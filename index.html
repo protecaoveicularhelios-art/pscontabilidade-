@@ -73,7 +73,7 @@
     .hero-visual { position: relative; display: flex; justify-content: flex-end; }
     .hero-photo {
       width: 420px; max-width: 100%; height: 520px;
-      object-fit: cover; border-radius: 20px;
+      object-fit: cover; object-position: top center; border-radius: 20px;
       display: block;
     }
     .hero-photo-placeholder {
@@ -241,11 +241,7 @@
 
       <div class="hero-visual">
         <div style="position:relative">
-          <!-- Substitua pela foto real do especialista -->
-          <div class="hero-photo-placeholder">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            FOTO DO ESPECIALISTA
-          </div>
+          <img src="/assets/img/especialista.jpg" alt="Especialista PS Contabilidade" class="hero-photo">
           <div class="hero-badge">
             <div class="hero-badge-num">+500</div>
             <div class="hero-badge-label">Empresas atendidas</div>
