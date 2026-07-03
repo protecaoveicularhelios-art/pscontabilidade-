@@ -142,11 +142,7 @@ section { padding: 96px 48px; }
   background: var(--gray-bg);
   padding: 140px 48px 100px;
   position: relative; overflow: hidden;
-}
-.page-hero::after {
-  content: ''; position: absolute; bottom: -2px; left: 0; right: 0;
-  height: 70px; background: var(--white);
-  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  border-radius: 0 0 64px 64px;
 }
 .breadcrumb { font-size: .78rem; color: var(--text-mid); margin-bottom: 16px; }
 .breadcrumb a { color: var(--text-mid); text-decoration: none; transition: color .2s; }
