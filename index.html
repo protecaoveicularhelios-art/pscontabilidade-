@@ -64,10 +64,7 @@
     .hero-brand {
       display: flex; align-items: center; gap: 10px; margin-bottom: 48px;
     }
-    .hero-brand-icon { width: 48px; height: 48px; }
-    .hero-brand-text { line-height: 1.2; }
-    .hero-brand-name { font-size: .95rem; font-weight: 800; color: var(--navy); }
-    .hero-brand-sub  { font-size: .72rem; font-weight: 500; color: var(--text-mid); }
+    .hero-brand-img { height: 48px; width: auto; display: block; }
     .hero-title {
       font-size: clamp(2rem, 4vw, 3.4rem); font-weight: 900; color: var(--navy);
       line-height: 1.08; letter-spacing: -1px; margin-bottom: 22px;
@@ -223,14 +220,7 @@
     <div class="hero-inner">
       <div>
         <div class="hero-brand">
-          <svg class="hero-brand-icon" viewBox="0 0 48 48" fill="none">
-            <path d="M34 10H22a12 12 0 0 0 0 24h4" stroke="#0D1B3E" stroke-width="4.5" stroke-linecap="round"/>
-            <path d="M14 38h12a12 12 0 0 0 0-24h-4" stroke="#D41E3C" stroke-width="4.5" stroke-linecap="round"/>
-          </svg>
-          <div class="hero-brand-text">
-            <div class="hero-brand-name">PS Contabilidade</div>
-            <div class="hero-brand-sub">contabilidade &amp; consultoria</div>
-          </div>
+          <img src="/assets/img/logo.png" alt="PS Contabilidade" class="hero-brand-img">
         </div>
 
         <h1 class="hero-title">
