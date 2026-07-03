@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PS Contabilidade | Clareza financeira e crescimento seguro em BH</title>
+  <meta name="description" content="PS Contabilidade transforma contabilidade em estratégia de crescimento. +20 anos de experiência, 100% humanizado. Diagnóstico tributário gratuito. Belo Horizonte · MG.">
+  <link rel="canonical" href="https://pscont.com.br">
+  <meta property="og:title" content="PS Contabilidade | Clareza financeira e crescimento seguro">
+  <meta property="og:description" content="Mais do que emitir guias: somos parceiros na gestão do seu negócio. +20 anos de experiência, 100% humanizado.">
+  <meta property="og:url" content="https://pscont.com.br">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "PS Contabilidade",
+    "description": "Escritório de contabilidade e consultoria empresarial. Transformando contabilidade em estratégia de crescimento desde 2003.",
+    "foundingDate": "2003",
+    "url": "https://pscont.com.br",
+    "telephone": "+55-31-99676-4159",
+    "email": "contato@pscont.com.br",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Belo Horizonte",
+      "addressRegion": "MG",
+      "addressCountry": "BR"
+    },
+    "areaServed": "Brasil",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "500"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <style>
+    /* ── HERO ── */
+    .hero {
+      background: var(--gray-bg);
+      padding-top: 68px; min-height: 100vh;
+      display: flex; align-items: center;
+      position: relative; overflow: hidden;
+    }
+    .hero::after {
+      content: ''; position: absolute; bottom: -2px; left: 0; right: 0;
+      height: 90px; background: var(--white);
+      border-radius: 60% 60% 0 0 / 100% 100% 0 0;
+      z-index: 1;
+    }
+    .hero-inner {
+      max-width: 1200px; margin: 0 auto; padding: 64px 48px 120px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 64px;
+      align-items: center; position: relative; z-index: 0; width: 100%;
+    }
+    .hero-brand {
+      display: flex; align-items: center; gap: 10px; margin-bottom: 48px;
+    }
+    .hero-brand-icon { width: 48px; height: 48px; }
+    .hero-brand-text { line-height: 1.2; }
+    .hero-brand-name { font-size: .95rem; font-weight: 800; color: var(--navy); }
+    .hero-brand-sub  { font-size: .72rem; font-weight: 500; color: var(--text-mid); }
+    .hero-title {
+      font-size: clamp(2rem, 4vw, 3.4rem); font-weight: 900; color: var(--navy);
+      line-height: 1.08; letter-spacing: -1px; margin-bottom: 22px;
+    }
+    .hero-sub { font-size: 1rem; color: var(--text-mid); line-height: 1.72; margin-bottom: 32px; max-width: 460px; }
+    .hero-stats { display: flex; gap: 36px; margin-bottom: 36px; flex-wrap: wrap; }
+    .hero-stat { font-size: .95rem; font-weight: 700; color: var(--crimson); }
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+
+    /* Hero visual */
+    .hero-visual { position: relative; display: flex; justify-content: flex-end; }
+    .hero-photo {
+      width: 420px; max-width: 100%; height: 520px;
+      object-fit: cover; border-radius: 20px;
+      display: block;
+    }
+    .hero-photo-placeholder {
+      width: 420px; max-width: 100%; height: 520px; border-radius: 20px;
+      background: linear-gradient(135deg, #c5cdd8 0%, #8fa0b4 100%);
+      display: flex; align-items: center; justify-content: center; flex-direction: column;
+      gap: 12px; color: rgba(255,255,255,.7); font-size: .82rem; font-weight: 600; letter-spacing: 1px;
+    }
+    .hero-photo-placeholder svg { width: 40px; height: 40px; opacity: .6; }
+    .hero-badge {
+      position: absolute; bottom: 48px; right: -16px;
+      background: var(--navy); color: #fff;
+      border-radius: 14px; padding: 14px 22px;
+      box-shadow: 0 8px 32px rgba(13,27,62,.28);
+      white-space: nowrap; z-index: 2;
+    }
+    .hero-badge-num   { font-size: 1.7rem; font-weight: 900; line-height: 1; }
+    .hero-badge-label { font-size: .7rem; font-weight: 500; color: rgba(255,255,255,.65); margin-top: 2px; }
+    .hero-logo-float {
+      position: absolute; top: 20px; right: -24px;
+      background: #fff; border-radius: 14px; padding: 14px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.1); z-index: 2;
+    }
+    .hero-logo-float svg { width: 44px; height: 44px; display: block; }
+
+    /* ── WHY SECTION ── */
+    .why-section { background: var(--white); text-align: center; padding: 96px 48px; }
+    .why-section .section-title { margin-bottom: 56px; }
+    .why-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 20px; max-width: 880px; margin: 0 auto; text-align: left;
+    }
+
+    /* ── CTA MIDDLE ── */
+    .cta-mid { background: var(--white); text-align: center; padding: 16px 48px 80px; }
+    .cta-mid-pill {
+      display: inline-flex; align-items: center; justify-content: center;
+      background: var(--crimson); color: #fff;
+      padding: 18px 56px; border-radius: 50px; font-size: 1.05rem; font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 8px 36px var(--crimson-glow);
+      transition: background .2s, transform .2s, box-shadow .2s;
+      margin-bottom: 20px;
+    }
+    .cta-mid-pill:hover { background: var(--crimson-dark); transform: translateY(-2px); box-shadow: 0 12px 44px rgba(212,30,60,.35); }
+    .cta-mid-checks {
+      display: flex; align-items: center; justify-content: center; gap: 32px;
+      flex-wrap: wrap; margin-top: 4px;
+    }
+    .cta-mid-check {
+      display: flex; align-items: center; gap: 7px;
+      font-size: .85rem; font-weight: 600; color: var(--text-mid);
+    }
+    .cta-mid-check svg { width: 20px; height: 20px; color: var(--crimson); }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials-section { background: var(--gray-bg); padding: 96px 48px; position: relative; }
+    .testimonials-section::before {
+      content: ''; position: absolute; top: -60px; left: 0; right: 0;
+      height: 80px; background: var(--gray-bg);
+      border-radius: 0 0 60% 60% / 0 0 100% 100%;
+    }
+    .testimonials-section .section-title { text-align: center; margin-bottom: 10px; }
+    .testimonials-sub { text-align: center; color: var(--text-mid); font-size: .95rem; margin-bottom: 56px; }
+    .testimonials-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 20px; max-width: 1000px; margin: 0 auto;
+    }
+
+    /* ── CTA BANNER ── */
+    .cta-banner { background: var(--crimson); padding: 0 48px 80px; }
+    .cta-banner-card {
+      max-width: 880px; margin: 0 auto;
+      background: var(--white); border-radius: var(--radius-lg);
+      padding: 56px 52px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
+      align-items: center;
+      transform: translateY(-44px);
+      box-shadow: 0 20px 60px rgba(0,0,0,.15);
+    }
+    .cta-banner-title { font-size: clamp(1.5rem, 2.5vw, 2.1rem); font-weight: 900; color: var(--navy); line-height: 1.2; margin-bottom: 16px; }
+    .cta-banner-sub   { font-size: .92rem; color: var(--text-mid); line-height: 1.65; }
+    .cta-banner-sub strong { color: var(--navy); }
+    .cta-banner-right { background: var(--navy); border-radius: 16px; padding: 32px; }
+    .cta-banner-btn {
+      display: block; text-align: center;
+      background: var(--crimson); color: #fff;
+      padding: 16px 32px; border-radius: 50px;
+      font-size: 1rem; font-weight: 700; text-decoration: none;
+      box-shadow: 0 6px 24px var(--crimson-glow);
+      transition: background .2s, transform .2s;
+      margin-top: 24px; margin-bottom: 14px;
+    }
+    .cta-banner-btn:hover { background: var(--crimson-dark); transform: translateY(-1px); }
+    .cta-banner-note {
+      display: flex; align-items: center; justify-content: center; gap: 6px;
+      color: rgba(255,255,255,.55); font-size: .78rem;
+    }
+    .cta-banner-note svg { width: 14px; height: 14px; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; padding: 60px 20px 100px; }
+      .hero-visual { display: none; }
+      .why-grid { grid-template-columns: 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .cta-banner-card { grid-template-columns: 1fr; padding: 36px 24px; transform: translateY(-32px); }
+      .cta-banner, .cta-mid, .why-section, .testimonials-section { padding-left: 20px; padding-right: 20px; }
+    }
+    @media (max-width: 560px) {
+      .hero-stats { flex-direction: column; gap: 10px; }
+      .hero-btns  { flex-direction: column; }
+      .cta-mid-checks { flex-direction: column; gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════ NAVBAR ═══════ -->
+  <nav class="navbar" id="navbar">
+    <a href="/" class="nav-logo">
+      <svg class="nav-logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M34 10H22a12 12 0 0 0 0 24h4" stroke="#0D1B3E" stroke-width="4.5" stroke-linecap="round"/>
+        <path d="M14 38h12a12 12 0 0 0 0-24h-4" stroke="#D41E3C" stroke-width="4.5" stroke-linecap="round"/>
+      </svg>
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">PS Contabilidade</span>
+        <span class="nav-logo-sub">contabilidade &amp; consultoria</span>
+      </div>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/" class="active">Início</a></li>
+      <li><a href="quem-somos.html">Quem Somos</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="blog/">Blog</a></li>
+      <li><a href="https://wa.me/5531996764159?text=Ol%C3%A1%2C+gostaria+de+um+diagn%C3%B3stico+tribut%C3%A1rio+gratuito" class="nav-cta" target="_blank" rel="noopener">Falar com especialista</a></li>
+    </ul>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══════ HERO ═══════ -->
+  <section class="hero" id="inicio">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-brand">
+          <svg class="hero-brand-icon" viewBox="0 0 48 48" fill="none">
+            <path d="M34 10H22a12 12 0 0 0 0 24h4" stroke="#0D1B3E" stroke-width="4.5" stroke-linecap="round"/>
+            <path d="M14 38h12a12 12 0 0 0 0-24h-4" stroke="#D41E3C" stroke-width="4.5" stroke-linecap="round"/>
+          </svg>
+          <div class="hero-brand-text">
+            <div class="hero-brand-name">PS Contabilidade</div>
+            <div class="hero-brand-sub">contabilidade &amp; consultoria</div>
+          </div>
+        </div>
+
+        <h1 class="hero-title">
+          Clareza financeira,<br>
+          economia real e<br>
+          crescimento seguro
+        </h1>
+        <p class="hero-sub">
+          Se você trabalha muito, fatura bem, mas não vê o lucro… a PS Contabilidade pode transformar sua realidade. Mais do que emitir guias, somos parceiros na gestão do seu negócio.
+        </p>
+        <div class="hero-stats">
+          <span class="hero-stat">+20 anos de Experiência</span>
+          <span class="hero-stat">100% Humanizado</span>
+        </div>
+        <div class="hero-btns">
+          <a href="https://wa.me/5531996764159?text=Ol%C3%A1%2C+gostaria+de+um+diagn%C3%B3stico+tribut%C3%A1rio+gratuito" class="btn-dark" target="_blank" rel="noopener">
+            Falar com especialista
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#por-que" class="btn-outline">Tirar dúvidas</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div style="position:relative">
+          <!-- Substitua pela foto real do especialista -->
+          <div class="hero-photo-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            FOTO DO ESPECIALISTA
+          </div>
+          <div class="hero-badge">
+            <div class="hero-badge-num">+500</div>
+            <div class="hero-badge-label">Empresas atendidas</div>
+          </div>
+          <div class="hero-logo-float">
+            <svg viewBox="0 0 48 48" fill="none" width="44" height="44">
+              <path d="M34 10H22a12 12 0 0 0 0 24h4" stroke="#0D1B3E" stroke-width="4.5" stroke-linecap="round"/>
+              <path d="M14 38h12a12 12 0 0 0 0-24h-4" stroke="#D41E3C" stroke-width="4.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ POR QUE ESCOLHER ═══════ -->
+  <section class="why-section" id="por-que">
+    <div class="container">
+      <div class="section-arrow"></div>
+      <h2 class="section-title">Por que escolher a<br>PS Contabilidade?</h2>
+      <div class="why-grid">
+
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2"/>
+          </svg>
+          <h3 class="card-title">Diagnóstico tributário gratuito</h3>
+          <div class="card-divider"></div>
+          <p>Descubra se você está pagando mais impostos do que deveria, com um estudo comparativo entre regimes e uma projeção real de economia.</p>
+        </div>
+
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+          </svg>
+          <h3 class="card-title">Abertura de empresa</h3>
+          <div class="card-divider"></div>
+          <p>Abra seu CNPJ com enquadramento fiscal correto desde o início. Nada de surpresas depois: comece do jeito certo para pagar menos e crescer com segurança.</p>
+        </div>
+
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>
+          </svg>
+          <h3 class="card-title">Atendimento digital em todo o Brasil</h3>
+          <div class="card-divider"></div>
+          <p>A tecnologia aproxima, e na PS você tem um contador disponível, mesmo de longe. Atendemos empresas de todos os estados, com estrutura digital, suporte humanizado e entregas pontuais.</p>
+        </div>
+
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+          <h3 class="card-title">Parceiros na gestão do negócio</h3>
+          <div class="card-divider"></div>
+          <p>Relatórios claros, reuniões mensais e suporte direto. Garanta que você entenda seus números e tome decisões com confiança — sempre com um especialista ao seu lado.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CTA MEIO ═══════ -->
+  <div class="cta-mid">
+    <a href="https://wa.me/5531996764159?text=Ol%C3%A1%2C+quero+uma+proposta+da+PS+Contabilidade" class="cta-mid-pill" target="_blank" rel="noopener">
+      Quero uma proposta
+    </a>
+    <div class="cta-mid-checks">
+      <span class="cta-mid-check">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+        </svg>
+        100% GRATUITO
+      </span>
+      <span class="cta-mid-check">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+        </svg>
+        SEM COMPROMISSO
+      </span>
+    </div>
+  </div>
+
+  <!-- ═══════ DEPOIMENTOS ═══════ -->
+  <section class="testimonials-section">
+    <div class="container">
+      <h2 class="section-title">Empresários que confiam na PS</h2>
+      <p class="testimonials-sub">Transformando a gestão financeira de empresas em todo o Brasil</p>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">"A PS Contabilidade profissionalizou nossa estrutura financeira e trouxe clareza para decisões estratégicas."</p>
+          <div class="testimonial-client">INSIG Soluções</div>
+          <div class="testimonial-role">Cliente PS Contabilidade</div>
+        </div>
+
+        <div class="testimonial-card featured">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">"Conseguimos enxergar resultados concretos mês a mês. A contabilidade se tornou nossa aliada estratégica."</p>
+          <div class="testimonial-client">Expand Bebidas</div>
+          <div class="testimonial-role">Cliente PS Contabilidade</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-mark">"</div>
+          <p class="testimonial-text">"Hoje temos tranquilidade e clareza fiscal. A PS Contabilidade recuperou valores e colocou nossa empresa em dia."</p>
+          <div class="testimonial-client">RDD Transportes</div>
+          <div class="testimonial-role">Cliente PS Contabilidade</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CTA BANNER ═══════ -->
+  <section class="cta-banner">
+    <div class="cta-banner-card">
+      <div>
+        <h2 class="cta-banner-title">Descubra quanto sua empresa pode economizar</h2>
+        <p class="cta-banner-sub">Agende um <strong>diagnóstico gratuito</strong> e fale com um especialista da <strong>PS Contabilidade</strong></p>
+      </div>
+      <div class="cta-banner-right">
+        <ul class="check-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Análise tributária completa
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Projeção de economia
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Sem compromisso
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            100% gratuito
+          </li>
+        </ul>
+        <a href="https://wa.me/5531996764159?text=Ol%C3%A1%2C+quero+uma+proposta+da+PS+Contabilidade" class="cta-banner-btn" target="_blank" rel="noopener">
+          Quero uma proposta
+        </a>
+        <div class="cta-banner-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Resposta em até 24 horas úteis
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo">
+          <svg class="footer-logo-icon" viewBox="0 0 48 48" fill="none">
+            <path d="M34 10H22a12 12 0 0 0 0 24h4" stroke="#0D1B3E" stroke-width="4.5" stroke-linecap="round"/>
+            <path d="M14 38h12a12 12 0 0 0 0-24h-4" stroke="#D41E3C" stroke-width="4.5" stroke-linecap="round"/>
+          </svg>
+          <span class="footer-logo-name">PS Contabilidade</span>
+        </a>
+        <p class="footer-tagline">Transformando contabilidade em estratégia de crescimento desde 2003</p>
+      </div>
+      <div class="footer-contact">
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:contato@pscont.com.br">contato@pscont.com.br</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 9.81a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 2 .18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.09 7.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+5531996764159">+ 55 (31) 9 9676-4159</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 PS Contabilidade. Todos os direitos reservados. Belo Horizonte · MG</span>
+      <ul class="footer-nav">
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="blog/">Blog</a></li>
+        <li><a href="privacidade.html">Privacidade</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    const navbar   = document.getElementById('navbar');
+    const navToggle = document.getElementById('navToggle');
+    const navLinks  = document.getElementById('navLinks');
+
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+  </script>
+</body>
+</html>

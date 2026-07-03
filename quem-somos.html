@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quem Somos | PS Contabilidade — Belo Horizonte MG</title>
+  <meta name="description" content="Conheça a PS Contabilidade: +20 anos transformando contabilidade em estratégia de crescimento em BH. Nossos valores, missão e equipe de especialistas.">
+  <link rel="canonical" href="https://pscont.com.br/quem-somos">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "Quem Somos — PS Contabilidade",
+    "url": "https://pscont.com.br/quem-somos",
+    "mainEntity": {
+      "@type": "AccountingService",
+      "name": "PS Contabilidade",
+      "foundingDate": "2003",
+      "numberOfEmployees": { "@type": "QuantitativeValue", "value": "9" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Belo Horizonte",
+        "addressRegion": "MG",
+        "addressCountry": "BR"
+      }
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <style>
+    /* ── SOBRE GRID ── */
+    .about-section { background: var(--white); padding: 80px 48px; }
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 80px; align-items: center; max-width: 1100px; margin: 0 auto;
+    }
+    .about-img-wrap { position: relative; }
+    .about-img {
+      width: 100%; border-radius: 20px; object-fit: cover;
+      display: block; box-shadow: 0 20px 60px rgba(0,0,0,.12);
+    }
+    .about-img-placeholder {
+      width: 100%; height: 440px; border-radius: 20px;
+      background: linear-gradient(135deg, #c5cdd8, #8fa0b4);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,.7); font-size: .82rem; font-weight: 600; letter-spacing: 1px;
+    }
+    .about-accent {
+      position: absolute; bottom: -20px; right: -20px;
+      width: 120px; height: 120px;
+      background: var(--crimson); border-radius: 16px; z-index: -1;
+      opacity: .12;
+    }
+    .about-since {
+      position: absolute; top: -16px; left: -16px;
+      background: var(--navy); color: #fff;
+      border-radius: 14px; padding: 14px 20px;
+      box-shadow: 0 8px 28px rgba(13,27,62,.25);
+      text-align: center;
+    }
+    .about-since-num  { font-size: 1.6rem; font-weight: 900; line-height: 1; }
+    .about-since-text { font-size: .65rem; font-weight: 600; color: rgba(255,255,255,.6); text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+
+    .about-content .section-tag { margin-bottom: 10px; }
+    .about-content .section-title { margin-bottom: 20px; }
+    .about-content .section-sub { margin-bottom: 32px; }
+
+    .about-values { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 36px; }
+    .value-card {
+      background: var(--gray-bg); border-radius: 12px; padding: 18px;
+      border-left: 3px solid var(--crimson);
+    }
+    .value-card strong {
+      display: block; font-size: .78rem; font-weight: 800;
+      color: var(--navy); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 4px;
+    }
+    .value-card p { font-size: .8rem; color: var(--text-mid); line-height: 1.55; }
+
+    /* ── NÚMEROS ── */
+    .numbers-section { background: var(--navy); padding: 72px 48px; }
+    .numbers-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 32px; max-width: 960px; margin: 0 auto; text-align: center;
+    }
+    .number-item {}
+    .number-val { font-size: 2.8rem; font-weight: 900; color: var(--crimson); line-height: 1; margin-bottom: 8px; }
+    .number-label { font-size: .82rem; font-weight: 600; color: rgba(255,255,255,.7); line-height: 1.4; }
+
+    /* ── MISSÃO / VISÃO / VALORES ── */
+    .mvv-section { background: var(--gray-bg); padding: 96px 48px; }
+    .mvv-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1000px; margin: 0 auto; }
+    .mvv-card { background: var(--white); border-radius: var(--radius); padding: 36px 28px; box-shadow: var(--card-shadow); }
+    .mvv-icon { width: 44px; height: 44px; color: var(--crimson); margin-bottom: 20px; }
+    .mvv-title { font-size: 1.1rem; font-weight: 800; color: var(--navy); margin-bottom: 14px; }
+    .mvv-text  { font-size: .88rem; color: var(--text-mid); line-height: 1.72; }
+
+    /* ── CTA BOTTOM ── */
+    .cta-bottom { background: var(--crimson); padding: 72px 48px; text-align: center; }
+    .cta-bottom h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 900; color: #fff; margin-bottom: 16px; }
+    .cta-bottom p { color: rgba(255,255,255,.8); font-size: .95rem; margin-bottom: 36px; }
+    .cta-bottom .btn-white {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #fff; color: var(--crimson);
+      padding: 16px 36px; border-radius: 50px;
+      font-size: .95rem; font-weight: 800; text-decoration: none;
+      transition: transform .2s, box-shadow .2s;
+      box-shadow: 0 6px 24px rgba(0,0,0,.15);
+    }
+    .cta-bottom .btn-white:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(0,0,0,.2); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 860px) {
+      .about-grid { grid-template-columns: 1fr; gap: 48px; }
+      .about-values { grid-template-columns: 1fr; }
+      .numbers-grid { grid-template-columns: repeat(2, 1fr); }
+      .mvv-grid { grid-template-columns: 1fr; }
+      .about-section, .numbers-section, .mvv-section, .cta-bottom { padding-left: 20px; padding-right: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <a href="/" class="nav-logo">
+      <svg class="nav-logo-icon" viewBox="0 0 48 48" fill="none">
+        <path d="M34 10H22a12 12 0 0 0 0 24h4" stroke="#0D1B3E" stroke-width="4.5" stroke-linecap="round"/>
+        <path d="M14 38h12a12 12 0 0 0 0-24h-4" stroke="#D41E3C" stroke-width="4.5" stroke-linecap="round"/>
+      </svg>
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">PS Contabilidade</span>
+        <span class="nav-logo-sub">contabilidade &amp; consultoria</span>
+      </div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Início</a></li>
+      <li><a href="quem-somos.html" class="active">Quem Somos</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="blog/">Blog</a></li>
+      <li><a href="https://wa.me/5531996764159" class="nav-cta" target="_blank" rel="noopener">Falar com especialista</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Início</a><span>›</span> Quem Somos
+      </nav>
+      <h1 class="page-hero-title">Mais do que contabilidade,<br>parceiros no seu crescimento</h1>
+      <p class="page-hero-sub">Desde 2003, transformamos a gestão financeira de centenas de empresas em todo o Brasil com clareza, estratégia e atendimento humanizado.</p>
+    </div>
+  </div>
+
+  <!-- SOBRE NÓS -->
+  <section class="about-section">
+    <div class="about-grid">
+      <div class="about-img-wrap">
+        <!-- Substitua pela foto real -->
+        <div class="about-img-placeholder">FOTO DA EQUIPE / SEDE</div>
+        <div class="about-accent"></div>
+        <div class="about-since">
+          <div class="about-since-num">2003</div>
+          <div class="about-since-text">Fundação</div>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="section-tag">Nossa história</span>
+        <h2 class="section-title">Nascemos em BH,<br>atendemos o Brasil</h2>
+        <p class="section-sub">Fundada em Belo Horizonte, Minas Gerais, a PS Contabilidade surgiu com uma missão clara: ser mais do que um escritório contábil — ser o parceiro estratégico que os empresários precisam para crescer com segurança e clareza financeira.</p>
+        <p class="section-sub" style="margin-top:16px">Com mais de 20 anos de experiência, atendemos empresas de todos os portes e segmentos, desde MEIs em início de jornada até empresas de médio porte em fase de expansão.</p>
+
+        <div class="about-values">
+          <div class="value-card">
+            <strong>Clareza</strong>
+            <p>Você entende cada número do seu negócio</p>
+          </div>
+          <div class="value-card">
+            <strong>Estratégia</strong>
+            <p>Contabilidade como ferramenta de crescimento</p>
+          </div>
+          <div class="value-card">
+            <strong>Humanização</strong>
+            <p>Suporte real, não apenas sistemas automatizados</p>
+          </div>
+          <div class="value-card">
+            <strong>Pontualidade</strong>
+            <p>Entregas no prazo, sem surpresas fiscais</p>
+          </div>
+        </div>
+
+        <a href="https://wa.me/5531996764159" class="btn-dark" target="_blank" rel="noopener">
+          Falar com nossa equipe
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NÚMEROS -->
+  <section class="numbers-section">
+    <div class="numbers-grid">
+      <div class="number-item">
+        <div class="number-val">+500</div>
+        <div class="number-label">Empresas atendidas<br>em todo o Brasil</div>
+      </div>
+      <div class="number-item">
+        <div class="number-val">+20</div>
+        <div class="number-label">Anos de experiência<br>em contabilidade</div>
+      </div>
+      <div class="number-item">
+        <div class="number-val">100%</div>
+        <div class="number-label">Atendimento<br>humanizado</div>
+      </div>
+      <div class="number-item">
+        <div class="number-val">27</div>
+        <div class="number-label">Estados atendidos<br>com estrutura digital</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSÃO / VISÃO / VALORES -->
+  <section class="mvv-section">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:56px">
+        <span class="section-tag">Nosso propósito</span>
+        <h2 class="section-title">O que nos move</h2>
+      </div>
+      <div class="mvv-grid">
+        <div class="mvv-card">
+          <svg class="mvv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+          </svg>
+          <h3 class="mvv-title">Missão</h3>
+          <p class="mvv-text">Transformar a contabilidade em estratégia de crescimento real, entregando clareza financeira e suporte humanizado para empresários que querem ver o lucro de verdade.</p>
+        </div>
+        <div class="mvv-card">
+          <svg class="mvv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
+          </svg>
+          <h3 class="mvv-title">Visão</h3>
+          <p class="mvv-text">Ser referência nacional em contabilidade consultiva, reconhecida por transformar dados contábeis em decisões estratégicas que impulsionam o crescimento das empresas clientes.</p>
+        </div>
+        <div class="mvv-card">
+          <svg class="mvv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+          <h3 class="mvv-title">Valores</h3>
+          <p class="mvv-text">Ética e transparência em tudo que fazemos. Comprometimento com prazos. Atendimento humanizado. Educação financeira para nossos clientes. Inovação contínua nos processos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BOTTOM -->
+  <div class="cta-bottom">
+    <h2>Pronto para transformar sua contabilidade?</h2>
+    <p>Agende um diagnóstico gratuito e descubra quanto sua empresa pode economizar</p>
+    <a href="https://wa.me/5531996764159?text=Ol%C3%A1%2C+quero+um+diagn%C3%B3stico+tribut%C3%A1rio+gratuito" class="btn-white" target="_blank" rel="noopener">
+      Quero um diagnóstico gratuito
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo">
+          <svg class="footer-logo-icon" viewBox="0 0 48 48" fill="none">
+            <path d="M34 10H22a12 12 0 0 0 0 24h4" stroke="#0D1B3E" stroke-width="4.5" stroke-linecap="round"/>
+            <path d="M14 38h12a12 12 0 0 0 0-24h-4" stroke="#D41E3C" stroke-width="4.5" stroke-linecap="round"/>
+          </svg>
+          <span class="footer-logo-name">PS Contabilidade</span>
+        </a>
+        <p class="footer-tagline">Transformando contabilidade em estratégia de crescimento desde 2003</p>
+      </div>
+      <div class="footer-contact">
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:contato@pscont.com.br">contato@pscont.com.br</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 9.81a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 2 .18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.09 7.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+5531996764159">+ 55 (31) 9 9676-4159</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 PS Contabilidade. Todos os direitos reservados. Belo Horizonte · MG</span>
+      <ul class="footer-nav">
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="blog/">Blog</a></li>
+        <li><a href="privacidade.html">Privacidade</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    const navToggle = document.getElementById('navToggle');
+    const navLinks  = document.getElementById('navLinks');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 20));
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+  </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Bloquear páginas de templates internos (não indexar)
+Disallow: /seo/_template-cidade.html
+Disallow: /blog/_template-post.html
+
+# Sitemaps
+Sitemap: https://pscont.com.br/sitemap.xml
+Sitemap: https://pscont.com.br/sitemap-blog.xml
+Sitemap: https://pscont.com.br/sitemap-seo.xml

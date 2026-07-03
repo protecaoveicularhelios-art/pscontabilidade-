@@ -1,0 +1,17 @@
+[
+  { "nome": "Belo Horizonte",      "slug": "belo-horizonte",      "estado": "MG", "estadoSlug": "mg" },
+  { "nome": "Contagem",            "slug": "contagem",            "estado": "MG", "estadoSlug": "mg" },
+  { "nome": "Betim",               "slug": "betim",               "estado": "MG", "estadoSlug": "mg" },
+  { "nome": "Ribeirão das Neves",  "slug": "ribeirao-das-neves",  "estado": "MG", "estadoSlug": "mg" },
+  { "nome": "Santa Luzia",         "slug": "santa-luzia",         "estado": "MG", "estadoSlug": "mg" },
+  { "nome": "Ibirité",             "slug": "ibirite",             "estado": "MG", "estadoSlug": "mg" },
+  { "nome": "Sete Lagoas",         "slug": "sete-lagoas",         "estado": "MG", "estadoSlug": "mg" },
+  { "nome": "Sabará",              "slug": "sabara",              "estado": "MG", "estadoSlug": "mg" },
+  { "nome": "Nova Lima",           "slug": "nova-lima",           "estado": "MG", "estadoSlug": "mg" },
+  { "nome": "Vespasiano",          "slug": "vespasiano",          "estado": "MG", "estadoSlug": "mg" },
+  { "nome": "Pedro Leopoldo",      "slug": "pedro-leopoldo",      "estado": "MG", "estadoSlug": "mg" },
+  { "nome": "Brumadinho",          "slug": "brumadinho",          "estado": "MG", "estadoSlug": "mg" },
+  { "nome": "Itabirito",           "slug": "itabirito",           "estado": "MG", "estadoSlug": "mg" },
+  { "nome": "Lagoa Santa",         "slug": "lagoa-santa",         "estado": "MG", "estadoSlug": "mg" },
+  { "nome": "Confins",             "slug": "confins",             "estado": "MG", "estadoSlug": "mg" }
+]

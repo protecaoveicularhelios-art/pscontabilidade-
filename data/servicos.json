@@ -1,0 +1,6 @@
+[
+  { "nome": "Contabilidade para MEI", "slug": "contabilidade-para-mei",   "prioridade": "0.9" },
+  { "nome": "Abertura de Empresa",    "slug": "abertura-de-empresa",     "prioridade": "0.9" },
+  { "nome": "Contabilidade Digital",  "slug": "contabilidade-digital",   "prioridade": "0.8" },
+  { "nome": "Planejamento Tributário","slug": "planejamento-tributario","prioridade": "0.8" }
+]

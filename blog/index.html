@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | PS Contabilidade — Dicas de gestão financeira e contabilidade</title>
+  <meta name="description" content="Artigos, dicas e guias sobre contabilidade empresarial, planejamento tributário, abertura de empresa e gestão financeira para PMEs.">
+  <link rel="canonical" href="https://pscont.com.br/blog">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+
+  <style>
+    /* ── FILTROS ── */
+    .blog-filters {
+      background: var(--white); padding: 32px 48px 0;
+      display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+      max-width: 1200px; margin: 0 auto;
+    }
+    .filter-btn {
+      padding: 8px 18px; border-radius: 50px;
+      border: 1.5px solid var(--border); background: transparent;
+      font-size: .8rem; font-weight: 600; color: var(--text-mid);
+      cursor: pointer; transition: all .2s; font-family: inherit;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--crimson); color: #fff; border-color: var(--crimson);
+    }
+
+    /* ── BLOG GRID ── */
+    .blog-section { background: var(--white); padding: 48px 48px 96px; }
+    .blog-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 28px; max-width: 1200px; margin: 0 auto;
+    }
+    .blog-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); overflow: hidden;
+      box-shadow: var(--card-shadow);
+      transition: transform .25s, box-shadow .25s;
+      display: flex; flex-direction: column;
+    }
+    .blog-card:hover { transform: translateY(-5px); box-shadow: 0 8px 32px rgba(0,0,0,.1); }
+    .blog-card-thumb {
+      width: 100%; height: 200px; object-fit: cover; display: block;
+      background: linear-gradient(135deg, #c5cdd8, #8fa0b4);
+    }
+    .blog-card-thumb-placeholder {
+      width: 100%; height: 200px;
+      background: linear-gradient(135deg, #c5cdd8, #8fa0b4);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,.6); font-size: .72rem; font-weight: 600;
+      letter-spacing: 1px; text-transform: uppercase;
+    }
+    .blog-card-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
+    .blog-card-cat {
+      font-size: .65rem; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; color: var(--crimson); margin-bottom: 10px;
+    }
+    .blog-card-title {
+      font-size: 1rem; font-weight: 800; color: var(--navy);
+      line-height: 1.35; margin-bottom: 10px;
+      text-decoration: none; display: block;
+      transition: color .2s;
+    }
+    .blog-card-title:hover { color: var(--crimson); }
+    .blog-card-excerpt { font-size: .84rem; color: var(--text-mid); line-height: 1.68; flex: 1; margin-bottom: 20px; }
+    .blog-card-meta {
+      display: flex; align-items: center; justify-content: space-between;
+      font-size: .76rem; color: var(--text-light); padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+    .blog-card-date { display: flex; align-items: center; gap: 5px; }
+    .blog-card-date svg { width: 13px; height: 13px; }
+    .blog-card-read {
+      display: flex; align-items: center; gap: 4px;
+      font-weight: 600; color: var(--crimson); font-size: .76rem;
+      text-decoration: none; transition: gap .2s;
+    }
+    .blog-card-read:hover { gap: 7px; }
+    .blog-card-read svg { width: 13px; height: 13px; }
+
+    /* ── POST DESTAQUE ── */
+    .blog-featured {
+      background: var(--white); padding: 48px 48px 0;
+    }
+    .featured-card {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
+      background: var(--gray-bg); border-radius: var(--radius-lg);
+      overflow: hidden; border: 1px solid var(--border);
+    }
+    .featured-thumb {
+      height: 360px; background: linear-gradient(135deg, #c5cdd8, #8fa0b4);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,.6); font-size: .8rem; font-weight: 600; letter-spacing: 1px;
+    }
+    .featured-body { padding: 48px 48px 48px 0; display: flex; flex-direction: column; justify-content: center; }
+    .featured-tag {
+      display: inline-block;
+      background: var(--crimson); color: #fff;
+      font-size: .65rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+      padding: 4px 12px; border-radius: 50px; margin-bottom: 16px; width: fit-content;
+    }
+    .featured-title {
+      font-size: 1.5rem; font-weight: 900; color: var(--navy);
+      line-height: 1.25; margin-bottom: 14px;
+      text-decoration: none; display: block; transition: color .2s;
+    }
+    .featured-title:hover { color: var(--crimson); }
+    .featured-excerpt { font-size: .9rem; color: var(--text-mid); line-height: 1.72; margin-bottom: 28px; }
+    .featured-meta { font-size: .78rem; color: var(--text-light); margin-bottom: 20px; }
+
+    /* ── NEWSLETTER ── */
+    .newsletter-section {
+      background: var(--navy); padding: 72px 48px; text-align: center;
+    }
+    .newsletter-section h2 { font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 900; color: #fff; margin-bottom: 10px; }
+    .newsletter-section p  { color: rgba(255,255,255,.65); font-size: .9rem; margin-bottom: 32px; }
+    .newsletter-form { display: flex; gap: 12px; max-width: 440px; margin: 0 auto; flex-wrap: wrap; justify-content: center; }
+    .newsletter-input {
+      flex: 1; min-width: 220px; padding: 14px 20px; border-radius: 50px;
+      border: 2px solid rgba(255,255,255,.15); background: rgba(255,255,255,.08);
+      color: #fff; font-size: .9rem; font-family: inherit; outline: none;
+      transition: border-color .2s;
+    }
+    .newsletter-input::placeholder { color: rgba(255,255,255,.4); }
+    .newsletter-input:focus { border-color: var(--crimson); }
+    .newsletter-btn {
+      padding: 14px 28px; border-radius: 50px;
+      background: var(--crimson); color: #fff; border: none;
+      font-size: .9rem; font-weight: 700; cursor: pointer; font-family: inherit;
+      transition: background .2s, transform .2s;
+      white-space: nowrap;
+    }
+    .newsletter-btn:hover { background: var(--crimson-dark); transform: translateY(-1px); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 960px) {
+      .blog-grid { grid-template-columns: repeat(2, 1fr); }
+      .featured-card { grid-template-columns: 1fr; }
+      .featured-thumb { height: 240px; }
+      .featured-body { padding: 32px; }
+      .blog-section, .blog-featured, .blog-filters, .newsletter-section { padding-left: 20px; padding-right: 20px; }
+    }
+    @media (max-width: 600px) {
+      .blog-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <a href="/" class="nav-logo">
+      <svg class="nav-logo-icon" viewBox="0 0 48 48" fill="none">
+        <path d="M34 10H22a12 12 0 0 0 0 24h4" stroke="#0D1B3E" stroke-width="4.5" stroke-linecap="round"/>
+        <path d="M14 38h12a12 12 0 0 0 0-24h-4" stroke="#D41E3C" stroke-width="4.5" stroke-linecap="round"/>
+      </svg>
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">PS Contabilidade</span>
+        <span class="nav-logo-sub">contabilidade &amp; consultoria</span>
+      </div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../">Início</a></li>
+      <li><a href="../quem-somos.html">Quem Somos</a></li>
+      <li><a href="../servicos.html">Serviços</a></li>
+      <li><a href="index.html" class="active">Blog</a></li>
+      <li><a href="https://wa.me/5531996764159" class="nav-cta" target="_blank" rel="noopener">Falar com especialista</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="../">Início</a><span>›</span> Blog</nav>
+      <h1 class="page-hero-title">Blog PS Contabilidade</h1>
+      <p class="page-hero-sub">Dicas, guias e novidades sobre contabilidade, planejamento tributário e gestão financeira para empresários de todo o Brasil.</p>
+    </div>
+  </div>
+
+  <!-- POST DESTAQUE -->
+  <div class="blog-featured">
+    <div class="featured-card">
+      <div class="featured-thumb">IMAGEM DE CAPA</div>
+      <div class="featured-body">
+        <span class="featured-tag">Destaque</span>
+        <a href="como-reduzir-impostos-empresa.html" class="featured-title">
+          Como reduzir os impostos da sua empresa legalmente em 2026
+        </a>
+        <p class="featured-excerpt">Descubra as estratégias legais de planejamento tributário que podem fazer sua empresa economizar até 40% nos impostos. Um guia completo com exemplos práticos.</p>
+        <div class="featured-meta">15 de Junho de 2026 · 8 min de leitura</div>
+        <a href="como-reduzir-impostos-empresa.html" class="btn-dark" style="width:fit-content">
+          Ler artigo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FILTROS -->
+  <div class="blog-filters">
+    <button class="filter-btn active">Todos</button>
+    <button class="filter-btn">Tributário</button>
+    <button class="filter-btn">Abertura de Empresa</button>
+    <button class="filter-btn">Gestão Financeira</button>
+    <button class="filter-btn">MEI</button>
+    <button class="filter-btn">Folha de Pagamento</button>
+  </div>
+
+  <!-- GRID DE POSTS -->
+  <section class="blog-section">
+    <div class="blog-grid">
+
+      <article class="blog-card">
+        <div class="blog-card-thumb-placeholder">IMAGEM</div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Tributário</div>
+          <a href="simples-nacional-ou-lucro-presumido.html" class="blog-card-title">Simples Nacional ou Lucro Presumido: qual é melhor para sua empresa?</a>
+          <p class="blog-card-excerpt">Entenda as diferenças entre os regimes tributários e descubra qual pode gerar mais economia para o seu negócio.</p>
+          <div class="blog-card-meta">
+            <span class="blog-card-date">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              10 Jun 2026
+            </span>
+            <a href="simples-nacional-ou-lucro-presumido.html" class="blog-card-read">
+              Ler <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-card-thumb-placeholder">IMAGEM</div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Abertura de Empresa</div>
+          <a href="passo-a-passo-abrir-empresa-bh.html" class="blog-card-title">Passo a passo: como abrir uma empresa em Belo Horizonte em 2026</a>
+          <p class="blog-card-excerpt">Do CNPJ ao alvará: guia completo com todos os documentos, custos e prazos para abrir sua empresa em BH.</p>
+          <div class="blog-card-meta">
+            <span class="blog-card-date">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              02 Jun 2026
+            </span>
+            <a href="passo-a-passo-abrir-empresa-bh.html" class="blog-card-read">
+              Ler <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-card-thumb-placeholder">IMAGEM</div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">MEI</div>
+          <a href="mei-limite-faturamento-2026.html" class="blog-card-title">Limite do MEI em 2026: o que mudou e quando migrar de regime</a>
+          <p class="blog-card-excerpt">Fique por dentro das regras atualizadas do MEI e saiba exatamente quando é a hora certa de abrir uma ME.</p>
+          <div class="blog-card-meta">
+            <span class="blog-card-date">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              28 Mai 2026
+            </span>
+            <a href="mei-limite-faturamento-2026.html" class="blog-card-read">
+              Ler <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-card-thumb-placeholder">IMAGEM</div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Gestão Financeira</div>
+          <a href="fluxo-de-caixa-para-pme.html" class="blog-card-title">Fluxo de caixa para PMEs: controle financeiro que todo empresário precisa</a>
+          <p class="blog-card-excerpt">Aprenda a montar e interpretar o fluxo de caixa da sua empresa e evite as surpresas financeiras que quebram negócios.</p>
+          <div class="blog-card-meta">
+            <span class="blog-card-date">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              20 Mai 2026
+            </span>
+            <a href="fluxo-de-caixa-para-pme.html" class="blog-card-read">
+              Ler <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-card-thumb-placeholder">IMAGEM</div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Folha de Pagamento</div>
+          <a href="esocial-guia-completo.html" class="blog-card-title">eSocial 2026: guia completo para empresas cumprirem as obrigações</a>
+          <p class="blog-card-excerpt">Tudo o que sua empresa precisa saber sobre o eSocial: prazos, obrigações, penalidades e como se manter em dia.</p>
+          <div class="blog-card-meta">
+            <span class="blog-card-date">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              12 Mai 2026
+            </span>
+            <a href="esocial-guia-completo.html" class="blog-card-read">
+              Ler <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-card-thumb-placeholder">IMAGEM</div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Tributário</div>
+          <a href="o-que-e-bpo-financeiro.html" class="blog-card-title">O que é BPO Financeiro e por que sua empresa precisa considerar</a>
+          <p class="blog-card-excerpt">Terceirizar o financeiro pode ser a virada que seu negócio precisa. Entenda como funciona o BPO e quais os benefícios reais.</p>
+          <div class="blog-card-meta">
+            <span class="blog-card-date">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              05 Mai 2026
+            </span>
+            <a href="o-que-e-bpo-financeiro.html" class="blog-card-read">
+              Ler <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-section">
+    <h2>Receba conteúdo gratuito sobre gestão financeira</h2>
+    <p>Assine nossa newsletter e receba dicas práticas de contabilidade e tributação todo mês</p>
+    <form class="newsletter-form" onsubmit="return false">
+      <input class="newsletter-input" type="email" placeholder="Seu melhor e-mail" required>
+      <button class="newsletter-btn" type="submit">Assinar grátis</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="../" class="footer-logo">
+          <svg class="footer-logo-icon" viewBox="0 0 48 48" fill="none">
+            <path d="M34 10H22a12 12 0 0 0 0 24h4" stroke="#0D1B3E" stroke-width="4.5" stroke-linecap="round"/>
+            <path d="M14 38h12a12 12 0 0 0 0-24h-4" stroke="#D41E3C" stroke-width="4.5" stroke-linecap="round"/>
+          </svg>
+          <span class="footer-logo-name">PS Contabilidade</span>
+        </a>
+        <p class="footer-tagline">Transformando contabilidade em estratégia de crescimento desde 2003</p>
+      </div>
+      <div class="footer-contact">
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:contato@pscont.com.br">contato@pscont.com.br</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 9.81a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 2 .18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.09 7.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+5531996764159">+ 55 (31) 9 9676-4159</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 PS Contabilidade. Todos os direitos reservados.</span>
+      <ul class="footer-nav">
+        <li><a href="../quem-somos.html">Quem Somos</a></li>
+        <li><a href="../servicos.html">Serviços</a></li>
+        <li><a href="index.html">Blog</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    const navToggle = document.getElementById('navToggle');
+    const navLinks  = document.getElementById('navLinks');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 20));
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+    // Filtros do blog
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

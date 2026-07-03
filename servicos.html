@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossos Serviços | PS Contabilidade — Belo Horizonte MG</title>
+  <meta name="description" content="Contabilidade, abertura de empresa, BPO financeiro, folha de pagamento e mais. Conheça os serviços da PS Contabilidade para empresas em BH e todo o Brasil.">
+  <link rel="canonical" href="https://pscont.com.br/servicos">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Contabilidade Empresarial",
+    "provider": {
+      "@type": "AccountingService",
+      "name": "PS Contabilidade",
+      "url": "https://pscont.com.br",
+      "telephone": "+55-31-99676-4159",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Belo Horizonte",
+        "addressRegion": "MG",
+        "addressCountry": "BR"
+      }
+    },
+    "areaServed": "Brasil"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <style>
+    /* ── SERVICES GRID ── */
+    .services-section { background: var(--white); padding: 80px 48px; }
+    .services-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 24px; max-width: 1100px; margin: 0 auto;
+    }
+    .service-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 32px 28px;
+      box-shadow: var(--card-shadow);
+      transition: transform .25s, box-shadow .25s, border-color .25s;
+    }
+    .service-card:hover {
+      transform: translateY(-6px); border-color: var(--crimson);
+      box-shadow: 0 12px 40px rgba(212,30,60,.1);
+    }
+    .service-icon {
+      width: 48px; height: 48px; border-radius: 12px;
+      background: rgba(212,30,60,.08); display: flex; align-items: center; justify-content: center;
+      margin-bottom: 20px; color: var(--crimson);
+    }
+    .service-icon svg { width: 24px; height: 24px; }
+    .service-name { font-size: 1.05rem; font-weight: 800; color: var(--navy); margin-bottom: 10px; }
+    .service-desc { font-size: .88rem; color: var(--text-mid); line-height: 1.7; margin-bottom: 20px; }
+    .service-link {
+      font-size: .82rem; font-weight: 700; color: var(--crimson);
+      text-decoration: none; display: flex; align-items: center; gap: 4px;
+      transition: gap .2s;
+    }
+    .service-link:hover { gap: 8px; }
+    .service-link svg { width: 14px; height: 14px; }
+
+    /* ── SEGMENTOS ── */
+    .segments-section { background: var(--gray-bg); padding: 80px 48px; }
+    .segments-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 48px; }
+    .segment-pill {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: 50px; padding: 14px 20px; text-align: center;
+      font-size: .88rem; font-weight: 700; color: var(--navy);
+      transition: background .2s, color .2s, border-color .2s;
+      cursor: default;
+    }
+    .segment-pill:hover { background: var(--crimson); color: #fff; border-color: var(--crimson); }
+
+    /* ── PROCESSO ── */
+    .process-section { background: var(--white); padding: 80px 48px; }
+    .process-steps {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 0; max-width: 960px; margin: 56px auto 0;
+      position: relative;
+    }
+    .process-steps::before {
+      content: ''; position: absolute; top: 28px; left: 10%; right: 10%;
+      height: 2px; background: var(--border); z-index: 0;
+    }
+    .process-step { text-align: center; position: relative; z-index: 1; padding: 0 12px; }
+    .process-num {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: var(--crimson); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; font-weight: 900; margin: 0 auto 16px;
+      box-shadow: 0 4px 16px var(--crimson-glow);
+    }
+    .process-title { font-size: .9rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+    .process-desc  { font-size: .78rem; color: var(--text-mid); line-height: 1.6; }
+
+    /* ── PLANOS ── */
+    .plans-section { background: var(--gray-bg); padding: 80px 48px; }
+    .plans-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 24px; max-width: 900px; margin: 56px auto 0;
+    }
+    .plan-card {
+      background: var(--white); border: 2px solid var(--border);
+      border-radius: var(--radius-lg); padding: 36px 28px;
+      transition: transform .25s, border-color .25s;
+    }
+    .plan-card:hover { transform: translateY(-6px); }
+    .plan-card.featured { border-color: var(--crimson); }
+    .plan-badge {
+      display: inline-block; font-size: .65rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 1.5px;
+      background: var(--crimson); color: #fff;
+      padding: 4px 12px; border-radius: 50px; margin-bottom: 16px;
+    }
+    .plan-name  { font-size: 1.3rem; font-weight: 900; color: var(--navy); margin-bottom: 8px; }
+    .plan-desc  { font-size: .82rem; color: var(--text-mid); line-height: 1.6; margin-bottom: 24px; }
+    .plan-divider { height: 1px; background: var(--border); margin-bottom: 24px; }
+    .plan-features { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 32px; }
+    .plan-features li { display: flex; align-items: center; gap: 8px; font-size: .85rem; color: var(--text-mid); }
+    .plan-features li svg { width: 16px; height: 16px; color: var(--crimson); flex-shrink: 0; }
+    .plan-cta {
+      display: block; text-align: center;
+      padding: 13px 24px; border-radius: 50px;
+      font-size: .88rem; font-weight: 700; text-decoration: none;
+      transition: background .2s, transform .2s;
+    }
+    .plan-cta-outline { border: 2px solid var(--border); color: var(--navy); }
+    .plan-cta-outline:hover { border-color: var(--navy); }
+    .plan-cta-filled { background: var(--crimson); color: #fff; box-shadow: 0 4px 16px var(--crimson-glow); }
+    .plan-cta-filled:hover { background: var(--crimson-dark); transform: translateY(-1px); }
+
+    /* ── CTA BOTTOM ── */
+    .cta-bottom { background: var(--crimson); padding: 72px 48px; text-align: center; }
+    .cta-bottom h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 900; color: #fff; margin-bottom: 12px; }
+    .cta-bottom p  { color: rgba(255,255,255,.8); font-size: .95rem; margin-bottom: 32px; }
+    .btn-white {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #fff; color: var(--crimson);
+      padding: 16px 36px; border-radius: 50px;
+      font-size: .95rem; font-weight: 800; text-decoration: none;
+      box-shadow: 0 6px 24px rgba(0,0,0,.15);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .btn-white:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(0,0,0,.2); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 960px) {
+      .services-grid  { grid-template-columns: repeat(2, 1fr); }
+      .segments-grid  { grid-template-columns: repeat(2, 1fr); }
+      .process-steps  { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+      .process-steps::before { display: none; }
+      .plans-grid     { grid-template-columns: 1fr; }
+      .services-section, .segments-section, .process-section, .plans-section, .cta-bottom { padding-left: 20px; padding-right: 20px; }
+    }
+    @media (max-width: 560px) {
+      .services-grid { grid-template-columns: 1fr; }
+      .segments-grid { grid-template-columns: repeat(2, 1fr); }
+      .process-steps { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <a href="/" class="nav-logo">
+      <svg class="nav-logo-icon" viewBox="0 0 48 48" fill="none">
+        <path d="M34 10H22a12 12 0 0 0 0 24h4" stroke="#0D1B3E" stroke-width="4.5" stroke-linecap="round"/>
+        <path d="M14 38h12a12 12 0 0 0 0-24h-4" stroke="#D41E3C" stroke-width="4.5" stroke-linecap="round"/>
+      </svg>
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">PS Contabilidade</span>
+        <span class="nav-logo-sub">contabilidade &amp; consultoria</span>
+      </div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Início</a></li>
+      <li><a href="quem-somos.html">Quem Somos</a></li>
+      <li><a href="servicos.html" class="active">Serviços</a></li>
+      <li><a href="blog/">Blog</a></li>
+      <li><a href="https://wa.me/5531996764159" class="nav-cta" target="_blank" rel="noopener">Falar com especialista</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Início</a><span>›</span> Serviços
+      </nav>
+      <h1 class="page-hero-title">Serviços que transformam<br>sua gestão financeira</h1>
+      <p class="page-hero-sub">Do MEI à empresa em expansão, temos a solução contábil certa para cada fase do seu negócio — com suporte humanizado e estratégia real.</p>
+    </div>
+  </div>
+
+  <!-- SERVIÇOS -->
+  <section class="services-section" id="servicos">
+    <div style="text-align:center; margin-bottom:56px">
+      <span class="section-tag">O que fazemos</span>
+      <h2 class="section-title">Nossos serviços</h2>
+      <p class="section-sub" style="margin:0 auto">Soluções contábeis completas para empresas de todos os portes, com atendimento digital em todo o Brasil</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2"/></svg>
+        </div>
+        <h3 class="service-name">Contabilidade Digital</h3>
+        <p class="service-desc">Escrituração completa, balanço patrimonial, DRE e demonstrações financeiras entregues no prazo — tudo 100% digital e organizado.</p>
+        <a href="https://wa.me/5531996764159" class="service-link" target="_blank" rel="noopener">
+          Saber mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h3 class="service-name">Diagnóstico Tributário</h3>
+        <p class="service-desc">Análise completa do regime tributário da sua empresa com projeção real de economia. Descubra se está pagando mais impostos do que deveria.</p>
+        <a href="https://wa.me/5531996764159" class="service-link" target="_blank" rel="noopener">
+          Saber mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <h3 class="service-name">Abertura de Empresa</h3>
+        <p class="service-desc">Abertura do seu CNPJ com o enquadramento fiscal correto desde o início. MEI, ME, EPP, Ltda — cuidamos de tudo com agilidade.</p>
+        <a href="https://wa.me/5531996764159" class="service-link" target="_blank" rel="noopener">
+          Saber mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3 class="service-name">Folha de Pagamento</h3>
+        <p class="service-desc">Gestão completa de RH e folha: admissões, demissões, férias, 13º salário, eSocial e FGTS — sem erro e sempre em dia.</p>
+        <a href="https://wa.me/5531996764159" class="service-link" target="_blank" rel="noopener">
+          Saber mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h3 class="service-name">BPO Financeiro</h3>
+        <p class="service-desc">Terceirize o financeiro da sua empresa: contas a pagar, contas a receber, conciliação bancária e relatórios gerenciais mensais.</p>
+        <a href="https://wa.me/5531996764159" class="service-link" target="_blank" rel="noopener">
+          Saber mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+        </div>
+        <h3 class="service-name">Consultoria Empresarial</h3>
+        <p class="service-desc">Planejamento tributário estratégico, estudos de viabilidade, análise de rentabilidade e suporte para tomada de decisões financeiras.</p>
+        <a href="https://wa.me/5531996764159" class="service-link" target="_blank" rel="noopener">
+          Saber mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEGMENTOS ATENDIDOS -->
+  <section class="segments-section">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:0">
+        <span class="section-tag">Para quem atendemos</span>
+        <h2 class="section-title">Segmentos que atendemos</h2>
+      </div>
+      <div class="segments-grid">
+        <div class="segment-pill">MEI</div>
+        <div class="segment-pill">Microempresa (ME)</div>
+        <div class="segment-pill">Simples Nacional</div>
+        <div class="segment-pill">Lucro Presumido</div>
+        <div class="segment-pill">Lucro Real</div>
+        <div class="segment-pill">Profissional Liberal</div>
+        <div class="segment-pill">E-commerce</div>
+        <div class="segment-pill">Serviços & Consultoria</div>
+        <div class="segment-pill">Comércio</div>
+        <div class="segment-pill">Indústria</div>
+        <div class="segment-pill">Saúde & Medicina</div>
+        <div class="segment-pill">Construção Civil</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="process-section">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:0">
+        <span class="section-tag">Processo</span>
+        <h2 class="section-title">Como funciona?</h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="process-num">1</div>
+          <h3 class="process-title">Diagnóstico</h3>
+          <p class="process-desc">Análise gratuita da situação atual da sua empresa</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">2</div>
+          <h3 class="process-title">Proposta</h3>
+          <p class="process-desc">Apresentamos o plano ideal para o seu negócio</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">3</div>
+          <h3 class="process-title">Migração</h3>
+          <p class="process-desc">Fazemos toda a transição sem burocracia para você</p>
+        </div>
+        <div class="process-step">
+          <div class="process-num">4</div>
+          <h3 class="process-title">Parceria</h3>
+          <p class="process-desc">Reuniões mensais e suporte contínuo para crescer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANOS -->
+  <section class="plans-section" id="planos">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:0">
+        <span class="section-tag">Planos</span>
+        <h2 class="section-title">Escolha seu plano</h2>
+        <p class="section-sub" style="margin:0 auto">Valores personalizados de acordo com o porte e necessidade da sua empresa</p>
+      </div>
+      <div class="plans-grid">
+        <div class="plan-card">
+          <span class="plan-badge" style="background: var(--text-mid)">MEI</span>
+          <h3 class="plan-name">Microempreendedor</h3>
+          <p class="plan-desc">Para profissionais autônomos e MEIs que precisam de organização fiscal e contabilidade básica.</p>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>DASN anual do MEI</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Orientação tributária</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Suporte via WhatsApp</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Atendimento digital</li>
+          </ul>
+          <a href="https://wa.me/5531996764159?text=Quero+saber+sobre+o+plano+MEI" class="plan-cta plan-cta-outline" target="_blank" rel="noopener">Escolher plano</a>
+        </div>
+
+        <div class="plan-card featured">
+          <span class="plan-badge">Mais popular</span>
+          <h3 class="plan-name">Microempresa</h3>
+          <p class="plan-desc">Para MEs e EPPs que precisam de contabilidade completa, folha de pagamento e planejamento tributário.</p>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Contabilidade completa</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Folha de pagamento</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Planejamento tributário</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Reunião mensal</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Relatórios gerenciais</li>
+          </ul>
+          <a href="https://wa.me/5531996764159?text=Quero+saber+sobre+o+plano+para+Microempresa" class="plan-cta plan-cta-filled" target="_blank" rel="noopener">Escolher plano</a>
+        </div>
+
+        <div class="plan-card">
+          <span class="plan-badge" style="background: var(--navy)">Profissional Liberal</span>
+          <h3 class="plan-name">Profissional Liberal</h3>
+          <p class="plan-desc">Para médicos, advogados, engenheiros e outros profissionais que precisam de organização fiscal e IRPF.</p>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Contabilidade do profissional</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Declaração IRPF</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Orientação tributária</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Suporte dedicado</li>
+          </ul>
+          <a href="https://wa.me/5531996764159?text=Quero+saber+sobre+o+plano+para+Profissional+Liberal" class="plan-cta plan-cta-outline" target="_blank" rel="noopener">Escolher plano</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-bottom">
+    <h2>Não sabe qual plano é ideal para você?</h2>
+    <p>Fale com um especialista e receba uma proposta personalizada e gratuita</p>
+    <a href="https://wa.me/5531996764159?text=Ol%C3%A1%2C+quero+uma+proposta+personalizada" class="btn-white" target="_blank" rel="noopener">
+      Quero uma proposta gratuita
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo">
+          <svg class="footer-logo-icon" viewBox="0 0 48 48" fill="none">
+            <path d="M34 10H22a12 12 0 0 0 0 24h4" stroke="#0D1B3E" stroke-width="4.5" stroke-linecap="round"/>
+            <path d="M14 38h12a12 12 0 0 0 0-24h-4" stroke="#D41E3C" stroke-width="4.5" stroke-linecap="round"/>
+          </svg>
+          <span class="footer-logo-name">PS Contabilidade</span>
+        </a>
+        <p class="footer-tagline">Transformando contabilidade em estratégia de crescimento desde 2003</p>
+      </div>
+      <div class="footer-contact">
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:contato@pscont.com.br">contato@pscont.com.br</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 9.81a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 2 .18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.09 7.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+5531996764159">+ 55 (31) 9 9676-4159</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 PS Contabilidade. Todos os direitos reservados. Belo Horizonte · MG</span>
+      <ul class="footer-nav">
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="blog/">Blog</a></li>
+        <li><a href="privacidade.html">Privacidade</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    const navToggle = document.getElementById('navToggle');
+    const navLinks  = document.getElementById('navLinks');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 20));
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+  </script>
+</body>
+</html>
