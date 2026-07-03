@@ -152,14 +152,13 @@
     }
 
     /* ── CTA BANNER ── */
-    .cta-banner { background: var(--crimson); padding: 0 48px 80px; }
+    .cta-banner { background: var(--crimson); padding: 80px 48px; }
     .cta-banner-card {
       max-width: 880px; margin: 0 auto;
       background: var(--white); border-radius: var(--radius-lg);
       padding: 56px 52px;
       display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
       align-items: center;
-      transform: translateY(-44px);
       box-shadow: 0 20px 60px rgba(0,0,0,.15);
     }
     .cta-banner-title { font-size: clamp(1.5rem, 2.5vw, 2.1rem); font-weight: 900; color: var(--navy); line-height: 1.2; margin-bottom: 16px; }
@@ -188,7 +187,7 @@
       .hero-visual { display: none; }
       .why-grid { grid-template-columns: 1fr; }
       .testimonials-grid { grid-template-columns: 1fr; }
-      .cta-banner-card { grid-template-columns: 1fr; padding: 36px 24px; transform: translateY(-32px); }
+      .cta-banner-card { grid-template-columns: 1fr; padding: 36px 24px; }
       .cta-banner, .cta-mid, .why-section, .testimonials-section { padding-left: 20px; padding-right: 20px; }
     }
     @media (max-width: 560px) {
@@ -203,14 +202,7 @@
   <!-- ═══════ NAVBAR ═══════ -->
   <nav class="navbar" id="navbar">
     <a href="/" class="nav-logo">
-      <svg class="nav-logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M34 10H22a12 12 0 0 0 0 24h4" stroke="#0D1B3E" stroke-width="4.5" stroke-linecap="round"/>
-        <path d="M14 38h12a12 12 0 0 0 0-24h-4" stroke="#D41E3C" stroke-width="4.5" stroke-linecap="round"/>
-      </svg>
-      <div class="nav-logo-text">
-        <span class="nav-logo-name">PS Contabilidade</span>
-        <span class="nav-logo-sub">contabilidade &amp; consultoria</span>
-      </div>
+      <img src="/assets/img/logo.png" alt="PS Contabilidade" class="nav-logo-img">
     </a>
 
     <ul class="nav-links" id="navLinks">
@@ -427,11 +419,7 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <a href="/" class="footer-logo">
-          <svg class="footer-logo-icon" viewBox="0 0 48 48" fill="none">
-            <path d="M34 10H22a12 12 0 0 0 0 24h4" stroke="#0D1B3E" stroke-width="4.5" stroke-linecap="round"/>
-            <path d="M14 38h12a12 12 0 0 0 0-24h-4" stroke="#D41E3C" stroke-width="4.5" stroke-linecap="round"/>
-          </svg>
-          <span class="footer-logo-name">PS Contabilidade</span>
+          <img src="/assets/img/logo.png" alt="PS Contabilidade" class="footer-logo-img">
         </a>
         <p class="footer-tagline">Transformando contabilidade em estratégia de crescimento desde 2003</p>
       </div>
