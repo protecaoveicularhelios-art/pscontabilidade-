@@ -47,13 +47,6 @@
       width: 100%; height: 200px; object-fit: cover; display: block;
       background: linear-gradient(135deg, #c5cdd8, #8fa0b4);
     }
-    .blog-card-thumb-placeholder {
-      width: 100%; height: 200px;
-      background: linear-gradient(135deg, #c5cdd8, #8fa0b4);
-      display: flex; align-items: center; justify-content: center;
-      color: rgba(255,255,255,.6); font-size: .72rem; font-weight: 600;
-      letter-spacing: 1px; text-transform: uppercase;
-    }
     .blog-card-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
     .blog-card-cat {
       font-size: .65rem; font-weight: 700; letter-spacing: 1.5px;
@@ -92,10 +85,8 @@
       background: var(--gray-bg); border-radius: var(--radius-lg);
       overflow: hidden; border: 1px solid var(--border);
     }
-    .featured-thumb {
-      height: 360px; background: linear-gradient(135deg, #c5cdd8, #8fa0b4);
-      display: flex; align-items: center; justify-content: center;
-      color: rgba(255,255,255,.6); font-size: .8rem; font-weight: 600; letter-spacing: 1px;
+    .featured-thumb-img {
+      width: 100%; height: 360px; object-fit: cover; display: block;
     }
     .featured-body { padding: 48px 48px 48px 0; display: flex; flex-direction: column; justify-content: center; }
     .featured-tag {
@@ -141,7 +132,7 @@
     @media (max-width: 960px) {
       .blog-grid { grid-template-columns: repeat(2, 1fr); }
       .featured-card { grid-template-columns: 1fr; }
-      .featured-thumb { height: 240px; }
+      .featured-thumb-img { height: 240px; }
       .featured-body { padding: 32px; }
       .blog-section, .blog-featured, .blog-filters, .newsletter-section { padding-left: 20px; padding-right: 20px; }
     }
@@ -177,7 +168,7 @@
   <!-- POST DESTAQUE -->
   <div class="blog-featured">
     <div class="featured-card">
-      <div class="featured-thumb">IMAGEM DE CAPA</div>
+      <img src="../assets/img/blog/como-reduzir-impostos-empresa.jpg" alt="Como reduzir os impostos da sua empresa legalmente em 2026" class="featured-thumb-img">
       <div class="featured-body">
         <span class="featured-tag">Destaque</span>
         <a href="como-reduzir-impostos-empresa.html" class="featured-title">
@@ -208,7 +199,7 @@
     <div class="blog-grid">
 
       <article class="blog-card">
-        <div class="blog-card-thumb-placeholder">IMAGEM</div>
+        <img src="../assets/img/blog/simples-nacional-ou-lucro-presumido.jpg" alt="Simples Nacional ou Lucro Presumido: qual é melhor para sua empresa?" class="blog-card-thumb">
         <div class="blog-card-body">
           <div class="blog-card-cat">Tributário</div>
           <a href="simples-nacional-ou-lucro-presumido.html" class="blog-card-title">Simples Nacional ou Lucro Presumido: qual é melhor para sua empresa?</a>
@@ -226,7 +217,7 @@
       </article>
 
       <article class="blog-card">
-        <div class="blog-card-thumb-placeholder">IMAGEM</div>
+        <img src="../assets/img/blog/passo-a-passo-abrir-empresa-bh.jpg" alt="Passo a passo: como abrir uma empresa em Belo Horizonte em 2026" class="blog-card-thumb">
         <div class="blog-card-body">
           <div class="blog-card-cat">Abertura de Empresa</div>
           <a href="passo-a-passo-abrir-empresa-bh.html" class="blog-card-title">Passo a passo: como abrir uma empresa em Belo Horizonte em 2026</a>
@@ -244,7 +235,7 @@
       </article>
 
       <article class="blog-card">
-        <div class="blog-card-thumb-placeholder">IMAGEM</div>
+        <img src="../assets/img/blog/mei-limite-faturamento-2026.jpg" alt="Limite do MEI em 2026: o que mudou e quando migrar de regime" class="blog-card-thumb">
         <div class="blog-card-body">
           <div class="blog-card-cat">MEI</div>
           <a href="mei-limite-faturamento-2026.html" class="blog-card-title">Limite do MEI em 2026: o que mudou e quando migrar de regime</a>
@@ -262,7 +253,7 @@
       </article>
 
       <article class="blog-card">
-        <div class="blog-card-thumb-placeholder">IMAGEM</div>
+        <img src="../assets/img/blog/fluxo-de-caixa-para-pme.jpg" alt="Fluxo de caixa para PMEs: controle financeiro que todo empresário precisa" class="blog-card-thumb">
         <div class="blog-card-body">
           <div class="blog-card-cat">Gestão Financeira</div>
           <a href="fluxo-de-caixa-para-pme.html" class="blog-card-title">Fluxo de caixa para PMEs: controle financeiro que todo empresário precisa</a>
@@ -280,7 +271,7 @@
       </article>
 
       <article class="blog-card">
-        <div class="blog-card-thumb-placeholder">IMAGEM</div>
+        <img src="../assets/img/blog/esocial-guia-completo.jpg" alt="eSocial 2026: guia completo para empresas cumprirem as obrigações" class="blog-card-thumb">
         <div class="blog-card-body">
           <div class="blog-card-cat">Folha de Pagamento</div>
           <a href="esocial-guia-completo.html" class="blog-card-title">eSocial 2026: guia completo para empresas cumprirem as obrigações</a>
@@ -298,7 +289,7 @@
       </article>
 
       <article class="blog-card">
-        <div class="blog-card-thumb-placeholder">IMAGEM</div>
+        <img src="../assets/img/blog/o-que-e-bpo-financeiro.jpg" alt="O que é BPO Financeiro e por que sua empresa precisa considerar" class="blog-card-thumb">
         <div class="blog-card-body">
           <div class="blog-card-cat">Tributário</div>
           <a href="o-que-e-bpo-financeiro.html" class="blog-card-title">O que é BPO Financeiro e por que sua empresa precisa considerar</a>
@@ -353,6 +344,7 @@
         <li><a href="../quem-somos.html">Quem Somos</a></li>
         <li><a href="../servicos.html">Serviços</a></li>
         <li><a href="index.html">Blog</a></li>
+        <li><a href="../privacidade.html">Privacidade</a></li>
       </ul>
     </div>
   </footer>

@@ -2,7 +2,8 @@
 <!--
   PS Contabilidade — Sitemap Principal
   Atualize as <lastmod> sempre que editar as páginas.
-  Para as páginas SEO programático, gere um sitemap separado (sitemap-seo.xml).
+  Posts do blog: sitemap-blog.xml
+  Páginas de SEO programático: sitemap-seo.xml
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
@@ -10,7 +11,7 @@
   <!-- ── PÁGINAS PRINCIPAIS ── -->
   <url>
     <loc>https://pscont.com.br/</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -31,63 +32,16 @@
 
   <url>
     <loc>https://pscont.com.br/blog</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- ── POSTS DO BLOG ── -->
   <url>
-    <loc>https://pscont.com.br/blog/como-reduzir-impostos-empresa</loc>
-    <lastmod>2026-06-15</lastmod>
+    <loc>https://pscont.com.br/privacidade</loc>
+    <lastmod>2026-07-06</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.3</priority>
   </url>
-
-  <url>
-    <loc>https://pscont.com.br/blog/simples-nacional-ou-lucro-presumido</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://pscont.com.br/blog/passo-a-passo-abrir-empresa-bh</loc>
-    <lastmod>2026-06-02</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://pscont.com.br/blog/mei-limite-faturamento-2026</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!--
-    ── PÁGINAS SEO PROGRAMÁTICO ──
-    Adicione aqui (ou no sitemap-seo.xml) as páginas geradas.
-    Exemplo de estrutura:
-
-    CONTABILIDADE PARA MEI — CIDADES MG:
-    /contabilidade-para-mei-em-belo-horizonte-mg
-    /contabilidade-para-mei-em-contagem-mg
-    /contabilidade-para-mei-em-betim-mg
-    /contabilidade-para-mei-em-ribeirao-das-neves-mg
-    /contabilidade-para-mei-em-santa-luzia-mg
-    /contabilidade-para-mei-em-sete-lagoas-mg
-
-    ABERTURA DE EMPRESA — CIDADES MG:
-    /abertura-de-empresa-em-belo-horizonte-mg
-    /abertura-de-empresa-em-contagem-mg
-    /abertura-de-empresa-em-betim-mg
-
-    CONTADOR DIGITAL — SEGMENTOS:
-    /contador-para-medicos-bh
-    /contador-para-advogados-bh
-    /contador-para-ecommerce-bh
-    /contador-para-construtoras-bh
-  -->
 
 </urlset>
