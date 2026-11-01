@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nossos Serviços | PS Contabilidade — Belo Horizonte MG</title>
   <meta name="description" content="Contabilidade, abertura de empresa, BPO financeiro, folha de pagamento e mais. Conheça os serviços da PS Contabilidade para empresas em BH e todo o Brasil.">
-  <link rel="canonical" href="https://pscont.com.br/servicos">
+  <link rel="canonical" href="https://pscontabilidadebh.com.br/servicos">
 
   <script type="application/ld+json">
   {
@@ -15,7 +15,7 @@
     "provider": {
       "@type": "AccountingService",
       "name": "PS Contabilidade",
-      "url": "https://pscont.com.br",
+      "url": "https://pscontabilidadebh.com.br",
       "telephone": "+55-31-99676-4159",
       "address": {
         "@type": "PostalAddress",
@@ -149,6 +149,19 @@
       transition: transform .2s, box-shadow .2s;
     }
     .btn-white:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(0,0,0,.2); }
+
+    /* ── ONDE ATENDEMOS ── */
+    .cities-section { background: var(--gray-bg); padding: 80px 48px; text-align: center; }
+    .cities-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 900px; margin: 40px auto 28px; }
+    .city-chip {
+      padding: 8px 18px; border-radius: 50px;
+      background: var(--white); border: 1px solid var(--border);
+      font-size: .82rem; font-weight: 600; color: var(--navy);
+      text-decoration: none; transition: all .2s;
+    }
+    .city-chip:hover { background: var(--crimson); color: #fff; border-color: var(--crimson); }
+    .cities-more { font-weight: 700; color: var(--crimson); text-decoration: none; font-size: .9rem; }
+    @media (max-width: 960px) { .cities-section { padding-left: 20px; padding-right: 20px; } }
 
     /* ── RESPONSIVE ── */
     @media (max-width: 960px) {
@@ -383,6 +396,33 @@
     </div>
   </section>
 
+  <!-- ONDE ATENDEMOS -->
+  <section class="cities-section">
+    <div class="container">
+      <span class="section-tag">Onde atendemos</span>
+      <h2 class="section-title">Contabilidade em BH e na Grande BH</h2>
+      <p class="section-sub" style="margin:0 auto">Atendimento 100% digital para empresas de Belo Horizonte e região metropolitana</p>
+      <div class="cities-grid">
+        <a href="/contabilidade-digital-em-belo-horizonte-mg/" class="city-chip">Belo Horizonte</a>
+        <a href="/contabilidade-digital-em-contagem-mg/" class="city-chip">Contagem</a>
+        <a href="/contabilidade-digital-em-betim-mg/" class="city-chip">Betim</a>
+        <a href="/contabilidade-digital-em-ribeirao-das-neves-mg/" class="city-chip">Ribeirão das Neves</a>
+        <a href="/contabilidade-digital-em-santa-luzia-mg/" class="city-chip">Santa Luzia</a>
+        <a href="/contabilidade-digital-em-ibirite-mg/" class="city-chip">Ibirité</a>
+        <a href="/contabilidade-digital-em-sete-lagoas-mg/" class="city-chip">Sete Lagoas</a>
+        <a href="/contabilidade-digital-em-sabara-mg/" class="city-chip">Sabará</a>
+        <a href="/contabilidade-digital-em-nova-lima-mg/" class="city-chip">Nova Lima</a>
+        <a href="/contabilidade-digital-em-vespasiano-mg/" class="city-chip">Vespasiano</a>
+        <a href="/contabilidade-digital-em-pedro-leopoldo-mg/" class="city-chip">Pedro Leopoldo</a>
+        <a href="/contabilidade-digital-em-brumadinho-mg/" class="city-chip">Brumadinho</a>
+        <a href="/contabilidade-digital-em-itabirito-mg/" class="city-chip">Itabirito</a>
+        <a href="/contabilidade-digital-em-lagoa-santa-mg/" class="city-chip">Lagoa Santa</a>
+        <a href="/contabilidade-digital-em-confins-mg/" class="city-chip">Confins</a>
+      </div>
+      <a href="/cidades-atendidas/" class="cities-more">Ver todos os serviços por cidade →</a>
+    </div>
+  </section>
+
   <!-- CTA -->
   <div class="cta-bottom">
     <h2>Não sabe qual plano é ideal para você?</h2>
@@ -418,6 +458,7 @@
         <li><a href="quem-somos.html">Quem Somos</a></li>
         <li><a href="servicos.html">Serviços</a></li>
         <li><a href="blog/">Blog</a></li>
+        <li><a href="/cidades-atendidas/">Cidades atendidas</a></li>
         <li><a href="privacidade.html">Privacidade</a></li>
       </ul>
     </div>

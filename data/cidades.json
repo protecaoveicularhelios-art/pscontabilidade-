@@ -1,17 +1,107 @@
 [
-  { "nome": "Belo Horizonte",      "slug": "belo-horizonte",      "estado": "MG", "estadoSlug": "mg" },
-  { "nome": "Contagem",            "slug": "contagem",            "estado": "MG", "estadoSlug": "mg" },
-  { "nome": "Betim",               "slug": "betim",               "estado": "MG", "estadoSlug": "mg" },
-  { "nome": "Ribeirão das Neves",  "slug": "ribeirao-das-neves",  "estado": "MG", "estadoSlug": "mg" },
-  { "nome": "Santa Luzia",         "slug": "santa-luzia",         "estado": "MG", "estadoSlug": "mg" },
-  { "nome": "Ibirité",             "slug": "ibirite",             "estado": "MG", "estadoSlug": "mg" },
-  { "nome": "Sete Lagoas",         "slug": "sete-lagoas",         "estado": "MG", "estadoSlug": "mg" },
-  { "nome": "Sabará",              "slug": "sabara",              "estado": "MG", "estadoSlug": "mg" },
-  { "nome": "Nova Lima",           "slug": "nova-lima",           "estado": "MG", "estadoSlug": "mg" },
-  { "nome": "Vespasiano",          "slug": "vespasiano",          "estado": "MG", "estadoSlug": "mg" },
-  { "nome": "Pedro Leopoldo",      "slug": "pedro-leopoldo",      "estado": "MG", "estadoSlug": "mg" },
-  { "nome": "Brumadinho",          "slug": "brumadinho",          "estado": "MG", "estadoSlug": "mg" },
-  { "nome": "Itabirito",           "slug": "itabirito",           "estado": "MG", "estadoSlug": "mg" },
-  { "nome": "Lagoa Santa",         "slug": "lagoa-santa",         "estado": "MG", "estadoSlug": "mg" },
-  { "nome": "Confins",             "slug": "confins",             "estado": "MG", "estadoSlug": "mg" }
+  {
+    "nome": "Belo Horizonte", "slug": "belo-horizonte", "estado": "MG", "estadoSlug": "mg",
+    "regiao": "capital de Minas Gerais", "distancia": "",
+    "perfil": "Capital mineira e maior centro econômico do estado, Belo Horizonte concentra empresas de serviços, comércio, saúde, educação e tecnologia — incluindo o ecossistema de startups conhecido como San Pedro Valley. É aqui que fica a sede da PS Contabilidade, atendendo empresários da capital desde 2003.",
+    "setores": ["serviços", "comércio", "tecnologia", "saúde", "educação"],
+    "vizinhas": ["contagem", "nova-lima", "sabara", "santa-luzia", "ribeirao-das-neves", "ibirite", "betim", "vespasiano"]
+  },
+  {
+    "nome": "Contagem", "slug": "contagem", "estado": "MG", "estadoSlug": "mg",
+    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 20 km",
+    "perfil": "Um dos principais polos industriais de Minas Gerais, Contagem reúne a Cidade Industrial, distribuidoras, atacadistas e a CeasaMinas. O município também tem um comércio de bairro forte e muitos prestadores de serviço que atendem a indústria local.",
+    "setores": ["indústria", "logística", "comércio atacadista", "serviços"],
+    "vizinhas": ["belo-horizonte", "betim", "ibirite", "ribeirao-das-neves"]
+  },
+  {
+    "nome": "Betim", "slug": "betim", "estado": "MG", "estadoSlug": "mg",
+    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 30 km",
+    "perfil": "Betim é referência na indústria automotiva e de autopeças, com a fábrica da Stellantis e a Refinaria Gabriel Passos (Regap). Em torno desses grandes empregadores cresce uma rede de fornecedores, transportadoras, comércio e prestadores de serviço.",
+    "setores": ["indústria automotiva", "autopeças", "petróleo e gás", "transporte", "comércio"],
+    "vizinhas": ["contagem", "ibirite", "belo-horizonte", "brumadinho"]
+  },
+  {
+    "nome": "Ribeirão das Neves", "slug": "ribeirao-das-neves", "estado": "MG", "estadoSlug": "mg",
+    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 30 km",
+    "perfil": "Ribeirão das Neves é um dos municípios mais populosos da Grande BH, com economia puxada pelo comércio local, pela construção civil e por um grande número de microempreendedores e prestadores de serviço autônomos.",
+    "setores": ["comércio varejista", "construção civil", "serviços", "microempreendedores"],
+    "vizinhas": ["belo-horizonte", "contagem", "vespasiano", "santa-luzia", "pedro-leopoldo"]
+  },
+  {
+    "nome": "Santa Luzia", "slug": "santa-luzia", "estado": "MG", "estadoSlug": "mg",
+    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 25 km",
+    "perfil": "Localizada no Vetor Norte da Grande BH, Santa Luzia combina um centro histórico com distritos industriais e um comércio em expansão, impulsionado pelo crescimento da região do aeroporto de Confins.",
+    "setores": ["indústria", "comércio", "serviços", "construção civil"],
+    "vizinhas": ["belo-horizonte", "vespasiano", "sabara", "lagoa-santa", "ribeirao-das-neves"]
+  },
+  {
+    "nome": "Ibirité", "slug": "ibirite", "estado": "MG", "estadoSlug": "mg",
+    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 25 km",
+    "perfil": "Vizinha de Betim e Contagem, Ibirité tem economia baseada no comércio, em pequenas indústrias e em serviços que atendem o polo industrial do entorno, com muitos negócios familiares e MEIs.",
+    "setores": ["comércio", "pequenas indústrias", "serviços", "microempreendedores"],
+    "vizinhas": ["betim", "contagem", "belo-horizonte", "brumadinho"]
+  },
+  {
+    "nome": "Sete Lagoas", "slug": "sete-lagoas", "estado": "MG", "estadoSlug": "mg",
+    "regiao": "colar metropolitano de Belo Horizonte", "distancia": "cerca de 70 km",
+    "perfil": "Sete Lagoas é um polo regional com forte presença da siderurgia (ferro-gusa), da indústria automotiva e do agronegócio, além de um comércio e um setor de serviços que atendem toda a região central de Minas.",
+    "setores": ["siderurgia", "indústria automotiva", "agronegócio", "comércio", "serviços"],
+    "vizinhas": ["pedro-leopoldo", "confins", "lagoa-santa", "vespasiano"]
+  },
+  {
+    "nome": "Sabará", "slug": "sabara", "estado": "MG", "estadoSlug": "mg",
+    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 20 km",
+    "perfil": "Cidade histórica do ciclo do ouro, Sabará tem economia ligada ao comércio, ao turismo cultural, à gastronomia e a prestadores de serviço que atuam também na capital.",
+    "setores": ["comércio", "turismo", "gastronomia", "serviços"],
+    "vizinhas": ["belo-horizonte", "santa-luzia", "nova-lima"]
+  },
+  {
+    "nome": "Nova Lima", "slug": "nova-lima", "estado": "MG", "estadoSlug": "mg",
+    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 20 km",
+    "perfil": "Nova Lima une tradição na mineração a um polo empresarial moderno na região do Vila da Serra, com escritórios, clínicas, profissionais liberais e serviços de alto padrão ligados aos condomínios residenciais.",
+    "setores": ["mineração", "serviços empresariais", "profissionais liberais", "saúde", "construção civil"],
+    "vizinhas": ["belo-horizonte", "sabara", "itabirito", "brumadinho"]
+  },
+  {
+    "nome": "Vespasiano", "slug": "vespasiano", "estado": "MG", "estadoSlug": "mg",
+    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 30 km",
+    "perfil": "No caminho entre BH e o Aeroporto de Confins, Vespasiano cresce com empresas de logística, distribuição, indústria e comércio que aproveitam a infraestrutura do Vetor Norte.",
+    "setores": ["logística", "indústria", "comércio", "serviços"],
+    "vizinhas": ["lagoa-santa", "santa-luzia", "confins", "ribeirao-das-neves", "pedro-leopoldo", "belo-horizonte"]
+  },
+  {
+    "nome": "Pedro Leopoldo", "slug": "pedro-leopoldo", "estado": "MG", "estadoSlug": "mg",
+    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 45 km",
+    "perfil": "Pedro Leopoldo tem tradição na indústria cimenteira e de mineração de calcário, além de agropecuária, comércio e serviços que atendem o Vetor Norte e o entorno do aeroporto.",
+    "setores": ["indústria cimenteira", "mineração", "agropecuária", "comércio"],
+    "vizinhas": ["confins", "lagoa-santa", "vespasiano", "sete-lagoas", "ribeirao-das-neves"]
+  },
+  {
+    "nome": "Brumadinho", "slug": "brumadinho", "estado": "MG", "estadoSlug": "mg",
+    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 60 km",
+    "perfil": "Conhecida pelo Instituto Inhotim, Brumadinho tem economia apoiada no turismo, na hospedagem, na gastronomia, na agricultura familiar e na mineração.",
+    "setores": ["turismo", "hospedagem", "gastronomia", "agricultura", "mineração"],
+    "vizinhas": ["betim", "ibirite", "nova-lima", "itabirito"]
+  },
+  {
+    "nome": "Itabirito", "slug": "itabirito", "estado": "MG", "estadoSlug": "mg",
+    "regiao": "colar metropolitano de Belo Horizonte", "distancia": "cerca de 55 km",
+    "perfil": "No Quadrilátero Ferrífero, Itabirito tem economia ligada à mineração e à indústria, com uma rede crescente de fornecedores, comércio e serviços — além do turismo histórico na rota para Ouro Preto.",
+    "setores": ["mineração", "indústria", "fornecedores industriais", "comércio", "turismo"],
+    "vizinhas": ["nova-lima", "brumadinho", "belo-horizonte"]
+  },
+  {
+    "nome": "Lagoa Santa", "slug": "lagoa-santa", "estado": "MG", "estadoSlug": "mg",
+    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 40 km",
+    "perfil": "Lagoa Santa é uma das cidades que mais crescem na Grande BH, com novos condomínios, comércio, serviços, gastronomia e empresas atraídas pela proximidade com o Aeroporto de Confins.",
+    "setores": ["comércio", "serviços", "gastronomia", "construção civil", "turismo"],
+    "vizinhas": ["confins", "vespasiano", "pedro-leopoldo", "santa-luzia"]
+  },
+  {
+    "nome": "Confins", "slug": "confins", "estado": "MG", "estadoSlug": "mg",
+    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 40 km",
+    "perfil": "Sede do Aeroporto Internacional de Belo Horizonte, Confins tem economia voltada a serviços aeroportuários, logística, hotelaria, alimentação e transporte.",
+    "setores": ["serviços aeroportuários", "logística", "hotelaria", "alimentação", "transporte"],
+    "vizinhas": ["lagoa-santa", "pedro-leopoldo", "vespasiano", "sete-lagoas"]
+  }
 ]
