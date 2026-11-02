@@ -2,11 +2,13 @@
   {
     "nome": "Contabilidade para MEI",
     "slug": "contabilidade-para-mei",
+    "grupo": "servicos",
+    "escopo": ["cidades", "bairros"],
     "prioridade": "0.9",
-    "titulo": "Contabilidade para MEI em {{CIDADE}}, {{ESTADO}} | PS Contabilidade",
-    "descricao": "Contador para MEI em {{CIDADE}}: DAS em dia, DASN-SIMEI, nota fiscal e controle do limite de R$ 81 mil. Atendimento 100% digital. Fale com a PS Contabilidade.",
-    "intro": "Cuidamos das obrigações do seu MEI em {{CIDADE}} — DAS mensal, declaração anual, emissão de nota fiscal e controle do limite de faturamento — para você focar no seu negócio sem medo de multa ou desenquadramento.",
-    "ganchoLocal": "Boa parte dos negócios de {{CIDADE}} começa como MEI, especialmente em {{SETORES}}. Acompanhamos o faturamento de perto e avisamos com antecedência quando é hora de migrar para microempresa, sem cobrança retroativa de impostos.",
+    "titulo": "Contabilidade para MEI {{EM_LOCAL}} | PS Contabilidade",
+    "descricao": "Contador para MEI {{EM_LOCAL}}: DAS em dia, DASN-SIMEI, nota fiscal e controle do limite de R$ 81 mil. Atendimento 100% digital. Fale com a PS Contabilidade.",
+    "intro": "Cuidamos das obrigações do seu MEI {{EM_LOCAL}} — DAS mensal, declaração anual, emissão de nota fiscal e controle do limite de faturamento — para você focar no seu negócio sem medo de multa ou desenquadramento.",
+    "ganchoLocal": "Boa parte dos negócios {{DE_LOCAL}} começa como MEI, especialmente em {{SETORES}}. Acompanhamos o faturamento de perto e avisamos com antecedência quando é hora de migrar para microempresa, sem cobrança retroativa de impostos.",
     "beneficios": [
       { "titulo": "DAS e DASN-SIMEI em dia", "texto": "Acompanhamos as guias mensais e entregamos a declaração anual do MEI no prazo, evitando multas e pendências no CNPJ." },
       { "titulo": "Controle do limite de R$ 81 mil", "texto": "Monitoramos o faturamento mês a mês e alertamos antes de você ultrapassar o teto — o excesso acima de 20% gera desenquadramento retroativo." },
@@ -19,28 +21,28 @@
       { "titulo": "Crescimento", "texto": "Planejamos a migração para ME quando o negócio pedir" }
     ],
     "faq": [
-      { "p": "MEI em {{CIDADE}} precisa de contador?", "r": "Não é obrigatório, mas um contador evita erros comuns: DAS atrasado, declaração anual fora do prazo, notas emitidas incorretamente e estouro do limite de faturamento. Para quem quer crescer com segurança, o acompanhamento compensa." },
+      { "p": "MEI {{EM_LOCAL}} precisa de contador?", "r": "Não é obrigatório, mas um contador evita erros comuns: DAS atrasado, declaração anual fora do prazo, notas emitidas incorretamente e estouro do limite de faturamento. Para quem quer crescer com segurança, o acompanhamento compensa." },
       { "p": "Qual é o limite de faturamento do MEI em 2026?", "r": "O limite é de R$ 81.000,00 por ano, proporcional aos meses de atividade no ano de abertura. Se o faturamento passar de 20% acima do limite, o desenquadramento é retroativo ao início do ano." },
-      { "p": "O MEI de {{CIDADE}} precisa emitir nota fiscal?", "r": "Para vendas e serviços a outras empresas (pessoa jurídica) a nota é obrigatória. Desde 2023, o MEI prestador de serviço emite a NFS-e pelo padrão nacional. Orientamos você a emitir corretamente em cada caso." },
-      { "p": "Quanto custa a contabilidade para MEI em {{CIDADE}}?", "r": "O valor depende do volume de notas e do tipo de atividade. O diagnóstico inicial é gratuito e sem compromisso — fale com a gente e receba uma proposta personalizada." },
-      { "p": "Atendem MEI em {{CIDADE}} sem ir ao escritório?", "r": "Sim. Todo o atendimento é digital, por WhatsApp, e-mail e videochamada. Você envia documentos pelo celular e recebe as guias prontas para pagar." }
+      { "p": "O MEI precisa emitir nota fiscal?", "r": "Para vendas e serviços a outras empresas (pessoa jurídica) a nota é obrigatória. Desde 2023, o MEI prestador de serviço emite a NFS-e pelo padrão nacional. Orientamos você a emitir corretamente em cada caso." }
     ],
     "posts": ["mei-limite-faturamento-2026", "simples-nacional-ou-lucro-presumido"],
     "ctaTitulo": "Seu MEI em dia, sem dor de cabeça",
-    "ctaTexto": "Fale com um especialista da PS Contabilidade e regularize seu MEI em {{CIDADE}}"
+    "ctaTexto": "Fale com um especialista da PS Contabilidade e regularize seu MEI {{EM_LOCAL}}"
   },
   {
     "nome": "Abertura de Empresa",
     "slug": "abertura-de-empresa",
+    "grupo": "servicos",
+    "escopo": ["cidades", "bairros"],
     "prioridade": "0.9",
-    "titulo": "Abertura de Empresa em {{CIDADE}}, {{ESTADO}} | PS Contabilidade",
-    "descricao": "Abra sua empresa em {{CIDADE}} com a PS Contabilidade: viabilidade, registro na JUCEMG, CNPJ, alvará e escolha do regime tributário. Atendimento digital e diagnóstico gratuito.",
-    "intro": "Abrimos sua empresa em {{CIDADE}} do início ao fim: consulta de viabilidade, registro na Junta Comercial (JUCEMG), CNPJ, inscrições e alvará — e já escolhemos o regime tributário que faz você pagar menos imposto desde o primeiro mês.",
-    "ganchoLocal": "Em {{CIDADE}}, os setores de {{SETORES}} têm exigências próprias de inscrição e licenciamento. Definimos o CNAE correto, verificamos a viabilidade do endereço junto à prefeitura e evitamos retrabalho com a JUCEMG.",
+    "titulo": "Abertura de Empresa {{EM_LOCAL}} | PS Contabilidade",
+    "descricao": "Abra sua empresa {{EM_LOCAL}} com a PS Contabilidade: viabilidade, registro na JUCEMG, CNPJ, alvará e escolha do regime tributário. Atendimento digital e diagnóstico gratuito.",
+    "intro": "Abrimos sua empresa {{EM_LOCAL}} do início ao fim: consulta de viabilidade, registro na Junta Comercial (JUCEMG), CNPJ, inscrições e alvará — e já escolhemos o regime tributário que faz você pagar menos imposto desde o primeiro mês.",
+    "ganchoLocal": "{{EM_LOCAL_CAP}}, negócios de {{SETORES}} têm exigências próprias de inscrição e licenciamento. Definimos o CNAE correto, verificamos a viabilidade do endereço junto à Prefeitura de {{MUNICIPIO}} e evitamos retrabalho com a JUCEMG.",
     "beneficios": [
       { "titulo": "Processo completo, sem burocracia", "texto": "Cuidamos do contrato social, registro na JUCEMG, CNPJ na Receita, inscrição municipal e, quando necessário, inscrição estadual na SEF-MG." },
       { "titulo": "Regime tributário certo desde o início", "texto": "Comparamos Simples Nacional, Lucro Presumido e Lucro Real antes da abertura — a escolha errada no primeiro ano pode custar caro." },
-      { "titulo": "CNAE e endereço validados", "texto": "Definimos as atividades corretas e consultamos a viabilidade do endereço na Prefeitura de {{CIDADE}} antes de dar entrada no registro." }
+      { "titulo": "CNAE e endereço validados", "texto": "Definimos as atividades corretas e consultamos a viabilidade do endereço na Prefeitura de {{MUNICIPIO}} antes de dar entrada no registro." }
     ],
     "passos": [
       { "titulo": "Planejamento", "texto": "Definimos tipo societário, CNAE e regime tributário" },
@@ -49,54 +51,48 @@
       { "titulo": "Licenças", "texto": "Alvará de funcionamento e liberação para emitir notas" }
     ],
     "faq": [
-      { "p": "Quanto tempo leva para abrir uma empresa em {{CIDADE}}?", "r": "Para atividades de baixo risco, o registro na JUCEMG e o CNPJ costumam sair em poucos dias úteis. Atividades que exigem licenças sanitárias, ambientais ou do Corpo de Bombeiros podem levar mais tempo. Informamos o prazo realista já no diagnóstico." },
-      { "p": "Preciso de alvará da Prefeitura de {{CIDADE}}?", "r": "Depende da atividade e do grau de risco. Atividades de baixo risco podem ter dispensa de alvará, mas ainda exigem inscrição municipal para emitir nota de serviço. Verificamos as exigências específicas do seu CNAE em {{CIDADE}}." },
-      { "p": "Posso abrir empresa com endereço residencial em {{CIDADE}}?", "r": "Em muitos casos, sim — principalmente para prestadores de serviço sem atendimento ao público. A consulta de viabilidade na prefeitura confirma se o endereço é permitido para a sua atividade." },
-      { "p": "Qual o melhor tipo de empresa para abrir?", "r": "Para quem empreende sozinho, a Sociedade Limitada Unipessoal (SLU) costuma ser a opção mais usada, pois separa o patrimônio pessoal do da empresa. Com sócios, a LTDA tradicional. Avaliamos o seu caso antes de decidir." },
-      { "p": "Quanto custa abrir uma empresa em {{CIDADE}}?", "r": "O custo envolve taxas da Junta Comercial, eventuais taxas municipais e os honorários da abertura. Apresentamos uma proposta com todos os valores antes de iniciar — o diagnóstico é gratuito." }
+      { "p": "Quanto tempo leva para abrir uma empresa {{EM_LOCAL}}?", "r": "Para atividades de baixo risco, o registro na JUCEMG e o CNPJ costumam sair em poucos dias úteis. Atividades que exigem licenças sanitárias, ambientais ou do Corpo de Bombeiros podem levar mais tempo. Informamos o prazo realista já no diagnóstico." },
+      { "p": "Preciso de alvará da Prefeitura de {{MUNICIPIO}}?", "r": "Depende da atividade e do grau de risco. Atividades de baixo risco podem ter dispensa de alvará, mas ainda exigem inscrição municipal para emitir nota de serviço. Verificamos as exigências específicas do seu CNAE em {{MUNICIPIO}}." },
+      { "p": "Qual o melhor tipo de empresa para abrir?", "r": "Para quem empreende sozinho, a Sociedade Limitada Unipessoal (SLU) costuma ser a opção mais usada, pois separa o patrimônio pessoal do da empresa. Com sócios, a LTDA tradicional. Avaliamos o seu caso antes de decidir." }
     ],
     "posts": ["passo-a-passo-abrir-empresa-bh", "simples-nacional-ou-lucro-presumido"],
     "ctaTitulo": "Pronto para tirar seu CNPJ do papel?",
-    "ctaTexto": "Fale com um especialista e abra sua empresa em {{CIDADE}} com o regime tributário certo"
+    "ctaTexto": "Fale com um especialista e abra sua empresa {{EM_LOCAL}} com o regime tributário certo"
   },
   {
     "nome": "Contabilidade Digital",
     "slug": "contabilidade-digital",
+    "grupo": "servicos",
+    "escopo": ["cidades"],
     "prioridade": "0.8",
-    "titulo": "Contabilidade Digital em {{CIDADE}}, {{ESTADO}} | PS Contabilidade",
-    "descricao": "Contabilidade digital em {{CIDADE}}: fiscal, folha, eSocial e relatórios gerenciais com atendimento humanizado. +20 anos de experiência. Diagnóstico gratuito.",
-    "intro": "Contabilidade completa para empresas de {{CIDADE}} sem papelada e sem deslocamento: fiscal, folha de pagamento, eSocial e relatórios gerenciais, com um contador que conhece o seu negócio e responde no WhatsApp.",
-    "ganchoLocal": "Atendemos empresas de {{CIDADE}} em {{SETORES}} com rotinas fiscais e trabalhistas adaptadas a cada atividade, além de relatórios mensais que mostram para onde está indo o seu dinheiro.",
+    "titulo": "Contabilidade Digital {{EM_LOCAL}} | PS Contabilidade",
+    "descricao": "Contabilidade digital {{EM_LOCAL}}: fiscal, folha, eSocial e relatórios gerenciais com atendimento humanizado. +20 anos de experiência. Diagnóstico gratuito.",
+    "intro": "Contabilidade completa para empresas {{DE_LOCAL}} sem papelada e sem deslocamento: fiscal, folha de pagamento, eSocial e relatórios gerenciais, com um contador que conhece o seu negócio e responde no WhatsApp.",
+    "ganchoLocal": "Atendemos empresas {{DE_LOCAL}} em {{SETORES}} com rotinas fiscais e trabalhistas adaptadas a cada atividade, além de relatórios mensais que mostram para onde está indo o seu dinheiro.",
     "beneficios": [
       { "titulo": "Tudo pelo celular", "texto": "Envie notas e documentos pelo WhatsApp ou e-mail e receba guias, balancetes e relatórios digitalmente, sem precisar ir ao escritório." },
       { "titulo": "Fiscal, folha e eSocial", "texto": "Apuração de impostos, obrigações acessórias (SPED, DCTFWeb, EFD-Reinf), folha de pagamento e eSocial com prazos controlados." },
       { "titulo": "Contador de verdade, não só um sistema", "texto": "Você tem um especialista dedicado que entende a sua empresa, com reuniões por vídeo para analisar resultados e tomar decisões." }
     ],
-    "passos": [
-      { "titulo": "Diagnóstico", "texto": "Análise gratuita da situação fiscal e contábil da sua empresa" },
-      { "titulo": "Proposta", "texto": "Plano de serviços sob medida para o porte e o segmento" },
-      { "titulo": "Migração", "texto": "Buscamos tudo com o contador anterior, sem perder prazos" },
-      { "titulo": "Parceria", "texto": "Rotina mensal, relatórios e reuniões para crescer" }
-    ],
     "faq": [
-      { "p": "Como funciona a contabilidade digital para empresas de {{CIDADE}}?", "r": "Você envia documentos e notas por meios digitais, e nós cuidamos da escrituração, apuração de impostos, folha e obrigações. Guias e relatórios chegam por e-mail ou WhatsApp, e as reuniões acontecem por videochamada." },
+      { "p": "Como funciona a contabilidade digital para empresas {{DE_LOCAL}}?", "r": "Você envia documentos e notas por meios digitais, e nós cuidamos da escrituração, apuração de impostos, folha e obrigações. Guias e relatórios chegam por e-mail ou WhatsApp, e as reuniões acontecem por videochamada." },
       { "p": "Contabilidade digital é segura?", "r": "Sim. Trabalhamos com certificado digital, sistemas contábeis profissionais e tratamos os dados conforme a LGPD. O responsável técnico é um contador registrado no CRC." },
-      { "p": "Como trocar de contador em {{CIDADE}}?", "r": "Fazemos toda a transição: solicitamos os arquivos e documentos ao contador anterior, conferimos pendências e assumimos a rotina sem que a empresa perca nenhum prazo fiscal." },
-      { "p": "Vocês fazem folha de pagamento e eSocial?", "r": "Sim. Cuidamos de admissões, demissões, férias, 13º, pró-labore e de todos os envios ao eSocial e à DCTFWeb." },
-      { "p": "Quanto custa a contabilidade digital em {{CIDADE}}?", "r": "O valor é definido pelo regime tributário, volume de notas e número de funcionários. Fazemos um diagnóstico gratuito e enviamos uma proposta sem compromisso." }
+      { "p": "Vocês fazem folha de pagamento e eSocial?", "r": "Sim. Cuidamos de admissões, demissões, férias, 13º, pró-labore e de todos os envios ao eSocial e à DCTFWeb." }
     ],
     "posts": ["fluxo-de-caixa-para-pme", "esocial-guia-completo", "o-que-e-bpo-financeiro"],
     "ctaTitulo": "Troque a papelada por um contador presente",
-    "ctaTexto": "Fale com um especialista e veja como funciona a contabilidade digital da PS em {{CIDADE}}"
+    "ctaTexto": "Fale com um especialista e veja como funciona a contabilidade digital da PS {{EM_LOCAL}}"
   },
   {
     "nome": "Planejamento Tributário",
     "slug": "planejamento-tributario",
+    "grupo": "servicos",
+    "escopo": ["cidades"],
     "prioridade": "0.8",
-    "titulo": "Planejamento Tributário em {{CIDADE}}, {{ESTADO}} | PS Contabilidade",
-    "descricao": "Planejamento tributário em {{CIDADE}}: reduza impostos legalmente com comparação de regimes, revisão de créditos e preparo para a reforma tributária. Diagnóstico gratuito.",
-    "intro": "Reduza a carga de impostos da sua empresa em {{CIDADE}} de forma legal: comparamos regimes tributários, revisamos enquadramentos e créditos e preparamos o seu negócio para a transição da reforma tributária.",
-    "ganchoLocal": "Empresas de {{CIDADE}} em {{SETORES}} costumam ter oportunidades específicas — como a escolha do anexo correto no Simples, créditos de ICMS em Minas Gerais ou a migração para o Lucro Presumido. Analisamos os números reais do seu negócio para encontrar essas economias.",
+    "titulo": "Planejamento Tributário {{EM_LOCAL}} | PS Contabilidade",
+    "descricao": "Planejamento tributário {{EM_LOCAL}}: reduza impostos legalmente com comparação de regimes, revisão de créditos e preparo para a reforma tributária. Diagnóstico gratuito.",
+    "intro": "Reduza a carga de impostos da sua empresa {{EM_LOCAL}} de forma legal: comparamos regimes tributários, revisamos enquadramentos e créditos e preparamos o seu negócio para a transição da reforma tributária.",
+    "ganchoLocal": "Empresas {{DE_LOCAL}} em {{SETORES}} costumam ter oportunidades específicas — como a escolha do anexo correto no Simples, créditos de ICMS em Minas Gerais ou a migração para o Lucro Presumido. Analisamos os números reais do seu negócio para encontrar essas economias.",
     "beneficios": [
       { "titulo": "Comparativo entre regimes", "texto": "Simulamos Simples Nacional, Lucro Presumido e Lucro Real com os seus números e mostramos quanto você economiza em cada cenário." },
       { "titulo": "Revisão de enquadramento e créditos", "texto": "Verificamos CNAE, anexo do Simples, Fator R e créditos de PIS, Cofins e ICMS que podem estar sendo desperdiçados." },
@@ -110,13 +106,419 @@
     ],
     "faq": [
       { "p": "Planejamento tributário é legal?", "r": "Sim. O planejamento tributário (elisão fiscal) usa as opções que a própria legislação oferece — como escolha de regime, enquadramento correto e aproveitamento de créditos — para pagar menos imposto sem qualquer irregularidade." },
-      { "p": "Qual regime tributário é mais vantajoso para empresas em {{CIDADE}}?", "r": "Depende do faturamento, da margem de lucro, da folha de pagamento e da atividade. Não existe regime melhor para todos — por isso simulamos os cenários com os números reais da sua empresa." },
       { "p": "Quando posso mudar de regime tributário?", "r": "A opção pelo Simples Nacional ou pelo Lucro Presumido é feita, em regra, no início de cada ano-calendário (em janeiro). Por isso o ideal é fazer o planejamento no último trimestre do ano." },
-      { "p": "Como a reforma tributária afeta minha empresa em {{CIDADE}}?", "r": "A substituição gradual de PIS, Cofins, ICMS e ISS por CBS e IBS muda a forma de calcular créditos e preços, inclusive para empresas do Simples que vendem para outras empresas. Avaliamos esse impacto no seu planejamento." },
-      { "p": "Quanto custa um planejamento tributário?", "r": "O diagnóstico inicial é gratuito. Depois dele, apresentamos uma proposta proporcional à complexidade da empresa e à economia projetada." }
+      { "p": "Como a reforma tributária afeta minha empresa?", "r": "A substituição gradual de PIS, Cofins, ICMS e ISS por CBS e IBS muda a forma de calcular créditos e preços, inclusive para empresas do Simples que vendem para outras empresas. Avaliamos esse impacto no seu planejamento." }
     ],
     "posts": ["como-reduzir-impostos-empresa", "simples-nacional-ou-lucro-presumido"],
     "ctaTitulo": "Pronto para pagar menos impostos?",
-    "ctaTexto": "Fale com um especialista e receba seu diagnóstico tributário gratuito em {{CIDADE}}"
+    "ctaTexto": "Fale com um especialista e receba seu diagnóstico tributário gratuito {{EM_LOCAL}}"
+  },
+  {
+    "nome": "Contabilidade para Pequenas Empresas",
+    "slug": "contabilidade-para-pequenas-empresas",
+    "grupo": "segmentos",
+    "escopo": ["cidades"],
+    "prioridade": "0.8",
+    "titulo": "Contabilidade para Pequenas Empresas {{EM_LOCAL}} | PS Contabilidade",
+    "descricao": "Contabilidade para ME e EPP {{EM_LOCAL}}: Simples Nacional, folha, impostos e relatórios para crescer com segurança. Atendimento digital e diagnóstico gratuito.",
+    "intro": "Contabilidade completa para microempresas (ME) e empresas de pequeno porte (EPP) {{EM_LOCAL}}: apuração do Simples Nacional, folha de pagamento, obrigações fiscais e relatórios para você saber se a empresa está realmente dando lucro.",
+    "ganchoLocal": "{{EM_LOCAL_CAP}}, a maioria das empresas de {{SETORES}} é de pequeno porte. Ajudamos esses negócios a manter o Simples Nacional bem enquadrado e a se preparar para quando o faturamento ultrapassar os limites do regime.",
+    "beneficios": [
+      { "titulo": "Simples Nacional bem enquadrado", "texto": "Conferimos anexo, Fator R e segregação de receitas para que o DAS não seja maior do que deveria." },
+      { "titulo": "Folha e pró-labore organizados", "texto": "Folha de pagamento, eSocial e definição de pró-labore e distribuição de lucros para os sócios pagarem menos imposto." },
+      { "titulo": "Relatórios para decidir", "texto": "Balancete, DRE e fluxo de caixa mensais com explicação simples — para você entender margem, custos e lucro." }
+    ],
+    "faq": [
+      { "p": "Qual a diferença entre ME e EPP?", "r": "Microempresa (ME) fatura até R$ 360 mil por ano; Empresa de Pequeno Porte (EPP) fatura de R$ 360 mil a R$ 4,8 milhões. Ambas podem optar pelo Simples Nacional, desde que a atividade seja permitida." },
+      { "p": "Toda pequena empresa deve ficar no Simples Nacional?", "r": "Não necessariamente. Dependendo da margem de lucro, da folha e da atividade, o Lucro Presumido pode sair mais barato. Fazemos a comparação com os números reais da empresa." },
+      { "p": "O que acontece se a empresa ultrapassar R$ 4,8 milhões?", "r": "A empresa é excluída do Simples Nacional e passa ao Lucro Presumido ou Real. Acompanhando o faturamento, planejamos essa transição com antecedência para evitar surpresas." }
+    ],
+    "posts": ["simples-nacional-ou-lucro-presumido", "fluxo-de-caixa-para-pme"],
+    "ctaTitulo": "Sua pequena empresa com contabilidade de gente grande",
+    "ctaTexto": "Fale com um especialista e receba uma proposta para sua empresa {{EM_LOCAL}}"
+  },
+  {
+    "nome": "Contabilidade para Profissional Liberal",
+    "slug": "contabilidade-para-profissional-liberal",
+    "grupo": "segmentos",
+    "escopo": ["cidades"],
+    "prioridade": "0.8",
+    "titulo": "Contabilidade para Profissional Liberal {{EM_LOCAL}} | PS Contabilidade",
+    "descricao": "Profissional liberal {{EM_LOCAL}}: compare pessoa física e PJ, reduza o imposto de renda e regularize sua atuação. Contabilidade digital com diagnóstico gratuito.",
+    "intro": "Se você é profissional liberal {{EM_LOCAL}} — consultor, fisioterapeuta, nutricionista, designer, corretor ou outro autônomo —, mostramos quanto você paga hoje como pessoa física e quanto pagaria com CNPJ, e cuidamos de toda a contabilidade da nova empresa.",
+    "ganchoLocal": "{{EM_LOCAL_CAP}}, muitos profissionais liberais ainda recebem como pessoa física, pagando até 27,5% de imposto de renda pelo carnê-leão. Com uma empresa bem enquadrada, a carga costuma cair bastante.",
+    "beneficios": [
+      { "titulo": "PF ou PJ: a conta certa", "texto": "Simulamos carnê-leão com livro-caixa versus empresa no Simples Nacional ou Lucro Presumido, com os seus números reais." },
+      { "titulo": "Fator R a seu favor", "texto": "Definimos o pró-labore ideal para que a empresa seja tributada pelo Anexo III do Simples, com alíquotas a partir de 6%." },
+      { "titulo": "Registro no conselho profissional", "texto": "Orientamos o registro da empresa no conselho da sua profissão, quando exigido, e a emissão correta de notas fiscais." }
+    ],
+    "faq": [
+      { "p": "Vale a pena profissional liberal abrir CNPJ?", "r": "Na maioria dos casos, a partir de uma renda mensal moderada, sim: como pessoa física a alíquota pode chegar a 27,5%, enquanto uma empresa no Simples pode pagar a partir de 6%. Fazemos a simulação gratuita para o seu caso." },
+      { "p": "O que é o Fator R?", "r": "É a relação entre a folha de pagamento (incluindo pró-labore) e o faturamento. Quando ela é de 28% ou mais, várias atividades intelectuais são tributadas pelo Anexo III do Simples, bem mais barato que o Anexo V." },
+      { "p": "Profissional liberal pode ser MEI?", "r": "A maioria das profissões regulamentadas (como advogado, médico, psicólogo, engenheiro) não pode ser MEI. Nesses casos, a alternativa costuma ser uma Sociedade Limitada Unipessoal no Simples Nacional." }
+    ],
+    "posts": ["como-reduzir-impostos-empresa", "simples-nacional-ou-lucro-presumido"],
+    "ctaTitulo": "Pague menos imposto pelo seu trabalho",
+    "ctaTexto": "Fale com um especialista e receba a simulação PF x PJ gratuita {{EM_LOCAL}}"
+  },
+  {
+    "nome": "Contabilidade para Advogados",
+    "slug": "contabilidade-para-advogados",
+    "grupo": "segmentos",
+    "escopo": ["cidades", "bairros"],
+    "prioridade": "0.8",
+    "titulo": "Contabilidade para Advogados {{EM_LOCAL}} | PS Contabilidade",
+    "descricao": "Contabilidade para advogados e escritórios de advocacia {{EM_LOCAL}}: sociedade unipessoal na OAB, Simples Nacional, ISS e honorários. Diagnóstico gratuito.",
+    "intro": "Contabilidade especializada para advogados e escritórios de advocacia {{EM_LOCAL}}: abertura de sociedade individual ou coletiva na OAB, escolha do regime tributário, tributação de honorários e distribuição de lucros entre os sócios.",
+    "ganchoLocal": "Advogados {{DE_LOCAL}} que ainda recebem honorários como pessoa física costumam pagar muito mais imposto do que o necessário. Avaliamos a abertura de uma sociedade de advocacia e o regime mais vantajoso para a sua carteira de clientes.",
+    "beneficios": [
+      { "titulo": "Sociedade registrada na OAB", "texto": "Cuidamos da constituição da sociedade unipessoal ou coletiva de advocacia, que é registrada na OAB/MG — e não na Junta Comercial." },
+      { "titulo": "Simples ou Presumido?", "texto": "A advocacia é tributada pelo Anexo IV do Simples, com INSS patronal pago à parte. Comparamos com o Lucro Presumido para achar a menor carga." },
+      { "titulo": "Honorários e sócios organizados", "texto": "Controle de honorários contratuais e de sucumbência, pró-labore e distribuição de lucros entre os sócios." }
+    ],
+    "faq": [
+      { "p": "Advogado pode ser MEI?", "r": "Não. A advocacia não está entre as atividades permitidas ao MEI. A alternativa mais usada é a sociedade unipessoal de advocacia, registrada na OAB." },
+      { "p": "Escritório de advocacia pode ser do Simples Nacional?", "r": "Sim. Sociedades de advogados podem optar pelo Simples, no Anexo IV, em que o INSS patronal (CPP) é recolhido separadamente. Em alguns casos o Lucro Presumido é mais vantajoso — por isso fazemos a simulação." },
+      { "p": "Como funciona o ISS para sociedade de advogados?", "r": "Muitos municípios permitem que sociedades uniprofissionais paguem ISS fixo por profissional, em vez de um percentual sobre o faturamento. Verificamos as regras de {{MUNICIPIO}} para o seu escritório." }
+    ],
+    "posts": ["simples-nacional-ou-lucro-presumido", "como-reduzir-impostos-empresa"],
+    "ctaTitulo": "Seu escritório com a tributação certa",
+    "ctaTexto": "Fale com um especialista em contabilidade para advogados {{EM_LOCAL}}"
+  },
+  {
+    "nome": "Contabilidade para Clínica Odontológica",
+    "slug": "contabilidade-para-clinica-odontologica",
+    "grupo": "segmentos",
+    "escopo": ["cidades", "bairros"],
+    "prioridade": "0.8",
+    "titulo": "Contabilidade para Clínica Odontológica {{EM_LOCAL}} | PS Contabilidade",
+    "descricao": "Contabilidade para dentistas e clínicas odontológicas {{EM_LOCAL}}: Fator R, Simples x Presumido, registro no CRO e gestão financeira. Diagnóstico gratuito.",
+    "intro": "Contabilidade especializada para dentistas e clínicas odontológicas {{EM_LOCAL}}: abertura da clínica com registro no CRO-MG, escolha do regime tributário, folha de auxiliares e controle financeiro de convênios e pagamentos parcelados.",
+    "ganchoLocal": "Clínicas odontológicas {{DE_LOCAL}} costumam ter custos altos com materiais, laboratório e equipe. Organizamos a contabilidade para mostrar a margem real de cada procedimento e enquadrar a clínica no regime com menor imposto.",
+    "beneficios": [
+      { "titulo": "Fator R e Anexo III", "texto": "Ajustamos pró-labore e folha para que a clínica seja tributada pelo Anexo III do Simples, com alíquota inicial de 6%, e não pelo Anexo V." },
+      { "titulo": "Abertura com CRO e Vigilância", "texto": "Cuidamos do CNPJ, registro da clínica no CRO-MG e orientamos o licenciamento sanitário junto à Prefeitura de {{MUNICIPIO}}." },
+      { "titulo": "Financeiro da clínica sob controle", "texto": "Conciliação de cartões, convênios e tratamentos parcelados, com relatórios que mostram o lucro de verdade." }
+    ],
+    "faq": [
+      { "p": "Dentista paga menos imposto como PJ?", "r": "Geralmente sim. Como pessoa física, o dentista pode pagar até 27,5% de IR no carnê-leão, além do INSS. Com uma clínica no Simples Nacional (Anexo III) a alíquota começa em 6%. Fazemos a simulação para o seu faturamento." },
+      { "p": "Clínica odontológica pode ter equiparação hospitalar?", "r": "Em situações específicas, clínicas no Lucro Presumido que realizam procedimentos com estrutura e normas sanitárias compatíveis podem reduzir a base de IRPJ e CSLL. Analisamos se a sua clínica cumpre os requisitos." },
+      { "p": "Consultório individual precisa de contador?", "r": "Se você atua como pessoa física, precisa manter o livro-caixa e o carnê-leão em dia — e usar o Receita Saúde para emitir recibos. Se tem CNPJ, a contabilidade é obrigatória. Em ambos os casos ajudamos a pagar menos imposto." }
+    ],
+    "posts": ["como-reduzir-impostos-empresa", "fluxo-de-caixa-para-pme"],
+    "ctaTitulo": "Sua clínica lucrando mais, pagando menos imposto",
+    "ctaTexto": "Fale com um especialista em contabilidade para dentistas {{EM_LOCAL}}"
+  },
+  {
+    "nome": "Contabilidade para Clínica Médica",
+    "slug": "contabilidade-para-clinica-medica",
+    "grupo": "segmentos",
+    "escopo": ["cidades", "bairros"],
+    "prioridade": "0.8",
+    "titulo": "Contabilidade para Clínica Médica {{EM_LOCAL}} | PS Contabilidade",
+    "descricao": "Contabilidade para clínicas médicas {{EM_LOCAL}}: equiparação hospitalar, Fator R, convênios e folha. Reduza impostos com quem entende de saúde. Diagnóstico gratuito.",
+    "intro": "Contabilidade especializada para clínicas médicas e de saúde {{EM_LOCAL}}: abertura com registro no CRM-MG, escolha entre Simples e Lucro Presumido, análise de equiparação hospitalar e controle de repasses de convênios.",
+    "ganchoLocal": "{{EM_LOCAL_CAP}}, clínicas e consultórios convivem com glosas de convênios, repasses a médicos parceiros e uma folha de recepção e enfermagem. Estruturamos a contabilidade para que nada disso vire imposto pago a mais.",
+    "beneficios": [
+      { "titulo": "Equiparação hospitalar", "texto": "Clínicas no Lucro Presumido que cumprem os requisitos podem reduzir a presunção de IRPJ de 32% para 8% e de CSLL de 32% para 12%." },
+      { "titulo": "Simples com Fator R", "texto": "Para clínicas menores, ajustamos a folha para manter o Anexo III do Simples Nacional, com alíquotas a partir de 6%." },
+      { "titulo": "Convênios e repasses", "texto": "Controle de faturamento por convênio, glosas e repasses a médicos parceiros, com relatórios por especialidade." }
+    ],
+    "faq": [
+      { "p": "O que é equiparação hospitalar?", "r": "É um benefício para clínicas no Lucro Presumido que prestam serviços hospitalares (como procedimentos, exames e cirurgias), organizadas como sociedade empresária e com licença sanitária adequada. A base de IRPJ cai de 32% para 8% e a de CSLL de 32% para 12% sobre essas receitas." },
+      { "p": "Clínica médica deve ser Simples ou Lucro Presumido?", "r": "Depende do faturamento, da folha e dos serviços prestados. Clínicas com equiparação hospitalar costumam se beneficiar do Presumido; clínicas menores com boa folha podem pagar menos no Simples. Simulamos os dois cenários." },
+      { "p": "Preciso registrar a clínica no CRM?", "r": "Sim. Toda pessoa jurídica que presta serviços médicos precisa de registro no CRM-MG, com um diretor técnico responsável. Orientamos esse processo junto com a abertura da empresa." }
+    ],
+    "posts": ["como-reduzir-impostos-empresa", "o-que-e-bpo-financeiro"],
+    "ctaTitulo": "Sua clínica com a tributação de saúde correta",
+    "ctaTexto": "Fale com um especialista em contabilidade para clínicas {{EM_LOCAL}}"
+  },
+  {
+    "nome": "Contabilidade para Médicos",
+    "slug": "contabilidade-para-medicos",
+    "grupo": "segmentos",
+    "escopo": ["cidades"],
+    "prioridade": "0.8",
+    "titulo": "Contabilidade para Médicos {{EM_LOCAL}} | PS Contabilidade",
+    "descricao": "Contabilidade para médicos {{EM_LOCAL}}: PJ médica, plantões, carnê-leão e redução do imposto de renda. Atendimento digital especializado. Diagnóstico gratuito.",
+    "intro": "Contabilidade para médicos {{EM_LOCAL}} que atendem em consultório, fazem plantões ou recebem de hospitais e operadoras: abertura de PJ médica, escolha do regime tributário e organização do imposto de renda pessoa física.",
+    "ganchoLocal": "Muitos médicos {{DE_LOCAL}} recebem de várias fontes — hospitais, clínicas, convênios e pacientes particulares. Centralizamos essas receitas na pessoa jurídica certa para reduzir o imposto e simplificar a declaração anual.",
+    "beneficios": [
+      { "titulo": "PJ médica bem estruturada", "texto": "Abertura de Sociedade Limitada Unipessoal com registro no CRM-MG, pronta para faturar para hospitais, clínicas e operadoras." },
+      { "titulo": "Menos imposto que no carnê-leão", "texto": "Comparamos pessoa física, Simples Nacional e Lucro Presumido. Em muitos casos a carga total cai pela metade." },
+      { "titulo": "IRPF e dividendos em ordem", "texto": "Organizamos pró-labore, distribuição de lucros e a declaração de imposto de renda, já considerando as regras de dividendos vigentes desde 2026." }
+    ],
+    "faq": [
+      { "p": "Médico plantonista precisa de PJ?", "r": "Não é obrigatório, mas muitos hospitais só contratam plantonistas com CNPJ, e a PJ geralmente reduz bastante o imposto em relação ao recebimento como pessoa física." },
+      { "p": "Qual o melhor regime para PJ médica?", "r": "Médicos que atuam sozinhos costumam escolher entre o Simples Nacional (com Fator R) e o Lucro Presumido. O melhor depende do faturamento e do pró-labore — simulamos os dois com os seus números." },
+      { "p": "Médico pode receber como PF e PJ ao mesmo tempo?", "r": "Pode, mas cada receita precisa ser declarada corretamente. Organizamos o que entra na pessoa física (carnê-leão e Receita Saúde) e o que é faturado pela empresa, evitando malha fina." }
+    ],
+    "posts": ["como-reduzir-impostos-empresa", "simples-nacional-ou-lucro-presumido"],
+    "ctaTitulo": "Médico, pague menos imposto sobre o seu trabalho",
+    "ctaTexto": "Fale com um especialista em contabilidade médica {{EM_LOCAL}}"
+  },
+  {
+    "nome": "Contabilidade para Psicólogos",
+    "slug": "contabilidade-para-psicologos",
+    "grupo": "segmentos",
+    "escopo": ["cidades"],
+    "prioridade": "0.7",
+    "titulo": "Contabilidade para Psicólogos {{EM_LOCAL}} | PS Contabilidade",
+    "descricao": "Contabilidade para psicólogos {{EM_LOCAL}}: Receita Saúde, carnê-leão ou CNPJ no Simples com Fator R. Atendimento online para consultórios. Diagnóstico gratuito.",
+    "intro": "Contabilidade para psicólogos {{EM_LOCAL}} que atendem em consultório ou online: carnê-leão e Receita Saúde para quem atua como pessoa física, ou abertura de CNPJ com registro no CRP-MG para pagar menos imposto.",
+    "ganchoLocal": "Psicólogos {{DE_LOCAL}} que atendem particulares e convênios muitas vezes não sabem se já compensa abrir empresa. Fazemos a conta com o seu faturamento real e cuidamos de tudo, seja na pessoa física ou jurídica.",
+    "beneficios": [
+      { "titulo": "Receita Saúde e carnê-leão", "texto": "Para quem atua como PF, orientamos os recibos pelo Receita Saúde e mantemos livro-caixa e carnê-leão em dia." },
+      { "titulo": "CNPJ no Anexo III", "texto": "Com o Fator R, o consultório no Simples Nacional pode pagar a partir de 6% — bem menos que os 27,5% do carnê-leão." },
+      { "titulo": "Registro no CRP", "texto": "Orientamos o registro da pessoa jurídica no Conselho Regional de Psicologia e a emissão correta das notas fiscais." }
+    ],
+    "faq": [
+      { "p": "Psicólogo é obrigado a usar o Receita Saúde?", "r": "Sim. Desde 2025, psicólogos e outros profissionais de saúde que atendem como pessoa física devem emitir os recibos pelo aplicativo Receita Saúde, da Receita Federal." },
+      { "p": "Quando compensa o psicólogo abrir CNPJ?", "r": "Em geral, quando o rendimento mensal já cai nas faixas mais altas do carnê-leão. A partir daí, uma empresa no Simples com Fator R costuma pagar bem menos. Simulamos gratuitamente." },
+      { "p": "Psicólogo pode ser MEI?", "r": "Não. A psicologia é uma profissão regulamentada que não está entre as atividades permitidas ao MEI. A opção mais comum é uma Sociedade Limitada Unipessoal no Simples Nacional." }
+    ],
+    "posts": ["como-reduzir-impostos-empresa", "mei-limite-faturamento-2026"],
+    "ctaTitulo": "Cuide dos pacientes; a gente cuida dos impostos",
+    "ctaTexto": "Fale com um especialista em contabilidade para psicólogos {{EM_LOCAL}}"
+  },
+  {
+    "nome": "Contabilidade para Arquitetos e Engenheiros",
+    "slug": "contabilidade-para-arquitetos-e-engenheiros",
+    "grupo": "segmentos",
+    "escopo": ["cidades"],
+    "prioridade": "0.7",
+    "titulo": "Contabilidade para Arquitetos e Engenheiros {{EM_LOCAL}} | PS Contabilidade",
+    "descricao": "Contabilidade para arquitetos e engenheiros {{EM_LOCAL}}: CNPJ com registro no CAU ou CREA, Fator R, ISS e notas de projeto. Diagnóstico gratuito.",
+    "intro": "Contabilidade para escritórios de arquitetura, engenharia e projetistas {{EM_LOCAL}}: abertura da empresa com registro no CAU/MG ou CREA-MG, enquadramento no Simples com Fator R e controle de projetos, obras e notas fiscais.",
+    "ganchoLocal": "{{EM_LOCAL_CAP}}, arquitetos e engenheiros atendem tanto clientes pessoa física quanto construtoras e empresas de {{SETORES}}. Organizamos as retenções de impostos nas notas e o fluxo de recebimento por etapa de projeto.",
+    "beneficios": [
+      { "titulo": "Registro no CAU ou CREA", "texto": "Abertura da empresa com o registro obrigatório no conselho profissional e indicação do responsável técnico." },
+      { "titulo": "Fator R para pagar menos", "texto": "Serviços de arquitetura e engenharia podem cair no Anexo III do Simples quando o pró-labore atinge 28% do faturamento." },
+      { "titulo": "Retenções e notas sem erro", "texto": "Controle de ISS, INSS e IR retidos por clientes empresas, para que nada seja pago em duplicidade." }
+    ],
+    "faq": [
+      { "p": "Arquiteto ou engenheiro pode ser MEI?", "r": "Não. Por serem profissões regulamentadas, arquitetura e engenharia não podem ser exercidas como MEI. A opção mais comum é uma Sociedade Limitada Unipessoal no Simples Nacional." },
+      { "p": "A empresa precisa de registro no CAU ou CREA?", "r": "Sim. Pessoas jurídicas que prestam serviços de arquitetura precisam de registro no CAU, e as de engenharia, no CREA, sempre com um profissional como responsável técnico." },
+      { "p": "Qual regime é melhor para escritório de projetos?", "r": "Muitos escritórios pagam menos no Simples Nacional com Fator R; outros, com margens altas e poucos custos, se beneficiam do Lucro Presumido. Simulamos os dois cenários." }
+    ],
+    "posts": ["simples-nacional-ou-lucro-presumido", "como-reduzir-impostos-empresa"],
+    "ctaTitulo": "Seu escritório de projetos com impostos no lugar",
+    "ctaTexto": "Fale com um especialista em contabilidade para arquitetos e engenheiros {{EM_LOCAL}}"
+  },
+  {
+    "nome": "Contabilidade para Prestadores de Serviço",
+    "slug": "contabilidade-para-prestadores-de-servico",
+    "grupo": "segmentos",
+    "escopo": ["cidades"],
+    "prioridade": "0.7",
+    "titulo": "Contabilidade para Prestadores de Serviço {{EM_LOCAL}} | PS Contabilidade",
+    "descricao": "Contabilidade para empresas prestadoras de serviço {{EM_LOCAL}}: ISS, retenções, Fator R e escolha do regime tributário. Atendimento digital e diagnóstico gratuito.",
+    "intro": "Contabilidade para empresas de serviços {{EM_LOCAL}} — consultorias, agências, manutenção, limpeza, treinamento, representação comercial e muito mais: ISS, retenções na fonte, folha de pagamento e o regime tributário com menor carga.",
+    "ganchoLocal": "Prestadores de serviço {{DE_LOCAL}} que atendem empresas de {{SETORES}} lidam com retenções de ISS, INSS, IR e PIS/Cofins nas notas. Controlamos cada retenção para que ela seja compensada corretamente e não vire imposto pago duas vezes.",
+    "beneficios": [
+      { "titulo": "Anexo certo do Simples", "texto": "Cada serviço tem seu anexo (III, IV ou V). Enquadramos corretamente e usamos o Fator R quando ele reduz o imposto." },
+      { "titulo": "ISS e retenções controlados", "texto": "Emissão de NFS-e, ISS do município correto e controle de retenções feitas pelos seus clientes." },
+      { "titulo": "Contratos e folha", "texto": "Folha de pagamento, terceirização e cessão de mão de obra com as obrigações trabalhistas e previdenciárias em dia." }
+    ],
+    "faq": [
+      { "p": "Onde a empresa de serviços paga ISS?", "r": "Em regra, no município onde fica o estabelecimento do prestador. Mas alguns serviços — como construção, limpeza e vigilância — têm o ISS devido no local da prestação. Verificamos a regra para cada nota." },
+      { "p": "O que são retenções na nota fiscal de serviço?", "r": "Quando o cliente é empresa, ele pode reter parte dos tributos (ISS, INSS, IR, PIS, Cofins e CSLL) e recolher em seu nome. Esses valores precisam ser descontados da sua apuração, senão você paga duas vezes." },
+      { "p": "Empresa de serviços paga menos no Simples?", "r": "Depende do anexo e da folha de pagamento. Serviços no Anexo V sem Fator R podem pagar menos no Lucro Presumido. Fazemos a comparação com os seus números." }
+    ],
+    "posts": ["simples-nacional-ou-lucro-presumido", "fluxo-de-caixa-para-pme"],
+    "ctaTitulo": "Sua empresa de serviços pagando só o que deve",
+    "ctaTexto": "Fale com um especialista e receba seu diagnóstico gratuito {{EM_LOCAL}}"
+  },
+  {
+    "nome": "Contabilidade para Comércio e Lojas",
+    "slug": "contabilidade-para-comercio",
+    "grupo": "segmentos",
+    "escopo": ["cidades"],
+    "prioridade": "0.7",
+    "titulo": "Contabilidade para Comércio e Lojas {{EM_LOCAL}} | PS Contabilidade",
+    "descricao": "Contabilidade para lojas e comércio {{EM_LOCAL}}: ICMS, substituição tributária, estoque e NFC-e. Pague menos imposto com o enquadramento certo. Diagnóstico gratuito.",
+    "intro": "Contabilidade para lojas, varejo e atacado {{EM_LOCAL}}: apuração de ICMS, produtos com substituição tributária, controle de estoque, emissão de NF-e e NFC-e e escolha do regime tributário mais vantajoso.",
+    "ganchoLocal": "{{EM_LOCAL_CAP}}, o comércio é um dos motores da economia local. Muitas lojas pagam imposto em duplicidade sobre produtos com substituição tributária ou monofásicos — revisamos isso e recuperamos o que foi pago a mais.",
+    "beneficios": [
+      { "titulo": "Substituição tributária e monofásicos", "texto": "Segregamos no Simples as receitas de produtos com ICMS-ST e PIS/Cofins monofásico, que não devem ser tributados de novo." },
+      { "titulo": "ICMS de Minas Gerais", "texto": "Inscrição estadual na SEF-MG, apuração de ICMS, DIFAL e benefícios fiscais aplicáveis ao seu segmento." },
+      { "titulo": "Estoque e margem", "texto": "Controle de estoque e de custo das mercadorias vendidas, para você saber a margem real de cada produto." }
+    ],
+    "faq": [
+      { "p": "O que é substituição tributária do ICMS?", "r": "É quando o ICMS de toda a cadeia é recolhido antecipadamente pelo fabricante ou distribuidor. A loja que revende esses produtos não deve pagar ICMS de novo no Simples — mas muitas pagam por erro de enquadramento." },
+      { "p": "Loja pode recuperar imposto pago a mais?", "r": "Sim. Valores pagos indevidamente nos últimos cinco anos sobre produtos com ICMS-ST ou PIS/Cofins monofásico podem ser recuperados. Fazemos o levantamento no diagnóstico." },
+      { "p": "Toda loja precisa de inscrição estadual?", "r": "Sim. Empresas que vendem mercadorias precisam de inscrição estadual na Secretaria da Fazenda de Minas Gerais para emitir NF-e e NFC-e." }
+    ],
+    "posts": ["como-reduzir-impostos-empresa", "fluxo-de-caixa-para-pme"],
+    "ctaTitulo": "Sua loja vendendo mais e pagando menos imposto",
+    "ctaTexto": "Fale com um especialista em contabilidade para comércio {{EM_LOCAL}}"
+  },
+  {
+    "nome": "Contabilidade para Lojas de Veículos",
+    "slug": "contabilidade-para-lojas-de-veiculos",
+    "grupo": "segmentos",
+    "escopo": ["cidades"],
+    "prioridade": "0.7",
+    "titulo": "Contabilidade para Lojas de Veículos {{EM_LOCAL}} | PS Contabilidade",
+    "descricao": "Contabilidade para revendas de carros e motos {{EM_LOCAL}}: tributação sobre a margem de usados, consignação, ICMS e estoque. Diagnóstico gratuito.",
+    "intro": "Contabilidade para lojas de carros, motos e revendas de seminovos {{EM_LOCAL}}: tributação sobre a margem na revenda de usados, operações em consignação, ICMS de veículos e controle de estoque por chassi.",
+    "ganchoLocal": "Revendas de veículos {{DE_LOCAL}} que tributam o valor cheio da venda, em vez da margem, costumam pagar impostos muito acima do necessário. Estruturamos a operação para usar o regime específico do setor.",
+    "beneficios": [
+      { "titulo": "Imposto sobre a margem", "texto": "No Lucro Presumido, a revenda de usados pode ser tributada sobre a diferença entre preço de venda e de compra (Lei 9.716/98), e não sobre o valor total." },
+      { "titulo": "Consignação e entrada de usados", "texto": "Notas de entrada, consignação e devolução de veículos emitidas corretamente, com controle por chassi." },
+      { "titulo": "ICMS de veículos em MG", "texto": "Apuração do ICMS conforme as regras de Minas Gerais para veículos novos e usados, evitando autuações." }
+    ],
+    "faq": [
+      { "p": "Loja de carros usados paga imposto sobre o valor total?", "r": "Não precisa. Pela Lei 9.716/98, empresas no Lucro Presumido que revendem veículos usados podem tributar apenas a margem (venda menos custo de aquisição), equiparando a operação à consignação." },
+      { "p": "Revenda de veículos deve ser Simples ou Lucro Presumido?", "r": "Na maioria das revendas de usados, o Lucro Presumido com tributação sobre a margem é mais vantajoso, porque o Simples incide sobre o valor total da venda. Simulamos os dois cenários." },
+      { "p": "Como funciona a venda em consignação?", "r": "O veículo do cliente fica na loja, que recebe uma comissão pela venda. É preciso emitir notas de entrada e saída específicas e tributar apenas a comissão. Cuidamos de toda essa documentação." }
+    ],
+    "posts": ["simples-nacional-ou-lucro-presumido", "como-reduzir-impostos-empresa"],
+    "ctaTitulo": "Sua revenda pagando imposto só sobre a margem",
+    "ctaTexto": "Fale com um especialista em contabilidade para lojas de veículos {{EM_LOCAL}}"
+  },
+  {
+    "nome": "Contabilidade para Restaurantes e Bares",
+    "slug": "contabilidade-para-restaurantes",
+    "grupo": "segmentos",
+    "escopo": ["cidades"],
+    "prioridade": "0.7",
+    "titulo": "Contabilidade para Restaurantes e Bares {{EM_LOCAL}} | PS Contabilidade",
+    "descricao": "Contabilidade para restaurantes, bares e lanchonetes {{EM_LOCAL}}: bebidas monofásicas, gorjetas, folha e CMV. Reduza impostos com quem entende do setor.",
+    "intro": "Contabilidade para restaurantes, bares, lanchonetes, padarias e delivery {{EM_LOCAL}}: segregação de bebidas com tributação monofásica, gestão de gorjetas, folha de pagamento e controle do custo da mercadoria vendida (CMV).",
+    "ganchoLocal": "Bares e restaurantes {{DE_LOCAL}} têm margens apertadas e equipe grande. Revisamos a tributação das bebidas, a folha e o CMV para que o resultado do mês apareça no caixa.",
+    "beneficios": [
+      { "titulo": "Bebidas sem imposto em dobro", "texto": "Cervejas, refrigerantes e águas têm PIS/Cofins monofásico e ICMS-ST. Segregamos essas receitas no Simples para reduzir o DAS." },
+      { "titulo": "Gorjetas e folha corretas", "texto": "Gorjetas registradas conforme a Lei 13.419/2017, escalas, horas extras e encargos sem passivo trabalhista." },
+      { "titulo": "CMV e ficha técnica", "texto": "Relatórios de custo da mercadoria vendida para você saber quais pratos e bebidas dão mais lucro." }
+    ],
+    "faq": [
+      { "p": "Restaurante pode pagar menos imposto sobre bebidas?", "r": "Sim. Bebidas como cerveja, refrigerante e água têm PIS/Cofins monofásico e, em geral, ICMS por substituição tributária. No Simples, essas receitas devem ser segregadas — o que reduz o valor do DAS." },
+      { "p": "Gorjeta entra no faturamento do restaurante?", "r": "Pela Lei 13.419/2017, a gorjeta pertence aos empregados e deve ser anotada em carteira e na folha. Com o registro correto, ela não é tratada como receita do restaurante para fins de tributação." },
+      { "p": "Restaurante no Simples Nacional fica em qual anexo?", "r": "Em regra, no Anexo I (comércio), com alíquotas a partir de 4%. A segregação correta de produtos monofásicos e com ST faz grande diferença no valor final." }
+    ],
+    "posts": ["fluxo-de-caixa-para-pme", "como-reduzir-impostos-empresa"],
+    "ctaTitulo": "Mais lucro no caixa do seu restaurante",
+    "ctaTexto": "Fale com um especialista em contabilidade para bares e restaurantes {{EM_LOCAL}}"
+  },
+  {
+    "nome": "Contabilidade para Construtoras",
+    "slug": "contabilidade-para-construtoras",
+    "grupo": "segmentos",
+    "escopo": ["cidades"],
+    "prioridade": "0.7",
+    "titulo": "Contabilidade para Construtoras {{EM_LOCAL}} | PS Contabilidade",
+    "descricao": "Contabilidade para construtoras e empreiteiras {{EM_LOCAL}}: CNO, retenção de INSS, RET na incorporação, ISS de obras e custos por obra. Diagnóstico gratuito.",
+    "intro": "Contabilidade para construtoras, empreiteiras e incorporadoras {{EM_LOCAL}}: matrícula de obra (CNO), retenção de 11% de INSS, Regime Especial de Tributação (RET) na incorporação, ISS de obras e apuração de custos por empreendimento.",
+    "ganchoLocal": "{{EM_LOCAL_CAP}}, o mercado de construção civil atende tanto obras residenciais quanto empresas de {{SETORES}}. Organizamos custos, medições e retenções obra a obra para que você saiba a margem real de cada contrato.",
+    "beneficios": [
+      { "titulo": "Obras regularizadas", "texto": "Cadastro de obras no CNO, aferição no SERO e emissão da CND da obra para averbação." },
+      { "titulo": "RET e patrimônio de afetação", "texto": "Incorporações com patrimônio de afetação podem aderir ao RET, com tributação unificada de 4% sobre as receitas." },
+      { "titulo": "Retenções e ISS de obras", "texto": "Controle da retenção de 11% de INSS nas medições e do ISS devido no município de cada obra." }
+    ],
+    "faq": [
+      { "p": "Construtora pode ser do Simples Nacional?", "r": "Pode. A construção civil é tributada no Anexo IV do Simples, em que o INSS patronal é recolhido à parte. Dependendo da folha e da margem, o Lucro Presumido pode ser mais vantajoso." },
+      { "p": "O que é o RET da construção civil?", "r": "É o Regime Especial de Tributação para incorporações imobiliárias com patrimônio de afetação: IRPJ, CSLL, PIS e Cofins são recolhidos de forma unificada, com alíquota de 4% sobre as receitas do empreendimento." },
+      { "p": "Toda obra precisa de CNO?", "r": "Obras de construção civil precisam ser cadastradas no Cadastro Nacional de Obras (CNO). Ele é usado para recolher o INSS da obra e obter a certidão necessária para averbar a construção no cartório." }
+    ],
+    "posts": ["como-reduzir-impostos-empresa", "esocial-guia-completo"],
+    "ctaTitulo": "Sua construtora com obras e impostos em ordem",
+    "ctaTexto": "Fale com um especialista em contabilidade para construção civil {{EM_LOCAL}}"
+  },
+  {
+    "nome": "Contabilidade para E-commerce",
+    "slug": "contabilidade-para-ecommerce",
+    "grupo": "segmentos",
+    "escopo": ["cidades"],
+    "prioridade": "0.7",
+    "titulo": "Contabilidade para E-commerce {{EM_LOCAL}} | PS Contabilidade",
+    "descricao": "Contabilidade para lojas virtuais e sellers de marketplace {{EM_LOCAL}}: DIFAL, ICMS-ST, notas fiscais e conciliação de vendas. Diagnóstico gratuito.",
+    "intro": "Contabilidade para lojas virtuais e vendedores de marketplace {{EM_LOCAL}}: emissão de NF-e em escala, DIFAL nas vendas para outros estados, ICMS-ST, conciliação de repasses de marketplaces e meios de pagamento.",
+    "ganchoLocal": "E-commerces {{DE_LOCAL}} vendem para todo o Brasil e precisam lidar com as regras de ICMS de cada estado. Configuramos a tributação correta das notas para evitar multas e imposto pago a mais.",
+    "beneficios": [
+      { "titulo": "DIFAL e vendas interestaduais", "texto": "Cálculo e recolhimento do diferencial de alíquota de ICMS nas vendas a consumidores de outros estados, conforme cada caso." },
+      { "titulo": "Marketplaces conciliados", "texto": "Conciliação de vendas, comissões e repasses de marketplaces e gateways de pagamento com as notas emitidas." },
+      { "titulo": "Produtos com ST e monofásicos", "texto": "Cadastro fiscal correto de NCM e CEST para não tributar de novo produtos com substituição tributária." }
+    ],
+    "faq": [
+      { "p": "E-commerce no Simples paga DIFAL?", "r": "As regras do DIFAL para empresas do Simples Nacional geram discussões e variam conforme o estado de destino. Analisamos as suas vendas e aplicamos o entendimento mais seguro para cada operação." },
+      { "p": "Vendedor de marketplace precisa de CNPJ?", "r": "Para vender com regularidade e em volume, sim. Os marketplaces exigem cada vez mais a emissão de nota fiscal, e o CNPJ permite pagar bem menos imposto do que como pessoa física." },
+      { "p": "Posso começar o e-commerce como MEI?", "r": "Sim, desde que a atividade seja permitida e o faturamento fique dentro de R$ 81 mil por ano. Acompanhamos o crescimento e fazemos a migração para ME na hora certa." }
+    ],
+    "posts": ["mei-limite-faturamento-2026", "fluxo-de-caixa-para-pme"],
+    "ctaTitulo": "Sua loja virtual vendendo para o Brasil sem risco fiscal",
+    "ctaTexto": "Fale com um especialista em contabilidade para e-commerce {{EM_LOCAL}}"
+  },
+  {
+    "nome": "Contabilidade para Empresas de Tecnologia",
+    "slug": "contabilidade-para-empresas-de-tecnologia",
+    "grupo": "segmentos",
+    "escopo": ["cidades"],
+    "prioridade": "0.7",
+    "titulo": "Contabilidade para Empresas de Tecnologia {{EM_LOCAL}} | PS Contabilidade",
+    "descricao": "Contabilidade para startups, software houses e desenvolvedores {{EM_LOCAL}}: Fator R, exportação de serviços, investimento-anjo e Inova Simples.",
+    "intro": "Contabilidade para startups, software houses, SaaS e desenvolvedores PJ {{EM_LOCAL}}: enquadramento com Fator R, exportação de serviços para clientes no exterior, contratos de investimento e estrutura societária para crescer.",
+    "ganchoLocal": "Profissionais e empresas de tecnologia {{DE_LOCAL}} atendem clientes de todo o Brasil e do exterior. Estruturamos a empresa para aproveitar os benefícios da exportação de serviços e do Marco Legal das Startups.",
+    "beneficios": [
+      { "titulo": "Fator R para desenvolvimento", "texto": "Desenvolvimento de software e serviços de TI podem sair do Anexo V para o Anexo III do Simples com o pró-labore adequado." },
+      { "titulo": "Exportação de serviços", "texto": "Receitas de clientes no exterior podem ter isenção de ISS, PIS e Cofins quando cumpridos os requisitos de exportação." },
+      { "titulo": "Investimento e sócios", "texto": "Contratos de investimento-anjo e mútuo conversível conforme a LC 182/2021, vesting e entrada de novos sócios." }
+    ],
+    "faq": [
+      { "p": "Desenvolvedor PJ paga quanto de imposto?", "r": "No Simples Nacional com Fator R (pró-labore de pelo menos 28% do faturamento), a alíquota inicial é de 6%. Sem o Fator R, o Anexo V começa em 15,5%. O Lucro Presumido também pode ser uma opção." },
+      { "p": "Receber de cliente no exterior tem imposto?", "r": "A exportação de serviços pode ser isenta de ISS, PIS e Cofins, desde que o resultado do serviço se verifique no exterior e o pagamento ingresse no país. Analisamos cada contrato." },
+      { "p": "O que é o Inova Simples?", "r": "É um regime simplificado para startups em fase inicial, que permite abrir uma empresa de forma rápida e gratuita para testar o negócio. Avaliamos se faz sentido para o seu projeto." }
+    ],
+    "posts": ["simples-nacional-ou-lucro-presumido", "como-reduzir-impostos-empresa"],
+    "ctaTitulo": "Sua startup com contabilidade que acompanha o crescimento",
+    "ctaTexto": "Fale com um especialista em contabilidade para tecnologia {{EM_LOCAL}}"
+  },
+  {
+    "nome": "Contabilidade para Salões de Beleza",
+    "slug": "contabilidade-para-saloes-de-beleza",
+    "grupo": "segmentos",
+    "escopo": ["cidades"],
+    "prioridade": "0.7",
+    "titulo": "Contabilidade para Salões de Beleza {{EM_LOCAL}} | PS Contabilidade",
+    "descricao": "Contabilidade para salões de beleza, barbearias e estética {{EM_LOCAL}}: Lei do Salão Parceiro, MEI para profissionais e redução de impostos.",
+    "intro": "Contabilidade para salões de beleza, barbearias, clínicas de estética e esmalterias {{EM_LOCAL}}: implantação da Lei do Salão Parceiro, contratos com profissionais MEI, revenda de produtos e regime tributário mais econômico.",
+    "ganchoLocal": "Salões e barbearias {{DE_LOCAL}} que tributam todo o valor cobrado do cliente, incluindo a parte dos profissionais parceiros, pagam imposto sobre um dinheiro que não é deles. A Lei do Salão Parceiro resolve isso.",
+    "beneficios": [
+      { "titulo": "Lei do Salão Parceiro", "texto": "Com contratos homologados, o salão tributa só a sua cota-parte; o valor repassado aos profissionais parceiros não entra no faturamento." },
+      { "titulo": "Profissionais como MEI", "texto": "Orientamos cabeleireiros, manicures e barbeiros parceiros a se formalizarem como MEI, com segurança jurídica para os dois lados." },
+      { "titulo": "Produtos e serviços separados", "texto": "Segregamos revenda de cosméticos (com ST e monofásico) e prestação de serviços para reduzir o imposto do salão." }
+    ],
+    "faq": [
+      { "p": "O que é a Lei do Salão Parceiro?", "r": "A Lei 13.352/2016 permite que salões firmem contratos de parceria com cabeleireiros, barbeiros, manicures e outros profissionais. O salão retém e tributa apenas a sua cota-parte, e o profissional parceiro declara a parte dele, geralmente como MEI." },
+      { "p": "Salão de beleza pode ser MEI?", "r": "O próprio dono pode atuar como MEI em várias atividades de beleza, dentro do limite de R$ 81 mil por ano. Salões maiores costumam ser microempresas no Simples Nacional, usando a parceria com profissionais MEI." },
+      { "p": "Salão paga imposto sobre os produtos vendidos?", "r": "Muitos cosméticos têm PIS/Cofins monofásico e ICMS-ST. Quando a revenda é segregada corretamente no Simples, o salão não paga esses tributos de novo." }
+    ],
+    "posts": ["mei-limite-faturamento-2026", "como-reduzir-impostos-empresa"],
+    "ctaTitulo": "Seu salão pagando imposto só sobre o que é seu",
+    "ctaTexto": "Fale com um especialista em contabilidade para salões {{EM_LOCAL}}"
+  },
+  {
+    "nome": "Folha de Pagamento",
+    "slug": "folha-de-pagamento",
+    "grupo": "servicos",
+    "escopo": ["cidades"],
+    "prioridade": "0.7",
+    "titulo": "Folha de Pagamento e Departamento Pessoal {{EM_LOCAL}} | PS Contabilidade",
+    "descricao": "Folha de pagamento e departamento pessoal {{EM_LOCAL}}: eSocial, admissões, férias, rescisões e FGTS Digital sem erros. Atendimento digital e diagnóstico gratuito.",
+    "intro": "Terceirize o departamento pessoal da sua empresa {{EM_LOCAL}}: folha de pagamento, eSocial, admissões e demissões, férias, 13º, FGTS Digital e DCTFWeb, com prazos controlados e orientação trabalhista.",
+    "ganchoLocal": "Empresas {{DE_LOCAL}} em {{SETORES}} lidam com escalas, horas extras e convenções coletivas próprias. Aplicamos as regras da convenção do seu sindicato para evitar passivos trabalhistas.",
+    "beneficios": [
+      { "titulo": "eSocial sem pendências", "texto": "Todos os eventos enviados no prazo — admissões, afastamentos, folha e desligamentos — evitando multas automáticas." },
+      { "titulo": "FGTS Digital e DCTFWeb", "texto": "Guias do FGTS Digital e da DCTFWeb geradas corretamente a partir da folha, sem retrabalho." },
+      { "titulo": "Convenção coletiva aplicada", "texto": "Pisos, reajustes, adicionais e benefícios conforme a convenção coletiva da sua categoria." }
+    ],
+    "faq": [
+      { "p": "Quanto custa terceirizar a folha de pagamento?", "r": "O valor depende do número de funcionários e da complexidade (escalas, comissões, adicionais). Fazemos um diagnóstico gratuito e enviamos uma proposta sem compromisso." },
+      { "p": "O que é o FGTS Digital?", "r": "É o sistema que substituiu a antiga guia do FGTS. As informações vêm do eSocial, e a guia é gerada por Pix. Erros no eSocial geram cobranças incorretas — por isso a folha precisa estar bem feita." },
+      { "p": "Vocês atendem empresas com poucos funcionários?", "r": "Sim. Atendemos desde empresas com um único funcionário ou só pró-labore até empresas com equipes maiores, sempre com o mesmo cuidado." }
+    ],
+    "posts": ["esocial-guia-completo", "fluxo-de-caixa-para-pme"],
+    "ctaTitulo": "Departamento pessoal sem dor de cabeça",
+    "ctaTexto": "Fale com um especialista e terceirize a folha da sua empresa {{EM_LOCAL}}"
   }
 ]

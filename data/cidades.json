@@ -1,107 +1,768 @@
 [
   {
-    "nome": "Belo Horizonte", "slug": "belo-horizonte", "estado": "MG", "estadoSlug": "mg",
-    "regiao": "capital de Minas Gerais", "distancia": "",
+    "nome": "Belo Horizonte",
+    "slug": "belo-horizonte",
+    "regiao": "capital de Minas Gerais",
+    "distancia": "",
     "perfil": "Capital mineira e maior centro econômico do estado, Belo Horizonte concentra empresas de serviços, comércio, saúde, educação e tecnologia — incluindo o ecossistema de startups conhecido como San Pedro Valley. É aqui que fica a sede da PS Contabilidade, atendendo empresários da capital desde 2003.",
-    "setores": ["serviços", "comércio", "tecnologia", "saúde", "educação"],
-    "vizinhas": ["contagem", "nova-lima", "sabara", "santa-luzia", "ribeirao-das-neves", "ibirite", "betim", "vespasiano"]
+    "setores": [
+      "serviços",
+      "comércio",
+      "tecnologia",
+      "saúde",
+      "educação"
+    ],
+    "vizinhas": [
+      "contagem",
+      "nova-lima",
+      "sabara",
+      "santa-luzia",
+      "ribeirao-das-neves",
+      "ibirite",
+      "betim",
+      "vespasiano"
+    ]
   },
   {
-    "nome": "Contagem", "slug": "contagem", "estado": "MG", "estadoSlug": "mg",
-    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 20 km",
+    "nome": "Uberlândia",
+    "slug": "uberlandia",
+    "perfil": "Maior cidade do interior mineiro, Uberlândia é o principal polo do Triângulo Mineiro, com destaque para o atacado distribuidor, a logística, o agronegócio, as telecomunicações e um setor de serviços, saúde e educação que atende toda a região.",
+    "setores": [
+      "atacado e logística",
+      "agronegócio",
+      "tecnologia",
+      "serviços",
+      "saúde"
+    ]
+  },
+  {
+    "nome": "Contagem",
+    "slug": "contagem",
+    "regiao": "Região Metropolitana de Belo Horizonte",
+    "distancia": "cerca de 20 km",
     "perfil": "Um dos principais polos industriais de Minas Gerais, Contagem reúne a Cidade Industrial, distribuidoras, atacadistas e a CeasaMinas. O município também tem um comércio de bairro forte e muitos prestadores de serviço que atendem a indústria local.",
-    "setores": ["indústria", "logística", "comércio atacadista", "serviços"],
-    "vizinhas": ["belo-horizonte", "betim", "ibirite", "ribeirao-das-neves"]
+    "setores": [
+      "indústria",
+      "logística",
+      "comércio atacadista",
+      "serviços"
+    ],
+    "vizinhas": [
+      "belo-horizonte",
+      "betim",
+      "ibirite",
+      "ribeirao-das-neves"
+    ]
   },
   {
-    "nome": "Betim", "slug": "betim", "estado": "MG", "estadoSlug": "mg",
-    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 30 km",
+    "nome": "Juiz de Fora",
+    "slug": "juiz-de-fora",
+    "perfil": "Principal cidade da Zona da Mata, Juiz de Fora é um polo regional de serviços, saúde, educação e comércio, com uma universidade federal e um parque industrial diversificado.",
+    "setores": [
+      "serviços",
+      "comércio",
+      "saúde",
+      "educação",
+      "indústria"
+    ]
+  },
+  {
+    "nome": "Montes Claros",
+    "slug": "montes-claros",
+    "perfil": "Polo do Norte de Minas, Montes Claros concentra comércio, serviços de saúde e educação que atendem dezenas de municípios, além de indústrias e do agronegócio regional.",
+    "setores": [
+      "comércio",
+      "saúde",
+      "educação",
+      "indústria",
+      "agronegócio"
+    ]
+  },
+  {
+    "nome": "Betim",
+    "slug": "betim",
+    "regiao": "Região Metropolitana de Belo Horizonte",
+    "distancia": "cerca de 30 km",
     "perfil": "Betim é referência na indústria automotiva e de autopeças, com a fábrica da Stellantis e a Refinaria Gabriel Passos (Regap). Em torno desses grandes empregadores cresce uma rede de fornecedores, transportadoras, comércio e prestadores de serviço.",
-    "setores": ["indústria automotiva", "autopeças", "petróleo e gás", "transporte", "comércio"],
-    "vizinhas": ["contagem", "ibirite", "belo-horizonte", "brumadinho"]
+    "setores": [
+      "indústria automotiva",
+      "autopeças",
+      "petróleo e gás",
+      "transporte",
+      "comércio"
+    ],
+    "vizinhas": [
+      "contagem",
+      "ibirite",
+      "belo-horizonte",
+      "brumadinho"
+    ]
   },
   {
-    "nome": "Ribeirão das Neves", "slug": "ribeirao-das-neves", "estado": "MG", "estadoSlug": "mg",
-    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 30 km",
+    "nome": "Uberaba",
+    "slug": "uberaba",
+    "perfil": "No Triângulo Mineiro, Uberaba é referência nacional na pecuária zebuína e tem economia forte no agronegócio, na indústria de fertilizantes e alimentos e no comércio regional.",
+    "setores": [
+      "agronegócio",
+      "pecuária",
+      "indústria",
+      "comércio",
+      "serviços"
+    ]
+  },
+  {
+    "nome": "Ribeirão das Neves",
+    "slug": "ribeirao-das-neves",
+    "regiao": "Região Metropolitana de Belo Horizonte",
+    "distancia": "cerca de 30 km",
     "perfil": "Ribeirão das Neves é um dos municípios mais populosos da Grande BH, com economia puxada pelo comércio local, pela construção civil e por um grande número de microempreendedores e prestadores de serviço autônomos.",
-    "setores": ["comércio varejista", "construção civil", "serviços", "microempreendedores"],
-    "vizinhas": ["belo-horizonte", "contagem", "vespasiano", "santa-luzia", "pedro-leopoldo"]
+    "setores": [
+      "comércio varejista",
+      "construção civil",
+      "serviços",
+      "microempreendedores"
+    ],
+    "vizinhas": [
+      "belo-horizonte",
+      "contagem",
+      "vespasiano",
+      "santa-luzia",
+      "pedro-leopoldo"
+    ]
   },
   {
-    "nome": "Santa Luzia", "slug": "santa-luzia", "estado": "MG", "estadoSlug": "mg",
-    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 25 km",
-    "perfil": "Localizada no Vetor Norte da Grande BH, Santa Luzia combina um centro histórico com distritos industriais e um comércio em expansão, impulsionado pelo crescimento da região do aeroporto de Confins.",
-    "setores": ["indústria", "comércio", "serviços", "construção civil"],
-    "vizinhas": ["belo-horizonte", "vespasiano", "sabara", "lagoa-santa", "ribeirao-das-neves"]
+    "nome": "Governador Valadares",
+    "slug": "governador-valadares",
+    "perfil": "Principal cidade do Vale do Rio Doce, Governador Valadares é um centro regional de comércio, serviços e saúde, com pecuária forte no entorno.",
+    "setores": [
+      "comércio",
+      "serviços",
+      "saúde",
+      "pecuária",
+      "construção civil"
+    ]
   },
   {
-    "nome": "Ibirité", "slug": "ibirite", "estado": "MG", "estadoSlug": "mg",
-    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 25 km",
-    "perfil": "Vizinha de Betim e Contagem, Ibirité tem economia baseada no comércio, em pequenas indústrias e em serviços que atendem o polo industrial do entorno, com muitos negócios familiares e MEIs.",
-    "setores": ["comércio", "pequenas indústrias", "serviços", "microempreendedores"],
-    "vizinhas": ["betim", "contagem", "belo-horizonte", "brumadinho"]
+    "nome": "Divinópolis",
+    "slug": "divinopolis",
+    "perfil": "Polo do Centro-Oeste mineiro, Divinópolis é conhecida pela indústria de confecção e moda, pela metalurgia e fundição e por um comércio que atende toda a região.",
+    "setores": [
+      "confecção",
+      "metalurgia",
+      "comércio",
+      "serviços",
+      "saúde"
+    ]
   },
   {
-    "nome": "Sete Lagoas", "slug": "sete-lagoas", "estado": "MG", "estadoSlug": "mg",
-    "regiao": "colar metropolitano de Belo Horizonte", "distancia": "cerca de 70 km",
+    "nome": "Ipatinga",
+    "slug": "ipatinga",
+    "perfil": "Coração do Vale do Aço, Ipatinga tem economia ligada à siderurgia e à cadeia de fornecedores industriais, além de um comércio e um setor de serviços regionais em crescimento.",
+    "setores": [
+      "siderurgia",
+      "fornecedores industriais",
+      "comércio",
+      "serviços"
+    ]
+  },
+  {
+    "nome": "Sete Lagoas",
+    "slug": "sete-lagoas",
+    "regiao": "colar metropolitano de Belo Horizonte",
+    "distancia": "cerca de 70 km",
     "perfil": "Sete Lagoas é um polo regional com forte presença da siderurgia (ferro-gusa), da indústria automotiva e do agronegócio, além de um comércio e um setor de serviços que atendem toda a região central de Minas.",
-    "setores": ["siderurgia", "indústria automotiva", "agronegócio", "comércio", "serviços"],
-    "vizinhas": ["pedro-leopoldo", "confins", "lagoa-santa", "vespasiano"]
+    "setores": [
+      "siderurgia",
+      "indústria automotiva",
+      "agronegócio",
+      "comércio",
+      "serviços"
+    ],
+    "vizinhas": [
+      "pedro-leopoldo",
+      "confins",
+      "lagoa-santa",
+      "vespasiano"
+    ]
   },
   {
-    "nome": "Sabará", "slug": "sabara", "estado": "MG", "estadoSlug": "mg",
-    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 20 km",
+    "nome": "Santa Luzia",
+    "slug": "santa-luzia",
+    "regiao": "Região Metropolitana de Belo Horizonte",
+    "distancia": "cerca de 25 km",
+    "perfil": "Localizada no Vetor Norte da Grande BH, Santa Luzia combina um centro histórico com distritos industriais e um comércio em expansão, impulsionado pelo crescimento da região do aeroporto de Confins.",
+    "setores": [
+      "indústria",
+      "comércio",
+      "serviços",
+      "construção civil"
+    ],
+    "vizinhas": [
+      "belo-horizonte",
+      "vespasiano",
+      "sabara",
+      "lagoa-santa",
+      "ribeirao-das-neves"
+    ]
+  },
+  {
+    "nome": "Ibirité",
+    "slug": "ibirite",
+    "regiao": "Região Metropolitana de Belo Horizonte",
+    "distancia": "cerca de 25 km",
+    "perfil": "Vizinha de Betim e Contagem, Ibirité tem economia baseada no comércio, em pequenas indústrias e em serviços que atendem o polo industrial do entorno, com muitos negócios familiares e MEIs.",
+    "setores": [
+      "comércio",
+      "pequenas indústrias",
+      "serviços",
+      "microempreendedores"
+    ],
+    "vizinhas": [
+      "betim",
+      "contagem",
+      "belo-horizonte",
+      "brumadinho"
+    ]
+  },
+  {
+    "nome": "Poços de Caldas",
+    "slug": "pocos-de-caldas",
+    "perfil": "No Sul de Minas, Poços de Caldas combina turismo das águas termais, indústria — com destaque para a mineração e o alumínio — e um setor de serviços e comércio bem desenvolvido.",
+    "setores": [
+      "turismo",
+      "indústria",
+      "mineração",
+      "comércio",
+      "serviços"
+    ]
+  },
+  {
+    "nome": "Patos de Minas",
+    "slug": "patos-de-minas",
+    "perfil": "Polo do Alto Paranaíba, Patos de Minas tem economia apoiada no agronegócio — especialmente milho e leite — e em um comércio regional forte.",
+    "setores": [
+      "agronegócio",
+      "comércio",
+      "serviços",
+      "indústria de alimentos"
+    ]
+  },
+  {
+    "nome": "Pouso Alegre",
+    "slug": "pouso-alegre",
+    "perfil": "Às margens da Rodovia Fernão Dias, Pouso Alegre é um dos polos industriais e logísticos do Sul de Minas, com comércio e serviços em expansão.",
+    "setores": [
+      "indústria",
+      "logística",
+      "comércio",
+      "serviços",
+      "saúde"
+    ]
+  },
+  {
+    "nome": "Teófilo Otoni",
+    "slug": "teofilo-otoni",
+    "perfil": "Principal cidade do Vale do Mucuri, Teófilo Otoni é conhecida pelo comércio de pedras preciosas e é centro regional de comércio, saúde e serviços.",
+    "setores": [
+      "pedras preciosas",
+      "comércio",
+      "serviços",
+      "saúde"
+    ]
+  },
+  {
+    "nome": "Varginha",
+    "slug": "varginha",
+    "perfil": "No Sul de Minas, Varginha é um dos principais centros de comercialização e armazenagem de café do país, com logística, indústria e comércio fortes.",
+    "setores": [
+      "café",
+      "logística",
+      "indústria",
+      "comércio",
+      "serviços"
+    ]
+  },
+  {
+    "nome": "Conselheiro Lafaiete",
+    "slug": "conselheiro-lafaiete",
+    "perfil": "Na região do Alto Paraopeba, Conselheiro Lafaiete é um polo de comércio e serviços cercado por atividades de mineração e siderurgia.",
+    "setores": [
+      "comércio",
+      "serviços",
+      "mineração",
+      "siderurgia"
+    ]
+  },
+  {
+    "nome": "Sabará",
+    "slug": "sabara",
+    "regiao": "Região Metropolitana de Belo Horizonte",
+    "distancia": "cerca de 20 km",
     "perfil": "Cidade histórica do ciclo do ouro, Sabará tem economia ligada ao comércio, ao turismo cultural, à gastronomia e a prestadores de serviço que atuam também na capital.",
-    "setores": ["comércio", "turismo", "gastronomia", "serviços"],
-    "vizinhas": ["belo-horizonte", "santa-luzia", "nova-lima"]
+    "setores": [
+      "comércio",
+      "turismo",
+      "gastronomia",
+      "serviços"
+    ],
+    "vizinhas": [
+      "belo-horizonte",
+      "santa-luzia",
+      "nova-lima"
+    ]
   },
   {
-    "nome": "Nova Lima", "slug": "nova-lima", "estado": "MG", "estadoSlug": "mg",
-    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 20 km",
-    "perfil": "Nova Lima une tradição na mineração a um polo empresarial moderno na região do Vila da Serra, com escritórios, clínicas, profissionais liberais e serviços de alto padrão ligados aos condomínios residenciais.",
-    "setores": ["mineração", "serviços empresariais", "profissionais liberais", "saúde", "construção civil"],
-    "vizinhas": ["belo-horizonte", "sabara", "itabirito", "brumadinho"]
-  },
-  {
-    "nome": "Vespasiano", "slug": "vespasiano", "estado": "MG", "estadoSlug": "mg",
-    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 30 km",
+    "nome": "Vespasiano",
+    "slug": "vespasiano",
+    "regiao": "Região Metropolitana de Belo Horizonte",
+    "distancia": "cerca de 30 km",
     "perfil": "No caminho entre BH e o Aeroporto de Confins, Vespasiano cresce com empresas de logística, distribuição, indústria e comércio que aproveitam a infraestrutura do Vetor Norte.",
-    "setores": ["logística", "indústria", "comércio", "serviços"],
-    "vizinhas": ["lagoa-santa", "santa-luzia", "confins", "ribeirao-das-neves", "pedro-leopoldo", "belo-horizonte"]
+    "setores": [
+      "logística",
+      "indústria",
+      "comércio",
+      "serviços"
+    ],
+    "vizinhas": [
+      "lagoa-santa",
+      "santa-luzia",
+      "confins",
+      "ribeirao-das-neves",
+      "pedro-leopoldo",
+      "belo-horizonte"
+    ]
   },
   {
-    "nome": "Pedro Leopoldo", "slug": "pedro-leopoldo", "estado": "MG", "estadoSlug": "mg",
-    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 45 km",
-    "perfil": "Pedro Leopoldo tem tradição na indústria cimenteira e de mineração de calcário, além de agropecuária, comércio e serviços que atendem o Vetor Norte e o entorno do aeroporto.",
-    "setores": ["indústria cimenteira", "mineração", "agropecuária", "comércio"],
-    "vizinhas": ["confins", "lagoa-santa", "vespasiano", "sete-lagoas", "ribeirao-das-neves"]
+    "nome": "Barbacena",
+    "slug": "barbacena",
+    "perfil": "Conhecida como Cidade das Rosas, Barbacena tem economia baseada no comércio, nos serviços, na educação e na floricultura, no Campo das Vertentes.",
+    "setores": [
+      "comércio",
+      "serviços",
+      "educação",
+      "floricultura"
+    ]
   },
   {
-    "nome": "Brumadinho", "slug": "brumadinho", "estado": "MG", "estadoSlug": "mg",
-    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 60 km",
-    "perfil": "Conhecida pelo Instituto Inhotim, Brumadinho tem economia apoiada no turismo, na hospedagem, na gastronomia, na agricultura familiar e na mineração.",
-    "setores": ["turismo", "hospedagem", "gastronomia", "agricultura", "mineração"],
-    "vizinhas": ["betim", "ibirite", "nova-lima", "itabirito"]
+    "nome": "Araguari",
+    "slug": "araguari",
+    "perfil": "No Triângulo Mineiro, Araguari tem forte presença do agronegócio — com destaque para o café — além de indústria de alimentos e logística.",
+    "setores": [
+      "agronegócio",
+      "café",
+      "indústria de alimentos",
+      "logística",
+      "comércio"
+    ]
   },
   {
-    "nome": "Itabirito", "slug": "itabirito", "estado": "MG", "estadoSlug": "mg",
-    "regiao": "colar metropolitano de Belo Horizonte", "distancia": "cerca de 55 km",
-    "perfil": "No Quadrilátero Ferrífero, Itabirito tem economia ligada à mineração e à indústria, com uma rede crescente de fornecedores, comércio e serviços — além do turismo histórico na rota para Ouro Preto.",
-    "setores": ["mineração", "indústria", "fornecedores industriais", "comércio", "turismo"],
-    "vizinhas": ["nova-lima", "brumadinho", "belo-horizonte"]
+    "nome": "Itabira",
+    "slug": "itabira",
+    "perfil": "Berço da mineração de ferro em larga escala, Itabira tem economia ligada à mineração e aos seus fornecedores, além de comércio e serviços regionais.",
+    "setores": [
+      "mineração",
+      "fornecedores industriais",
+      "comércio",
+      "serviços"
+    ]
   },
   {
-    "nome": "Lagoa Santa", "slug": "lagoa-santa", "estado": "MG", "estadoSlug": "mg",
-    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 40 km",
+    "nome": "Passos",
+    "slug": "passos",
+    "perfil": "Polo do Sudoeste de Minas, Passos tem economia apoiada no agronegócio — leite, café e cana —, no comércio regional e em serviços de saúde e educação.",
+    "setores": [
+      "agronegócio",
+      "comércio",
+      "saúde",
+      "educação",
+      "serviços"
+    ]
+  },
+  {
+    "nome": "Nova Lima",
+    "slug": "nova-lima",
+    "regiao": "Região Metropolitana de Belo Horizonte",
+    "distancia": "cerca de 20 km",
+    "perfil": "Nova Lima une tradição na mineração a um polo empresarial moderno na região do Vila da Serra, com escritórios, clínicas, profissionais liberais e serviços de alto padrão ligados aos condomínios residenciais.",
+    "setores": [
+      "mineração",
+      "serviços empresariais",
+      "profissionais liberais",
+      "saúde",
+      "construção civil"
+    ],
+    "vizinhas": [
+      "belo-horizonte",
+      "sabara",
+      "itabirito",
+      "brumadinho"
+    ]
+  },
+  {
+    "nome": "Araxá",
+    "slug": "araxa",
+    "perfil": "No Alto Paranaíba, Araxá une mineração — com destaque para o nióbio e o fosfato — ao turismo termal e a um comércio e serviços bem estruturados.",
+    "setores": [
+      "mineração",
+      "turismo",
+      "comércio",
+      "serviços"
+    ]
+  },
+  {
+    "nome": "Nova Serrana",
+    "slug": "nova-serrana",
+    "perfil": "Nova Serrana é um dos maiores polos calçadistas do Brasil, especialmente na produção de tênis, com centenas de fábricas e fornecedores.",
+    "setores": [
+      "indústria calçadista",
+      "confecção",
+      "comércio",
+      "logística"
+    ]
+  },
+  {
+    "nome": "Lavras",
+    "slug": "lavras",
+    "perfil": "Lavras é um polo de educação e pesquisa agropecuária, com uma universidade federal de referência, além de agronegócio, comércio e serviços.",
+    "setores": [
+      "educação",
+      "agronegócio",
+      "comércio",
+      "serviços",
+      "saúde"
+    ]
+  },
+  {
+    "nome": "Coronel Fabriciano",
+    "slug": "coronel-fabriciano",
+    "perfil": "No Vale do Aço, Coronel Fabriciano tem economia baseada no comércio, nos serviços e na educação, integrada ao polo siderúrgico da região.",
+    "setores": [
+      "comércio",
+      "serviços",
+      "educação",
+      "indústria"
+    ]
+  },
+  {
+    "nome": "Muriaé",
+    "slug": "muriae",
+    "perfil": "Na Zona da Mata, Muriaé é um polo de confecção — com destaque para a moda íntima — e um centro regional de comércio e serviços.",
+    "setores": [
+      "confecção",
+      "comércio",
+      "serviços",
+      "saúde"
+    ]
+  },
+  {
+    "nome": "Ubá",
+    "slug": "uba",
+    "perfil": "Na Zona da Mata, Ubá é um dos principais polos moveleiros do Brasil, com indústrias de móveis e uma cadeia de fornecedores e comércio.",
+    "setores": [
+      "indústria moveleira",
+      "comércio",
+      "serviços",
+      "logística"
+    ]
+  },
+  {
+    "nome": "Ituiutaba",
+    "slug": "ituiutaba",
+    "perfil": "No Pontal do Triângulo Mineiro, Ituiutaba tem economia forte no agronegócio — grãos, cana e pecuária — e no comércio regional.",
+    "setores": [
+      "agronegócio",
+      "pecuária",
+      "comércio",
+      "serviços"
+    ]
+  },
+  {
+    "nome": "Itaúna",
+    "slug": "itauna",
+    "perfil": "No Centro-Oeste mineiro, Itaúna é um polo de fundição e metalurgia, com indústrias de diversos portes, comércio e serviços.",
+    "setores": [
+      "fundição",
+      "metalurgia",
+      "indústria",
+      "comércio"
+    ]
+  },
+  {
+    "nome": "Pará de Minas",
+    "slug": "para-de-minas",
+    "perfil": "Pará de Minas tem economia ligada à avicultura e à agroindústria, além de indústria, comércio e serviços que atendem o Centro-Oeste mineiro.",
+    "setores": [
+      "avicultura",
+      "agroindústria",
+      "indústria",
+      "comércio"
+    ]
+  },
+  {
+    "nome": "Paracatu",
+    "slug": "paracatu",
+    "perfil": "No Noroeste de Minas, Paracatu combina mineração de ouro e agronegócio irrigado, com comércio e serviços em crescimento.",
+    "setores": [
+      "mineração",
+      "agronegócio",
+      "comércio",
+      "serviços"
+    ]
+  },
+  {
+    "nome": "Itajubá",
+    "slug": "itajuba",
+    "perfil": "No Sul de Minas, Itajubá é um polo de tecnologia e educação, com universidade federal de engenharia e indústrias de alta tecnologia.",
+    "setores": [
+      "indústria",
+      "tecnologia",
+      "educação",
+      "comércio",
+      "serviços"
+    ]
+  },
+  {
+    "nome": "Manhuaçu",
+    "slug": "manhuacu",
+    "perfil": "Na região das Matas de Minas, Manhuaçu tem economia apoiada na cafeicultura e é centro regional de comércio e serviços.",
+    "setores": [
+      "café",
+      "comércio",
+      "serviços",
+      "agronegócio"
+    ]
+  },
+  {
+    "nome": "São João del Rei",
+    "slug": "sao-joao-del-rei",
+    "perfil": "Cidade histórica do Campo das Vertentes, São João del-Rei une turismo, universidade federal, artesanato e um comércio regional ativo.",
+    "setores": [
+      "turismo",
+      "educação",
+      "comércio",
+      "artesanato",
+      "serviços"
+    ]
+  },
+  {
+    "nome": "Patrocínio",
+    "slug": "patrocinio",
+    "perfil": "No Alto Paranaíba, Patrocínio é um dos grandes produtores de café do Cerrado Mineiro, com agronegócio forte e comércio regional.",
+    "setores": [
+      "café",
+      "agronegócio",
+      "comércio",
+      "serviços"
+    ]
+  },
+  {
+    "nome": "Caratinga",
+    "slug": "caratinga",
+    "perfil": "No Leste de Minas, Caratinga tem economia baseada na cafeicultura, no comércio regional e em serviços de educação e saúde.",
+    "setores": [
+      "café",
+      "comércio",
+      "educação",
+      "serviços"
+    ]
+  },
+  {
+    "nome": "Unaí",
+    "slug": "unai",
+    "perfil": "No Noroeste de Minas, Unaí é um dos grandes polos do agronegócio do estado, com produção de grãos, feijão e leite e comércio regional.",
+    "setores": [
+      "agronegócio",
+      "grãos",
+      "pecuária leiteira",
+      "comércio"
+    ]
+  },
+  {
+    "nome": "Esmeraldas",
+    "slug": "esmeraldas",
+    "perfil": "Na Região Metropolitana de Belo Horizonte, Esmeraldas cresce com novos bairros residenciais, comércio local, agricultura e muitos microempreendedores.",
+    "setores": [
+      "comércio",
+      "serviços",
+      "agricultura",
+      "microempreendedores"
+    ]
+  },
+  {
+    "nome": "Timóteo",
+    "slug": "timoteo",
+    "perfil": "No Vale do Aço, Timóteo tem economia ligada à produção de aço inoxidável e à cadeia de fornecedores industriais, além de comércio e serviços.",
+    "setores": [
+      "siderurgia",
+      "fornecedores industriais",
+      "comércio",
+      "serviços"
+    ]
+  },
+  {
+    "nome": "Curvelo",
+    "slug": "curvelo",
+    "perfil": "Na região central de Minas, Curvelo é um entroncamento rodoviário e centro regional de comércio, serviços e pecuária.",
+    "setores": [
+      "comércio",
+      "serviços",
+      "pecuária",
+      "transporte"
+    ]
+  },
+  {
+    "nome": "João Monlevade",
+    "slug": "joao-monlevade",
+    "perfil": "João Monlevade tem tradição na siderurgia, com uma grande usina e fornecedores industriais, além de comércio e serviços para a região do Médio Piracicaba.",
+    "setores": [
+      "siderurgia",
+      "indústria",
+      "comércio",
+      "serviços"
+    ]
+  },
+  {
+    "nome": "Alfenas",
+    "slug": "alfenas",
+    "perfil": "No Sul de Minas, Alfenas é um polo universitário e de saúde, com agronegócio forte — especialmente café — e comércio regional.",
+    "setores": [
+      "educação",
+      "saúde",
+      "café",
+      "comércio"
+    ]
+  },
+  {
+    "nome": "Viçosa",
+    "slug": "vicosa",
+    "perfil": "Na Zona da Mata, Viçosa é conhecida pela universidade federal e pela pesquisa agropecuária, com economia movida por educação, serviços e comércio.",
+    "setores": [
+      "educação",
+      "pesquisa",
+      "serviços",
+      "comércio"
+    ]
+  },
+  {
+    "nome": "Três Corações",
+    "slug": "tres-coracoes",
+    "perfil": "No Sul de Minas, Três Corações tem economia ligada ao café, à indústria de alimentos e ao comércio, às margens da Rodovia Fernão Dias.",
+    "setores": [
+      "café",
+      "indústria de alimentos",
+      "comércio",
+      "serviços"
+    ]
+  },
+  {
+    "nome": "Lagoa Santa",
+    "slug": "lagoa-santa",
+    "regiao": "Região Metropolitana de Belo Horizonte",
+    "distancia": "cerca de 40 km",
     "perfil": "Lagoa Santa é uma das cidades que mais crescem na Grande BH, com novos condomínios, comércio, serviços, gastronomia e empresas atraídas pela proximidade com o Aeroporto de Confins.",
-    "setores": ["comércio", "serviços", "gastronomia", "construção civil", "turismo"],
-    "vizinhas": ["confins", "vespasiano", "pedro-leopoldo", "santa-luzia"]
+    "setores": [
+      "comércio",
+      "serviços",
+      "gastronomia",
+      "construção civil",
+      "turismo"
+    ],
+    "vizinhas": [
+      "confins",
+      "vespasiano",
+      "pedro-leopoldo",
+      "santa-luzia"
+    ]
   },
   {
-    "nome": "Confins", "slug": "confins", "estado": "MG", "estadoSlug": "mg",
-    "regiao": "Região Metropolitana de Belo Horizonte", "distancia": "cerca de 40 km",
+    "nome": "Ouro Preto",
+    "slug": "ouro-preto",
+    "perfil": "Patrimônio Mundial da UNESCO, Ouro Preto tem economia baseada no turismo histórico, na universidade federal e na mineração.",
+    "setores": [
+      "turismo",
+      "educação",
+      "mineração",
+      "gastronomia",
+      "comércio"
+    ]
+  },
+  {
+    "nome": "Pedro Leopoldo",
+    "slug": "pedro-leopoldo",
+    "regiao": "Região Metropolitana de Belo Horizonte",
+    "distancia": "cerca de 45 km",
+    "perfil": "Pedro Leopoldo tem tradição na indústria cimenteira e de mineração de calcário, além de agropecuária, comércio e serviços que atendem o Vetor Norte e o entorno do aeroporto.",
+    "setores": [
+      "indústria cimenteira",
+      "mineração",
+      "agropecuária",
+      "comércio"
+    ],
+    "vizinhas": [
+      "confins",
+      "lagoa-santa",
+      "vespasiano",
+      "sete-lagoas",
+      "ribeirao-das-neves"
+    ]
+  },
+  {
+    "nome": "Itabirito",
+    "slug": "itabirito",
+    "regiao": "colar metropolitano de Belo Horizonte",
+    "distancia": "cerca de 55 km",
+    "perfil": "No Quadrilátero Ferrífero, Itabirito tem economia ligada à mineração e à indústria, com uma rede crescente de fornecedores, comércio e serviços — além do turismo histórico na rota para Ouro Preto.",
+    "setores": [
+      "mineração",
+      "indústria",
+      "fornecedores industriais",
+      "comércio",
+      "turismo"
+    ],
+    "vizinhas": [
+      "nova-lima",
+      "brumadinho",
+      "belo-horizonte"
+    ]
+  },
+  {
+    "nome": "Brumadinho",
+    "slug": "brumadinho",
+    "regiao": "Região Metropolitana de Belo Horizonte",
+    "distancia": "cerca de 60 km",
+    "perfil": "Conhecida pelo Instituto Inhotim, Brumadinho tem economia apoiada no turismo, na hospedagem, na gastronomia, na agricultura familiar e na mineração.",
+    "setores": [
+      "turismo",
+      "hospedagem",
+      "gastronomia",
+      "agricultura",
+      "mineração"
+    ],
+    "vizinhas": [
+      "betim",
+      "ibirite",
+      "nova-lima",
+      "itabirito"
+    ]
+  },
+  {
+    "nome": "Confins",
+    "slug": "confins",
+    "regiao": "Região Metropolitana de Belo Horizonte",
+    "distancia": "cerca de 40 km",
     "perfil": "Sede do Aeroporto Internacional de Belo Horizonte, Confins tem economia voltada a serviços aeroportuários, logística, hotelaria, alimentação e transporte.",
-    "setores": ["serviços aeroportuários", "logística", "hotelaria", "alimentação", "transporte"],
-    "vizinhas": ["lagoa-santa", "pedro-leopoldo", "vespasiano", "sete-lagoas"]
+    "setores": [
+      "serviços aeroportuários",
+      "logística",
+      "hotelaria",
+      "alimentação",
+      "transporte"
+    ],
+    "vizinhas": [
+      "lagoa-santa",
+      "pedro-leopoldo",
+      "vespasiano",
+      "sete-lagoas"
+    ]
   }
 ]

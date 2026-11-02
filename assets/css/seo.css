@@ -1,0 +1,161 @@
+/* PS Contabilidade — estilos das páginas de SEO programático (gerar-seo.js) */
+
+/* ── HERO LOCAL ── */
+.local-hero {
+  background: var(--gray-bg);
+  padding: 140px 48px 100px;
+  position: relative; overflow: hidden;
+}
+.local-hero::after {
+  content: ''; position: absolute; bottom: -2px; left: 0; right: 0;
+  height: 70px; background: var(--white);
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+}
+.local-hero-inner { max-width: 800px; }
+.local-hero-location {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(212,30,60,.08); color: var(--crimson);
+  border: 1px solid rgba(212,30,60,.2);
+  padding: 6px 14px; border-radius: 50px;
+  font-size: .72rem; font-weight: 700; letter-spacing: 1px;
+  text-transform: uppercase; margin-bottom: 20px;
+}
+.local-hero-location svg { width: 14px; height: 14px; }
+.local-hero-title {
+  font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 900; color: var(--navy);
+  line-height: 1.1; letter-spacing: -.5px; margin-bottom: 20px;
+}
+.local-hero-sub { font-size: 1rem; color: var(--text-mid); line-height: 1.72; margin-bottom: 36px; max-width: 580px; }
+.local-hero-trust { display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 32px; }
+.trust-item { font-size: .82rem; font-weight: 700; color: var(--crimson); }
+.local-hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* ── BENEFÍCIOS ── */
+.benefits-section { background: var(--white); padding: 80px 48px; }
+.benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+
+/* ── CONTEXTO LOCAL ── */
+.local-context { background: var(--white); padding: 0 48px 80px; }
+.local-context-box {
+  display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: start;
+  background: var(--gray-bg); border-radius: var(--radius-lg); padding: 48px;
+}
+.local-context-box p { color: var(--text-mid); line-height: 1.75; margin-bottom: 16px; font-size: .95rem; }
+.local-facts { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+.local-facts li {
+  background: var(--white); border-radius: var(--radius); padding: 16px 20px;
+  border: 1px solid var(--border); font-size: .88rem; color: var(--text-mid);
+}
+.local-facts strong { display: block; color: var(--navy); font-size: .78rem; text-transform: uppercase; letter-spacing: .8px; margin-bottom: 4px; }
+
+/* ── PROCESSO ── */
+.process-section { background: var(--white); padding: 0 48px 80px; }
+.process-steps {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 0; max-width: 960px; margin: 56px auto 0;
+  position: relative;
+}
+.process-steps::before {
+  content: ''; position: absolute; top: 28px; left: 10%; right: 10%;
+  height: 2px; background: var(--border); z-index: 0;
+}
+.process-step { text-align: center; position: relative; z-index: 1; padding: 0 12px; }
+.process-num {
+  width: 56px; height: 56px; border-radius: 50%;
+  background: var(--crimson); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; font-weight: 900; margin: 0 auto 16px;
+  box-shadow: 0 4px 16px var(--crimson-glow);
+}
+.process-title { font-size: .9rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+.process-desc  { font-size: .78rem; color: var(--text-mid); line-height: 1.6; }
+
+/* ── FAQ ── */
+.faq-section { background: var(--gray-bg); padding: 80px 48px; }
+.faq-list { max-width: 760px; margin: 48px auto 0; display: flex; flex-direction: column; gap: 12px; }
+.faq-item {
+  background: var(--white); border-radius: var(--radius);
+  border: 1px solid var(--border); overflow: hidden;
+}
+.faq-question {
+  width: 100%; padding: 20px 24px; text-align: left;
+  background: none; border: none; cursor: pointer;
+  font-size: .95rem; font-weight: 700; color: var(--navy);
+  font-family: inherit; display: flex; justify-content: space-between; align-items: center; gap: 16px;
+}
+.faq-question svg { width: 20px; height: 20px; flex-shrink: 0; color: var(--crimson); transition: transform .3s; }
+.faq-item.open .faq-question svg { transform: rotate(180deg); }
+.faq-answer {
+  max-height: 0; overflow: hidden; transition: max-height .35s ease, padding .35s ease;
+  font-size: .9rem; color: var(--text-mid); line-height: 1.72; padding: 0 24px;
+}
+.faq-item.open .faq-answer { max-height: 400px; padding: 0 24px 20px; }
+
+/* ── LINKS INTERNOS ── */
+.related-cities { background: var(--white); padding: 64px 48px 24px; }
+.related-cities + .related-cities { padding-top: 24px; }
+.related-cities:last-of-type { padding-bottom: 64px; }
+.cities-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.city-chip {
+  padding: 8px 18px; border-radius: 50px;
+  background: var(--gray-bg); border: 1px solid var(--border);
+  font-size: .82rem; font-weight: 600; color: var(--navy);
+  text-decoration: none; transition: all .2s;
+}
+.city-chip:hover { background: var(--crimson); color: #fff; border-color: var(--crimson); }
+.posts-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; margin-top: 24px; }
+.post-link {
+  display: block; padding: 20px 22px; border-radius: var(--radius);
+  border: 1px solid var(--border); background: var(--white);
+  font-weight: 700; color: var(--navy); text-decoration: none; font-size: .92rem; line-height: 1.45;
+  transition: border-color .2s, color .2s;
+}
+.post-link span { display: block; font-size: .72rem; color: var(--crimson); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+.post-link:hover { border-color: var(--crimson); color: var(--crimson); }
+
+/* ── HUBS ── */
+.hub-hero { background: var(--gray-bg); padding: 140px 48px 72px; }
+.hub-hero h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 900; color: var(--navy); line-height: 1.1; margin-bottom: 16px; }
+.hub-hero p { color: var(--text-mid); line-height: 1.72; max-width: 680px; }
+.hub-section { background: var(--white); padding: 64px 48px; }
+.hub-section.alt { background: var(--gray-bg); }
+.hub-section h2 { font-size: 1.5rem; font-weight: 900; color: var(--navy); margin-bottom: 8px; }
+.hub-section .hub-sub { color: var(--text-mid); margin-bottom: 28px; font-size: .95rem; }
+.hub-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.hub-card {
+  display: block; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 20px 22px; text-decoration: none; transition: border-color .2s, transform .2s;
+}
+.hub-section.alt .hub-card { background: var(--white); }
+.hub-section:not(.alt) .hub-card { background: var(--gray-bg); }
+.hub-card:hover { border-color: var(--crimson); transform: translateY(-2px); }
+.hub-card strong { display: block; color: var(--navy); font-size: 1rem; font-weight: 800; margin-bottom: 4px; }
+.hub-card span { display: block; color: var(--text-mid); font-size: .82rem; line-height: 1.5; }
+.hub-group { margin-top: 36px; }
+.hub-group:first-of-type { margin-top: 0; }
+.hub-group h3 { font-size: .8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--crimson); margin-bottom: 14px; }
+
+/* ── CTA LOCAL ── */
+.cta-local { background: var(--crimson); padding: 72px 48px; text-align: center; }
+.cta-local h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 900; color: #fff; margin-bottom: 10px; }
+.cta-local p  { color: rgba(255,255,255,.8); margin-bottom: 32px; }
+.btn-white {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #fff; color: var(--crimson); padding: 16px 36px;
+  border-radius: 50px; font-weight: 800; text-decoration: none;
+  box-shadow: 0 6px 24px rgba(0,0,0,.15); transition: transform .2s;
+}
+.btn-white:hover { transform: translateY(-2px); }
+
+@media (max-width: 860px) {
+  .local-hero, .benefits-section, .local-context, .process-section, .faq-section,
+  .related-cities, .cta-local, .hub-hero, .hub-section { padding-left: 20px; padding-right: 20px; }
+  .benefits-grid { grid-template-columns: 1fr; }
+  .local-hero-trust { flex-direction: column; gap: 8px; }
+  .local-context-box { grid-template-columns: 1fr; padding: 28px 22px; gap: 24px; }
+  .process-steps { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+  .process-steps::before { display: none; }
+}
+@media (max-width: 520px) {
+  .process-steps { grid-template-columns: 1fr; }
+}

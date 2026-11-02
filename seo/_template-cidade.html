@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <!--
   ══════════════════════════════════════════════════════════════════
-  PS Contabilidade — TEMPLATE SEO PROGRAMÁTICO
+  PS Contabilidade — TEMPLATE SEO PROGRAMÁTICO (serviço × local)
   ══════════════════════════════════════════════════════════════════
   NÃO edite as páginas geradas — edite este template e os dados em
-  data/servicos.json e data/cidades.json, depois rode:
+  data/servicos.json, data/cidades.json e data/bairros-bh.json, depois rode:
 
       node gerar-seo.js
 
   Blocos ({{..._HTML}}, {{..._JSON}}) são montados pelo gerador.
-  Variáveis simples: {{CIDADE}} {{CIDADE_SLUG}} {{ESTADO}} {{ESTADO_SLUG}}
-  {{SERVICO}} {{SERVICO_SLUG}} {{URL}} {{WHATSAPP_URL}} ANO
   ══════════════════════════════════════════════════════════════════
 -->
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="gerar-seo.js">
 
   <title>{{TITULO}}</title>
   <meta name="description" content="{{DESCRICAO}}">
   <link rel="canonical" href="{{URL}}">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="{{SERVICO}} em {{CIDADE}} | PS Contabilidade">
+  <meta property="og:title" content="{{TITULO}}">
   <meta property="og:description" content="{{DESCRICAO}}">
   <meta property="og:url" content="{{URL}}">
   <meta property="og:type" content="website">
@@ -41,181 +40,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/main.css">
-
-  <style>
-    /* ── HERO LOCAL ── */
-    .local-hero {
-      background: var(--gray-bg);
-      padding: 140px 48px 100px;
-      position: relative; overflow: hidden;
-    }
-    .local-hero::after {
-      content: ''; position: absolute; bottom: -2px; left: 0; right: 0;
-      height: 70px; background: var(--white);
-      border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-    }
-    .local-hero-inner {
-      max-width: 800px;
-    }
-    .local-hero-location {
-      display: inline-flex; align-items: center; gap: 6px;
-      background: rgba(212,30,60,.08); color: var(--crimson);
-      border: 1px solid rgba(212,30,60,.2);
-      padding: 6px 14px; border-radius: 50px;
-      font-size: .72rem; font-weight: 700; letter-spacing: 1px;
-      text-transform: uppercase; margin-bottom: 20px;
-    }
-    .local-hero-location svg { width: 14px; height: 14px; }
-    .local-hero-title {
-      font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 900; color: var(--navy);
-      line-height: 1.1; letter-spacing: -.5px; margin-bottom: 20px;
-    }
-    .local-hero-sub { font-size: 1rem; color: var(--text-mid); line-height: 1.72; margin-bottom: 36px; max-width: 580px; }
-    .local-hero-trust { display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 32px; }
-    .trust-item { font-size: .82rem; font-weight: 700; color: var(--crimson); }
-    .local-hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
-
-    /* ── BENEFÍCIOS ── */
-    .benefits-section { background: var(--white); padding: 80px 48px; }
-    .benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
-
-    /* ── CONTEXTO LOCAL ── */
-    .local-context { background: var(--white); padding: 0 48px 80px; }
-    .local-context-box {
-      display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: start;
-      background: var(--gray-bg); border-radius: var(--radius-lg); padding: 48px;
-    }
-    .local-context-box p { color: var(--text-mid); line-height: 1.75; margin-bottom: 16px; font-size: .95rem; }
-    .local-facts { list-style: none; display: flex; flex-direction: column; gap: 14px; }
-    .local-facts li {
-      background: var(--white); border-radius: var(--radius); padding: 16px 20px;
-      border: 1px solid var(--border); font-size: .88rem; color: var(--text-mid);
-    }
-    .local-facts strong { display: block; color: var(--navy); font-size: .78rem; text-transform: uppercase; letter-spacing: .8px; margin-bottom: 4px; }
-
-    /* ── PROCESSO ── */
-    .process-section { background: var(--white); padding: 0 48px 80px; }
-    .process-steps {
-      display: grid; grid-template-columns: repeat(4, 1fr);
-      gap: 0; max-width: 960px; margin: 56px auto 0;
-      position: relative;
-    }
-    .process-steps::before {
-      content: ''; position: absolute; top: 28px; left: 10%; right: 10%;
-      height: 2px; background: var(--border); z-index: 0;
-    }
-    .process-step { text-align: center; position: relative; z-index: 1; padding: 0 12px; }
-    .process-num {
-      width: 56px; height: 56px; border-radius: 50%;
-      background: var(--crimson); color: #fff;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.1rem; font-weight: 900; margin: 0 auto 16px;
-      box-shadow: 0 4px 16px var(--crimson-glow);
-    }
-    .process-title { font-size: .9rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
-    .process-desc  { font-size: .78rem; color: var(--text-mid); line-height: 1.6; }
-
-    /* ── FAQ ── */
-    .faq-section { background: var(--gray-bg); padding: 80px 48px; }
-    .faq-list { max-width: 760px; margin: 48px auto 0; display: flex; flex-direction: column; gap: 12px; }
-    .faq-item {
-      background: var(--white); border-radius: var(--radius);
-      border: 1px solid var(--border); overflow: hidden;
-    }
-    .faq-question {
-      width: 100%; padding: 20px 24px; text-align: left;
-      background: none; border: none; cursor: pointer;
-      font-size: .95rem; font-weight: 700; color: var(--navy);
-      font-family: inherit; display: flex; justify-content: space-between; align-items: center; gap: 16px;
-    }
-    .faq-question svg { width: 20px; height: 20px; flex-shrink: 0; color: var(--crimson); transition: transform .3s; }
-    .faq-item.open .faq-question svg { transform: rotate(180deg); }
-    .faq-answer {
-      max-height: 0; overflow: hidden; transition: max-height .35s ease, padding .35s ease;
-      font-size: .9rem; color: var(--text-mid); line-height: 1.72; padding: 0 24px;
-    }
-    .faq-item.open .faq-answer { max-height: 400px; padding: 0 24px 20px; }
-
-    /* ── LINKS INTERNOS ── */
-    .related-cities { background: var(--white); padding: 64px 48px 24px; }
-    .related-cities + .related-cities { padding-top: 24px; }
-    .related-cities:last-of-type { padding-bottom: 64px; }
-    .cities-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
-    .city-chip {
-      padding: 8px 18px; border-radius: 50px;
-      background: var(--gray-bg); border: 1px solid var(--border);
-      font-size: .82rem; font-weight: 600; color: var(--navy);
-      text-decoration: none; transition: all .2s;
-    }
-    .city-chip:hover { background: var(--crimson); color: #fff; border-color: var(--crimson); }
-    .posts-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; margin-top: 24px; }
-    .post-link {
-      display: block; padding: 20px 22px; border-radius: var(--radius);
-      border: 1px solid var(--border); background: var(--white);
-      font-weight: 700; color: var(--navy); text-decoration: none; font-size: .92rem; line-height: 1.45;
-      transition: border-color .2s, color .2s;
-    }
-    .post-link span { display: block; font-size: .72rem; color: var(--crimson); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
-    .post-link:hover { border-color: var(--crimson); color: var(--crimson); }
-
-    /* ── CTA LOCAL ── */
-    .cta-local { background: var(--crimson); padding: 72px 48px; text-align: center; }
-    .cta-local h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 900; color: #fff; margin-bottom: 10px; }
-    .cta-local p  { color: rgba(255,255,255,.8); margin-bottom: 32px; }
-    .btn-white {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: #fff; color: var(--crimson); padding: 16px 36px;
-      border-radius: 50px; font-weight: 800; text-decoration: none;
-      box-shadow: 0 6px 24px rgba(0,0,0,.15); transition: transform .2s;
-    }
-    .btn-white:hover { transform: translateY(-2px); }
-
-    @media (max-width: 860px) {
-      .local-hero, .benefits-section, .local-context, .process-section, .faq-section, .related-cities, .cta-local { padding-left: 20px; padding-right: 20px; }
-      .benefits-grid { grid-template-columns: 1fr; }
-      .local-hero-trust { flex-direction: column; gap: 8px; }
-      .local-context-box { grid-template-columns: 1fr; padding: 28px 22px; gap: 24px; }
-      .process-steps { grid-template-columns: repeat(2, 1fr); gap: 32px; }
-      .process-steps::before { display: none; }
-    }
-    @media (max-width: 520px) {
-      .process-steps { grid-template-columns: 1fr; }
-    }
-  </style>
+  <link rel="stylesheet" href="/assets/css/seo.css">
 </head>
 <body>
 
-  <nav class="navbar" id="navbar">
-    <a href="/" class="nav-logo">
-      <img src="/assets/img/logo.png" alt="PS Contabilidade" class="nav-logo-img">
-    </a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="/">Início</a></li>
-      <li><a href="/quem-somos.html">Quem Somos</a></li>
-      <li><a href="/servicos.html">Serviços</a></li>
-      <li><a href="/blog/">Blog</a></li>
-      <li><a href="https://wa.me/5531996764159" class="nav-cta" target="_blank" rel="noopener">Falar com especialista</a></li>
-    </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
-  </nav>
+{{NAV_HTML}}
 
   <!-- HERO LOCAL -->
   <div class="local-hero">
     <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/">Início</a><span>›</span>
-      <a href="/cidades-atendidas/">Cidades atendidas</a><span>›</span>
-      {{SERVICO}} em {{CIDADE}}
+{{BREADCRUMB_HTML}}
     </nav>
     <div class="local-hero-inner">
       <div class="local-hero-location">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        {{CIDADE}}, {{ESTADO}}
+        {{LOCAL_BADGE}}
       </div>
-      <h1 class="local-hero-title">{{SERVICO}} em<br>{{CIDADE}}, {{ESTADO}}</h1>
+      <h1 class="local-hero-title">{{SERVICO}}<br>{{EM_LOCAL_TITULO}}</h1>
       <p class="local-hero-sub">{{INTRO}}</p>
       <div class="local-hero-trust">
         <span class="trust-item">+20 anos de Experiência</span>
-        <span class="trust-item">100% Digital · Atendimento em {{CIDADE}}</span>
+        <span class="trust-item">100% Digital · Atendimento {{EM_LOCAL}}</span>
         <span class="trust-item">Diagnóstico Gratuito</span>
       </div>
       <div class="local-hero-btns">
@@ -231,7 +76,7 @@
   <section class="benefits-section">
     <div class="container">
       <span class="section-tag">Por que a PS Contabilidade</span>
-      <h2 class="section-title">{{SERVICO}} em {{CIDADE}}<br>com quem entende do negócio</h2>
+      <h2 class="section-title">{{SERVICO}} {{EM_LOCAL}}<br>com quem entende do negócio</h2>
       <div class="benefits-grid">
 {{BENEFICIOS_HTML}}
       </div>
@@ -244,7 +89,7 @@
       <div class="local-context-box">
         <div>
           <span class="section-tag">Atendimento local</span>
-          <h2 class="section-title" style="font-size:1.6rem">Empresas em {{CIDADE}}</h2>
+          <h2 class="section-title" style="font-size:1.6rem">Empresas {{EM_LOCAL}}</h2>
           <p>{{PERFIL}}</p>
           <p>{{GANCHO_LOCAL}}</p>
         </div>
@@ -260,7 +105,7 @@
     <div class="container">
       <div style="text-align:center">
         <span class="section-tag">Como funciona</span>
-        <h2 class="section-title">{{SERVICO}} em {{CIDADE}}, passo a passo</h2>
+        <h2 class="section-title">{{SERVICO}} {{EM_LOCAL}}, passo a passo</h2>
       </div>
       <div class="process-steps">
 {{PASSOS_HTML}}
@@ -273,7 +118,7 @@
     <div class="container">
       <div style="text-align:center">
         <span class="section-tag">Perguntas frequentes</span>
-        <h2 class="section-title">Dúvidas sobre {{SERVICO}}<br>em {{CIDADE}}?</h2>
+        <h2 class="section-title">Dúvidas sobre {{SERVICO}}<br>{{EM_LOCAL}}?</h2>
       </div>
       <div class="faq-list">
 {{FAQ_HTML}}
@@ -281,22 +126,22 @@
     </div>
   </section>
 
-  <!-- OUTROS SERVIÇOS NA CIDADE -->
+  <!-- OUTROS SERVIÇOS NO LOCAL -->
   <section class="related-cities">
     <div class="container">
-      <span class="section-tag">Também em {{CIDADE}}</span>
-      <h2 class="section-title" style="font-size:1.4rem">Outros serviços em {{CIDADE}}</h2>
+      <span class="section-tag">Também {{EM_LOCAL}}</span>
+      <h2 class="section-title" style="font-size:1.4rem">Outros serviços {{EM_LOCAL}}</h2>
       <div class="cities-grid">
 {{OUTROS_SERVICOS_HTML}}
       </div>
     </div>
   </section>
 
-  <!-- CIDADES RELACIONADAS -->
+  <!-- LOCAIS RELACIONADOS -->
   <section class="related-cities">
     <div class="container">
       <span class="section-tag">Também atendemos</span>
-      <h2 class="section-title" style="font-size:1.4rem">{{SERVICO}} em outras cidades de MG</h2>
+      <h2 class="section-title" style="font-size:1.4rem">{{RELACIONADOS_TITULO}}</h2>
       <div class="cities-grid">
 {{CIDADES_HTML}}
       </div>
@@ -324,54 +169,8 @@
     </a>
   </div>
 
-  <footer>
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <a href="/" class="footer-logo">
-          <img src="/assets/img/logo.png" alt="PS Contabilidade" class="footer-logo-img">
-        </a>
-        <p class="footer-tagline">Transformando contabilidade em estratégia de crescimento desde 2003</p>
-      </div>
-      <div class="footer-contact">
-        <div class="footer-contact-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          <a href="mailto:contato@pscont.com.br">contato@pscont.com.br</a>
-        </div>
-        <div class="footer-contact-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 9.81a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 2 .18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.09 7.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <a href="tel:+5531996764159">+ 55 (31) 9 9676-4159</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 PS Contabilidade. Todos os direitos reservados.</span>
-      <ul class="footer-nav">
-        <li><a href="/quem-somos.html">Quem Somos</a></li>
-        <li><a href="/servicos.html">Serviços</a></li>
-        <li><a href="/cidades-atendidas/">Cidades atendidas</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/privacidade.html">Privacidade</a></li>
-      </ul>
-    </div>
-  </footer>
+{{FOOTER_HTML}}
 
-  <script>
-    const navbar = document.getElementById('navbar');
-    const navToggle = document.getElementById('navToggle');
-    const navLinks  = document.getElementById('navLinks');
-    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 20));
-    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
-    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
-
-    // FAQ accordion
-    document.querySelectorAll('.faq-question').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const item = btn.parentElement;
-        const isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-        if (!isOpen) item.classList.add('open');
-      });
-    });
-  </script>
+  <script src="/assets/js/seo.js" defer></script>
 </body>
 </html>
