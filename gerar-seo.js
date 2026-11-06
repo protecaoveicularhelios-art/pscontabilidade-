@@ -7,7 +7,7 @@ const ROOT          = __dirname;
 const BASE_URL      = 'https://pscontabilidadebh.com.br';
 const SEO_DIR       = path.join(ROOT, 'seo');
 const HUB_SLUG      = 'cidades-atendidas';
-const WHATSAPP      = '5531996764159';
+const WHATSAPP      = '5531991960352';
 const MAX_RELACIONADOS = 8;   // links para outros locais em cada página
 const MAX_TITULO    = 65;     // acima disso, o título sai sem "| PS Contabilidade"
 const MARCADOR      = '<meta name="generator" content="gerar-seo.js">';
@@ -101,7 +101,7 @@ const ORGANIZACAO = {
   name: 'PS Contabilidade',
   url: BASE_URL,
   logo: `${BASE_URL}/assets/img/logomarca.png`,
-  telephone: '+55-31-99676-4159',
+  telephone: '+55-31-99196-0352',
   email: 'contato@pscont.com.br',
   foundingDate: '2003',
   address: { '@type': 'PostalAddress', addressLocality: 'Belo Horizonte', addressRegion: 'MG', addressCountry: 'BR' },
