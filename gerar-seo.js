@@ -476,10 +476,10 @@ ${faqHtml(faq)}
 
   return paginaHub({
     url: urlLocalHub(local),
-    tituloPagina: `Contabilidade ${local.emLocalTitulo} | PS Contabilidade`,
-    descricao: `Escritório de contabilidade para empresas ${local.emLocal}: abertura de empresa, MEI, planejamento tributário e contabilidade por segmento. Atendimento digital e diagnóstico gratuito.`,
-    h1: `Contabilidade ${local.emLocalTitulo}`,
-    intro: `A PS Contabilidade atende empresas ${local.emLocal} com mais de 20 anos de experiência, atendimento humanizado e rotina 100% digital. Escolha o serviço de que você precisa.`,
+    tituloPagina: `Escritório de Contabilidade ${local.emLocalTitulo} | PS Contabilidade`,
+    descricao: `Escritório de contabilidade ${local.emLocal}: abertura de empresa e CNPJ, MEI, planejamento tributário e contabilidade por segmento. Atendimento digital e diagnóstico gratuito.`,
+    h1: `Escritório de Contabilidade ${local.emLocalTitulo}`,
+    intro: `Procurando contabilidade ${local.emLocal}? A PS Contabilidade é um escritório de contabilidade com mais de 20 anos de experiência, atendimento humanizado e rotina 100% digital. Escolha o serviço de que você precisa.`,
     trilha, conteudo: blocos.join('\n\n'), whatsapp: `Olá, preciso de contabilidade ${local.emLocal}`,
     schemaExtra: [{ '@type': 'FAQPage', mainEntity: faq.map(f => ({ '@type': 'Question', name: f.p, acceptedAnswer: { '@type': 'Answer', text: f.r } })) }],
   });

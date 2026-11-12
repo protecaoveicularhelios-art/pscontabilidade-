@@ -35,9 +35,9 @@
     "grupo": "servicos",
     "escopo": ["cidades", "bairros"],
     "prioridade": "0.9",
-    "titulo": "Abertura de Empresa {{EM_LOCAL}} | PS Contabilidade",
-    "descricao": "Abra sua empresa {{EM_LOCAL}} com a PS Contabilidade: viabilidade, registro na JUCEMG, CNPJ, alvará e escolha do regime tributário. Atendimento digital e diagnóstico gratuito.",
-    "intro": "Abrimos sua empresa {{EM_LOCAL}} do início ao fim: consulta de viabilidade, registro na Junta Comercial (JUCEMG), CNPJ, inscrições e alvará — e já escolhemos o regime tributário que faz você pagar menos imposto desde o primeiro mês.",
+    "titulo": "Abertura de Empresa e CNPJ {{EM_LOCAL}} | PS Contabilidade",
+    "descricao": "Abrir CNPJ {{EM_LOCAL}} sem burocracia: viabilidade, registro na JUCEMG, CNPJ, alvará e escolha do regime tributário. Atendimento digital e diagnóstico gratuito.",
+    "intro": "Quer abrir CNPJ {{EM_LOCAL}}? Abrimos sua empresa do início ao fim: consulta de viabilidade, registro na Junta Comercial (JUCEMG), CNPJ, inscrições e alvará — e já escolhemos o regime tributário que faz você pagar menos imposto desde o primeiro mês.",
     "ganchoLocal": "{{EM_LOCAL_CAP}}, negócios de {{SETORES}} têm exigências próprias de inscrição e licenciamento. Definimos o CNAE correto, verificamos a viabilidade do endereço junto à Prefeitura de {{MUNICIPIO}} e evitamos retrabalho com a JUCEMG.",
     "beneficios": [
       { "titulo": "Processo completo, sem burocracia", "texto": "Cuidamos do contrato social, registro na JUCEMG, CNPJ na Receita, inscrição municipal e, quando necessário, inscrição estadual na SEF-MG." },
