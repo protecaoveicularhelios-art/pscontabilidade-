@@ -6,12 +6,12 @@
     "escopo": ["cidades", "bairros"],
     "prioridade": "0.9",
     "titulo": "Contabilidade para MEI {{EM_LOCAL}} | PS Contabilidade",
-    "descricao": "Contador para MEI {{EM_LOCAL}}: DAS em dia, DASN-SIMEI, nota fiscal e controle do limite de R$ 81 mil. Atendimento 100% digital. Fale com a PS Contabilidade.",
+    "descricao": "Contador para MEI {{EM_LOCAL}}: DAS em dia, DASN-SIMEI, nota fiscal e controle do limite do MEI (R$ 81 mil em 2026; R$ 110 mil em 2027). Atendimento 100% digital. Fale com a PS Contabilidade.",
     "intro": "Cuidamos das obrigações do seu MEI {{EM_LOCAL}} — DAS mensal, declaração anual, emissão de nota fiscal e controle do limite de faturamento — para você focar no seu negócio sem medo de multa ou desenquadramento.",
     "ganchoLocal": "Boa parte dos negócios {{DE_LOCAL}} começa como MEI, especialmente em {{SETORES}}. Acompanhamos o faturamento de perto e avisamos com antecedência quando é hora de migrar para microempresa, sem cobrança retroativa de impostos.",
     "beneficios": [
       { "titulo": "DAS e DASN-SIMEI em dia", "texto": "Acompanhamos as guias mensais e entregamos a declaração anual do MEI no prazo, evitando multas e pendências no CNPJ." },
-      { "titulo": "Controle do limite de R$ 81 mil", "texto": "Monitoramos o faturamento mês a mês e alertamos antes de você ultrapassar o teto — o excesso acima de 20% gera desenquadramento retroativo." },
+      { "titulo": "Controle do limite de faturamento", "texto": "Monitoramos o faturamento mês a mês e alertamos antes de você ultrapassar o teto — o excesso acima de 20% gera desenquadramento retroativo." },
       { "titulo": "Migração para ME sem susto", "texto": "Quando o negócio cresce, fazemos a transição de MEI para microempresa e escolhemos o regime tributário mais econômico para a nova fase." }
     ],
     "passos": [
@@ -22,7 +22,7 @@
     ],
     "faq": [
       { "p": "MEI {{EM_LOCAL}} precisa de contador?", "r": "Não é obrigatório, mas um contador evita erros comuns: DAS atrasado, declaração anual fora do prazo, notas emitidas incorretamente e estouro do limite de faturamento. Para quem quer crescer com segurança, o acompanhamento compensa." },
-      { "p": "Qual é o limite de faturamento do MEI em 2026?", "r": "O limite é de R$ 81.000,00 por ano, proporcional aos meses de atividade no ano de abertura. Se o faturamento passar de 20% acima do limite, o desenquadramento é retroativo ao início do ano." },
+      { "p": "Qual é o limite de faturamento do MEI em 2026?", "r": "Em 2026 o limite é de R$ 81.000,00 por ano, proporcional aos meses de atividade no ano de abertura. A Lei Complementar nº 238/2026 eleva o teto para R$ 110 mil em 2027 e R$ 140 mil a partir de 2028. Se o faturamento passar de 20% acima do limite, o desenquadramento é retroativo ao início do ano." },
       { "p": "O MEI precisa emitir nota fiscal?", "r": "Para vendas e serviços a outras empresas (pessoa jurídica) a nota é obrigatória. Desde 2023, o MEI prestador de serviço emite a NFS-e pelo padrão nacional. Orientamos você a emitir corretamente em cada caso." }
     ],
     "posts": ["mei-limite-faturamento-2026", "simples-nacional-ou-lucro-presumido"],
@@ -443,7 +443,7 @@
     "faq": [
       { "p": "E-commerce no Simples paga DIFAL?", "r": "As regras do DIFAL para empresas do Simples Nacional geram discussões e variam conforme o estado de destino. Analisamos as suas vendas e aplicamos o entendimento mais seguro para cada operação." },
       { "p": "Vendedor de marketplace precisa de CNPJ?", "r": "Para vender com regularidade e em volume, sim. Os marketplaces exigem cada vez mais a emissão de nota fiscal, e o CNPJ permite pagar bem menos imposto do que como pessoa física." },
-      { "p": "Posso começar o e-commerce como MEI?", "r": "Sim, desde que a atividade seja permitida e o faturamento fique dentro de R$ 81 mil por ano. Acompanhamos o crescimento e fazemos a migração para ME na hora certa." }
+      { "p": "Posso começar o e-commerce como MEI?", "r": "Sim, desde que a atividade seja permitida e o faturamento fique dentro do limite do MEI (R$ 81 mil em 2026 e R$ 110 mil em 2027). Acompanhamos o crescimento e fazemos a migração para ME na hora certa." }
     ],
     "posts": ["mei-limite-faturamento-2026", "fluxo-de-caixa-para-pme"],
     "ctaTitulo": "Sua loja virtual vendendo para o Brasil sem risco fiscal",
@@ -490,7 +490,7 @@
     ],
     "faq": [
       { "p": "O que é a Lei do Salão Parceiro?", "r": "A Lei 13.352/2016 permite que salões firmem contratos de parceria com cabeleireiros, barbeiros, manicures e outros profissionais. O salão retém e tributa apenas a sua cota-parte, e o profissional parceiro declara a parte dele, geralmente como MEI." },
-      { "p": "Salão de beleza pode ser MEI?", "r": "O próprio dono pode atuar como MEI em várias atividades de beleza, dentro do limite de R$ 81 mil por ano. Salões maiores costumam ser microempresas no Simples Nacional, usando a parceria com profissionais MEI." },
+      { "p": "Salão de beleza pode ser MEI?", "r": "O próprio dono pode atuar como MEI em várias atividades de beleza, dentro do limite do MEI (R$ 81 mil em 2026 e R$ 110 mil em 2027). Salões maiores costumam ser microempresas no Simples Nacional, usando a parceria com profissionais MEI." },
       { "p": "Salão paga imposto sobre os produtos vendidos?", "r": "Muitos cosméticos têm PIS/Cofins monofásico e ICMS-ST. Quando a revenda é segregada corretamente no Simples, o salão não paga esses tributos de novo." }
     ],
     "posts": ["mei-limite-faturamento-2026", "como-reduzir-impostos-empresa"],
